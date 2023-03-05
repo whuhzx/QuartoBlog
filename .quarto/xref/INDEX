@@ -1,0 +1,32 @@
+{
+  "index.qmd": {
+    "index.html": "7e2d0b50"
+  },
+  "posts/post-with-code/index.qmd": {
+    "index.html": "632b8321"
+  },
+  "posts/welcome/index.qmd": {
+    "index.html": "759c5470"
+  },
+  "about.qmd": {
+    "about.html": "dd01c148"
+  },
+  "test.qmd": {
+    "test.html": "a8e3b42d"
+  },
+  "posts/图表练习01：使用 waffle package 制作华夫饼图/index.qmd": {
+    "index.html": "cb6660f3"
+  },
+  "posts/hrbrthemes：最好用的ggplot主题扩展包/index.qmd": {
+    "index.html": "591adaa8"
+  },
+  "posts/使用 ggalluvial 制作桑基图和凹凸图/index.qmd": {
+    "index.html": "1c726cca"
+  },
+  "posts/使用 waffle package 制作华夫饼图/index.qmd": {
+    "index.html": "1a0a3d74"
+  },
+  "posts/常用包和函数汇总/index.qmd": {
+    "index.html": "1611edcf"
+  }
+}

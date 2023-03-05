@@ -1,0 +1,17 @@
+---
+title: "常用包和函数汇总"
+editor: visual
+date: '2023/03/04'
+categories: [R, 清单]
+---
+
+## 数据清洗
+
+* 列名清洗: `janitor::clean_names()`，将命名不一致的列名统一规范化
+
+
+
+## 数据可视化
+
+* ggplot 主题风格拓展：`hrbrthemes`
+
