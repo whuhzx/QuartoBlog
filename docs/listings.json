@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/在 Github 上部署 Quarto 的静态网页/index.html",
       "/posts/常用包和函数汇总/index.html",
       "/posts/hrbrthemes：最好用的ggplot主题扩展包/index.html",
       "/posts/使用 ggalluvial 制作桑基图和凹凸图/index.html",

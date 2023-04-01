@@ -1,7 +1,0 @@
-
-# 忽略csv和xlsx文件
-*.csv
-*.xlsx
-
-# 忽略_site目录下的所有文件
-_site/

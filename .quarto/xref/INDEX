@@ -28,5 +28,8 @@
   },
   "posts/常用包和函数汇总/index.qmd": {
     "index.html": "1611edcf"
+  },
+  "posts/在 Github 上部署 Quarto 的静态网页/index.qmd": {
+    "index.html": "3bd817aa"
   }
 }

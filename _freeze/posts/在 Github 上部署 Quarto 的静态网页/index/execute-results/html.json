@@ -1,0 +1,11 @@
+{
+  "hash": "d601b43a15d98e23bafd7bfd9de2eb7c",
+  "result": {
+    "markdown": "---\ntitle: \"在 Github 上部署 Quarto 的静态网页\"\ndate: \"2023/03/05\"\ncategories: ['Github', 'Quarto']\n---\n\n简单记录一下，如何在 Github 上部署 Quarto 的静态网页。\n\n## 确保 Github 和本机电脑已关联\n\n如果从未在电脑上使用过 Github，需首先将 Github 账号和本机电脑关联，具体方法是创建 SSH 文件，并将公钥上传到 Github 配置页。具体步骤如下：\n\n1、确认本机是否已创建 SSH Key\n\n使用 `ls -a ~` 查看本机主目录页是否有 `.ssh` 目录。若没有，则使用 `ssh-keygen -t rsa -C 'myemail@github.com'` 创建 ssh 目录，并生成私钥文件 `id_rsa` 和 公钥文件 `id_rsa.pub`。\n\n之后使用 `cat /.ssh/id_rsa.pub` 查看公钥并复制。\n\n2、将公钥上传到 Github 配置页\n\n打开 Github，进入 `Settings - SSH and GPG keys` 页面（或者直接输入 <https://github.com/settings/keys>网址），点击 `New SSH key`，将之前复制的公钥粘贴进去。\n\n## 配置 Quarto 项目文件夹，并关联本地库和远程库\n\n1、配置 Quarto 项目文件夹\n\n在 `_quarto.yml` 文件中写入 `output-dir: docs`，渲染后会生成 `docs` 目录，里面就是将要部署的静态网页。\n\n\n```{yaml}\nproject:\n  type: website\n  output-dir: docs\n```\n\n\n在主目录下使用 `touch .nojekyll` 新建 `.nojekyll` 文件，告诉 Github 在部署网页时，不要用默认的 Jekyll 处理网页。\n\n2、Quarto 的 Git 初始化\n\n在 Quarto 项目文件夹主目录下，使用 `git init` 进行 Git 初始化。\n\n新建 `.gitignore` 文件，在文件中写入 `*.csv` 和 `*.xlsx`，忽略数据源文件；再写入 `_site/` 忽略本地调试时生成的文件。\n\n3、在 Github 新建项目库，并关联本地库和远程库\n\n使用下列命令关联本地库和远程库\n\n\n```{git}\ngit remote add origin git@github.com:whuhzx/QuartoBlog.git\ngit branch -M main\ngit push -u origin main\n```\n\n\n如果执行过程中返回 `fatal: remote origin already exists.` 的报错，则重新设置： `git remote set-url origin git@github.com:whuhzx/QuartoBlog.git`\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}
