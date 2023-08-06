@@ -31,5 +31,11 @@
   },
   "posts/在 Github 上部署 Quarto 的静态网页/index.qmd": {
     "index.html": "3bd817aa"
+  },
+  "posts/使用 gghighlight 制图/index.qmd": {
+    "index.html": "40c9dd75"
+  },
+  "posts/使用 geom_ribbon 为折线差值填充颜色/index.qmd": {
+    "index.html": "eb812f41"
   }
 }

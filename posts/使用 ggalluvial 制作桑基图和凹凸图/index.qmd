@@ -4,7 +4,6 @@ date: "2023/02/23"
 categories: [R, ggplot2]
 ---
 
-
 ## 包引入
 
 ```{r}
@@ -14,7 +13,6 @@ library(ggalluvial)
 library(hrbrthemes)
 library(patchwork)
 ```
-
 
 ## 数据准备
 
@@ -68,7 +66,6 @@ city_data <- tribble(
 knitr::kable(head(city_data))
 ```
 
-
 ## 桑基图
 
 先直接看个例子。
@@ -114,7 +111,6 @@ p2
 基本用法之外，`geom_alluvium()` 函数还有一个 `curve_type` 参数，`curve_type =  "linear"` 表示线条使用直线。除了 `linear`，还有 `cubic`、`cubic`、`quintic` 等值，但是肉眼看不出太大区别。
 
 最后需要注意的是，制作桑基图时一般使用宽数据，操作如上所示。长数据也可，只是没有那么容易理解，这里不再演示。
-
 
 ## 凹凸图
 
@@ -194,7 +190,6 @@ p4 + p5
 
 在 ggalluvial 的 [Github Issues](https://github.com/corybrunson/ggalluvial/issues/108) 里找到了解决方法：将 `dplyr` 升级至 1.1.0 以后版本。
 
-
 ### 流入地和流出地的分类类别不能完全一致
 
 在桑基图的例子中，流入地和流出地都是线级城市，分类类型完全一致，首次 run 的时候报错了。这里用了一个笨办法来解决：给标签重命名，即在X线城市前面加了个空格，在图表显示的时候看不出来。
@@ -204,16 +199,10 @@ city_data <- city_data %>%
   mutate(fre_city_level = fct_relevel(fre_city_level, c(' 一线城市', ' 新一线城市', ' 二线城市', ' 三线城市', ' 四线城市', ' 五线城市')))
 ```
 
-
-
-
 ## 相关资源
 
-* [ggalluvial Github Page](https://github.com/corybrunson/ggalluvial)
+-   [ggalluvial Github Page](https://github.com/corybrunson/ggalluvial)
 
-* [Alluvial Plots in ggplot2](https://corybrunson.github.io/ggalluvial/articles/ggalluvial.html)
+-   [Alluvial Plots in ggplot2](https://corybrunson.github.io/ggalluvial/articles/ggalluvial.html)
 
-* [R Charts: Alluvial plot in ggplot2 with ggalluvial](https://r-charts.com/flow/ggalluvial/)
-
-
-
+-   [R Charts: Alluvial plot in ggplot2 with ggalluvial](https://r-charts.com/flow/ggalluvial/)

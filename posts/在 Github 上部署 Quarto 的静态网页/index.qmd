@@ -80,7 +80,7 @@ git push -u origin main
 
 3、使用 `git commit -m "文字说明"` 将缓存区的内容做成一个新的版本，可以在每次写完一篇新的博文内容后做一个新版本
 
-4、使用 `git push -u origin master` 将新版本推送到 Github 上
+4、使用 `git push -u origin main` 将新版本推送到 Github 上
 
 
 ## 相关资源

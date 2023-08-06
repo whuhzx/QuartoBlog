@@ -1,0 +1,145 @@
+---
+title: "使用 gghighlight 制图"
+categories: [R, ggplot2]
+date: '2023/08/06'
+execute:
+  warning: false
+---
+
+## 包引入
+
+```{r}
+library(tidyverse)
+library(gghighlight)
+library(hrbrthemes)
+```
+
+## 数据准备和清洗
+
+先导入数据。
+
+```{r}
+jisu_apps <- readxl::read_xlsx("QM数据.xlsx", sheet = 3) 
+```
+
+jisu_apps数据集中是不同极速版App的月活变化数据。
+
+```{r}
+knitr::kable(head(jisu_apps))
+```
+
+绘图需使用长数据，我们先将宽数据转换为长数据。
+
+```{r}
+jisu_apps_long <- jisu_apps %>%
+  pivot_longer(cols = 2:10, names_to = "应用", values_to = "月活")
+```
+
+```{r}
+knitr::kable(head(jisu_apps_long))
+```
+
+## 使用 gghighlight 制图
+
+其实整个pacakge里主要使用的就是`gghighlight()`函数。
+
+先看没有高亮任一线条的样子。
+
+```{r}
+jisu_apps_long %>%
+  ggplot(aes(x = 时间, y = 月活)) +
+  geom_line(aes(group = 应用, color = 应用)) +
+  theme_ipsum(base_family = "PingFang SC")
+```
+
+再来高亮指定名称的线条。其中`label_params`主要用来调整高亮线条的名称样式，参数和`geom_label_repel`一致。
+
+```{r}
+jisu_apps_long %>%
+  ggplot(aes(x = 时间, y = 月活)) +
+  geom_line(aes(group = 应用, color = 应用)) +
+  gghighlight(应用 == '快手极速版', label_params = list(family = "PingFang SC")) +
+  theme_ipsum(base_family = "PingFang SC")
+```
+
+线条名称可以改用图例的形式，而不直接在线条结尾处展现标签。这里需使用`use_direct_label`参数。
+
+```{r}
+jisu_apps_long %>%
+  ggplot(aes(x = 时间, y = 月活)) +
+  geom_line(aes(group = 应用, color = 应用)) +
+  gghighlight(应用 == '快手极速版', use_direct_label = FALSE) +
+  theme_ipsum(base_family = "PingFang SC")
+```
+
+还可以使用函数筛选需要高亮的线条。例如通过`max(月活) > 10000`筛选出月活过亿的应用。
+
+```{r}
+jisu_apps_long %>%
+  ggplot(aes(x = 时间, y = 月活)) +
+  geom_line(aes(group = 应用, color = 应用)) +
+  gghighlight(max(月活) > 10000, use_direct_label = FALSE) +
+  theme_ipsum(base_family = "PingFang SC")
+```
+
+结合`max_highlight`参数，指定高亮的最大线条数。
+
+```{r}
+jisu_apps_long %>%
+  ggplot(aes(x = 时间, y = 月活)) +
+  geom_line(aes(group = 应用, color = 应用)) +
+  gghighlight(max(月活, na.rm = TRUE), max_highlight = 3, use_direct_label = FALSE) +
+  theme_ipsum(base_family = "PingFang SC")
+```
+
+如果有更细粒度的需求，例如2023年月活最高的三个应用，则无法通过`gghighlight()`内置参数直接实现，需要先计算得到这三个应用的名称。
+
+```{r}
+
+top3_app_names <- jisu_apps_long %>%
+  filter(lubridate::year(时间) == 2023) %>%
+  group_by(应用) %>%
+  top_n(1, 月活) %>%
+  ungroup() %>%
+  arrange(desc(月活)) %>%
+  top_n(3, 月活) %>%
+  pull(应用)
+
+# 也可使用行计算，结果和上面一样
+# top3_app_names2 <- jisu_apps_long %>%
+#   filter(lubridate::year(时间) == 2023) %>%
+#   pivot_wider(names_from = 时间, values_from = 月活) %>%
+#   rowwise() %>%
+#   mutate(最大月活 = max(across(where(is.numeric)))) %>%
+#   ungroup() %>%
+#   top_n(3, 最大月活) %>%
+#   pull(应用)
+  
+jisu_apps_long %>%
+  ggplot(aes(x = 时间, y = 月活)) +
+  geom_line(aes(group = 应用, color = 应用)) +
+  gghighlight(应用 %in% top3_app_names, use_direct_label = FALSE) +
+  theme_ipsum(base_family = "PingFang SC")
+```
+
+最后按应用进行分面。
+
+```{r}
+jisu_apps_long %>%
+  mutate(应用 = fct_reorder(应用, -月活, mean, na.rm = TRUE)) %>%
+  ggplot(aes(x = 时间, y = 月活)) +
+  geom_line(aes(group = 应用, color = 应用), size = 0.7) +
+  # 为了看清趋势采用对数坐标轴
+  scale_y_log10() +
+  theme_ipsum(base_family = "PingFang SC", grid = "XY") +
+  gghighlight(use_direct_label = FALSE) +
+  facet_wrap(~应用) +
+  guides(color = FALSE) +
+  labs(y = "月活（万人）")
+```
+
+## 参考资料
+
+-   [Introduction to gghighlight](https://cran.r-project.org/web/packages/gghighlight/vignettes/gghighlight.html)
+
+-   [Line chart with small multiple](https://r-graph-gallery.com/web-line-chart-small-multiple-all-group-greyed-out.html)

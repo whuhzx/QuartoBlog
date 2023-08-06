@@ -130,7 +130,7 @@
     "href": "index.html",
     "title": "Boyce’s Blog",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\n在 Github 上部署 Quarto 的静态网页\n\n\n\n\n\n\n\nGithub\n\n\nQuarto\n\n\n\n\n\n\n\n\n\n\n\nMar 5, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n常用包和函数汇总\n\n\n\n\n\n\n\nR\n\n\n清单\n\n\n\n\n\n\n\n\n\n\n\nMar 4, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nhrbrthemes：最好用的 ggplot 主题扩展包\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nFeb 25, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n使用 ggalluvial 制作桑基图和凹凸图\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nFeb 23, 2023\n\n\nBoyce\n\n\n\n\n\n\n  \n\n\n\n\n使用 waffle package 制作华夫饼图\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nDec 7, 2022\n\n\nBoyce\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n使用 gghighlight 制图\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nAug 6, 2023\n\n\nBoyce\n\n\n\n\n\n\n  \n\n\n\n\n使用 geom_ribbon 给双折线区间填充颜色\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nAug 4, 2023\n\n\nBoyce\n\n\n\n\n\n\n  \n\n\n\n\n在 Github 上部署 Quarto 的静态网页\n\n\n\n\n\n\n\nGithub\n\n\nQuarto\n\n\n\n\n\n\n\n\n\n\n\nMar 5, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n常用包和函数汇总\n\n\n\n\n\n\n\nR\n\n\n清单\n\n\n\n\n\n\n\n\n\n\n\nMar 4, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nhrbrthemes：最好用的 ggplot 主题扩展包\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nFeb 25, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n使用 ggalluvial 制作桑基图和凹凸图\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nFeb 23, 2023\n\n\nBoyce\n\n\n\n\n\n\n  \n\n\n\n\n使用 waffle package 制作华夫饼图\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nDec 7, 2022\n\n\nBoyce\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -186,6 +186,69 @@
     "href": "posts/在 Github 上部署 Quarto 的静态网页/index.html#更新博客内容",
     "title": "在 Github 上部署 Quarto 的静态网页",
     "section": "更新博客内容",
-    "text": "更新博客内容\n后续更新博客内容时，可使用下列 Git 常用命令：\n1、使用 git add 文件名/目录名 将工作区修改内容添加到缓存区\n2、使用 git status 查看工作区或缓存区状况\n3、使用 git commit -m \"文字说明\" 将缓存区的内容做成一个新的版本，可以在每次写完一篇新的博文内容后做一个新版本\n4、使用 git push -u origin master 将新版本推送到 Github 上"
+    "text": "更新博客内容\n后续更新博客内容时，可使用下列 Git 常用命令：\n1、使用 git add 文件名/目录名 将工作区修改内容添加到缓存区\n2、使用 git status 查看工作区或缓存区状况\n3、使用 git commit -m \"文字说明\" 将缓存区的内容做成一个新的版本，可以在每次写完一篇新的博文内容后做一个新版本\n4、使用 git push -u origin main 将新版本推送到 Github 上"
+  },
+  {
+    "objectID": "posts/使用 gghighlight 制图/index.html",
+    "href": "posts/使用 gghighlight 制图/index.html",
+    "title": "使用 gghighlight 制图",
+    "section": "",
+    "text": "library(tidyverse)\nlibrary(gghighlight)\nlibrary(hrbrthemes)"
+  },
+  {
+    "objectID": "posts/使用 gghighlight 制图/index.html#数据准备和清洗",
+    "href": "posts/使用 gghighlight 制图/index.html#数据准备和清洗",
+    "title": "使用 gghighlight 制图",
+    "section": "数据准备和清洗",
+    "text": "数据准备和清洗\n先导入数据。\n\njisu_apps <- readxl::read_xlsx(\"QM数据.xlsx\", sheet = 3) \n\njisu_apps数据集中是不同极速版App的月活变化数据。\n\nknitr::kable(head(jisu_apps))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n时间\n快手极速版\n抖音极速版\n爱奇艺极速版\n喜马拉雅极速版\n好看视频极速版\n火山极速版\n美团极速版\nQQ极速版\n腾讯视频极速版\n\n\n\n\n2020-01-01\n10703.60\n9024.61\nNA\n89.47\nNA\n3387.60\nNA\n274.50\n537.34\n\n\n2020-02-01\n11374.78\n7565.89\nNA\n171.90\nNA\n2274.78\nNA\n351.04\n584.78\n\n\n2020-03-01\n11018.65\n6699.28\nNA\n165.85\nNA\n1487.27\nNA\n322.12\n425.26\n\n\n2020-04-01\n11237.10\n7222.69\nNA\n108.06\nNA\n1273.40\nNA\n287.80\n327.93\n\n\n2020-05-01\n11655.08\n7979.54\nNA\n92.20\nNA\n1350.78\nNA\n236.04\n290.39\n\n\n2020-06-01\n12118.11\n8839.93\nNA\n101.82\nNA\n2139.89\nNA\n219.02\n254.15\n\n\n\n\n\n绘图需使用长数据，我们先将宽数据转换为长数据。\n\njisu_apps_long <- jisu_apps %>%\n  pivot_longer(cols = 2:10, names_to = \"应用\", values_to = \"月活\")\n\n\nknitr::kable(head(jisu_apps_long))\n\n\n\n\n时间\n应用\n月活\n\n\n\n\n2020-01-01\n快手极速版\n10703.60\n\n\n2020-01-01\n抖音极速版\n9024.61\n\n\n2020-01-01\n爱奇艺极速版\nNA\n\n\n2020-01-01\n喜马拉雅极速版\n89.47\n\n\n2020-01-01\n好看视频极速版\nNA\n\n\n2020-01-01\n火山极速版\n3387.60"
+  },
+  {
+    "objectID": "posts/使用 gghighlight 制图/index.html#使用-gghighlight-制图",
+    "href": "posts/使用 gghighlight 制图/index.html#使用-gghighlight-制图",
+    "title": "使用 gghighlight 制图",
+    "section": "使用 gghighlight 制图",
+    "text": "使用 gghighlight 制图\n其实整个pacakge里主要使用的就是gghighlight()函数。\n先看没有高亮任一线条的样子。\n\njisu_apps_long %>%\n  ggplot(aes(x = 时间, y = 月活)) +\n  geom_line(aes(group = 应用, color = 应用)) +\n  theme_ipsum(base_family = \"PingFang SC\")\n\n\n\n\n再来高亮指定名称的线条。其中label_params主要用来调整高亮线条的名称样式，参数和geom_label_repel一致。\n\njisu_apps_long %>%\n  ggplot(aes(x = 时间, y = 月活)) +\n  geom_line(aes(group = 应用, color = 应用)) +\n  gghighlight(应用 == '快手极速版', label_params = list(family = \"PingFang SC\")) +\n  theme_ipsum(base_family = \"PingFang SC\")\n\n\n\n\n线条名称可以改用图例的形式，而不直接在线条结尾处展现标签。这里需使用use_direct_label参数。\n\njisu_apps_long %>%\n  ggplot(aes(x = 时间, y = 月活)) +\n  geom_line(aes(group = 应用, color = 应用)) +\n  gghighlight(应用 == '快手极速版', use_direct_label = FALSE) +\n  theme_ipsum(base_family = \"PingFang SC\")\n\n\n\n\n还可以使用函数筛选需要高亮的线条。例如通过max(月活) > 10000筛选出月活过亿的应用。\n\njisu_apps_long %>%\n  ggplot(aes(x = 时间, y = 月活)) +\n  geom_line(aes(group = 应用, color = 应用)) +\n  gghighlight(max(月活) > 10000, use_direct_label = FALSE) +\n  theme_ipsum(base_family = \"PingFang SC\")\n\n\n\n\n结合max_highlight参数，指定高亮的最大线条数。\n\njisu_apps_long %>%\n  ggplot(aes(x = 时间, y = 月活)) +\n  geom_line(aes(group = 应用, color = 应用)) +\n  gghighlight(max(月活, na.rm = TRUE), max_highlight = 3, use_direct_label = FALSE) +\n  theme_ipsum(base_family = \"PingFang SC\")\n\n\n\n\n如果有更细粒度的需求，例如2023年月活最高的三个应用，则无法通过gghighlight()内置参数直接实现，需要先计算得到这三个应用的名称。\n\ntop3_app_names <- jisu_apps_long %>%\n  filter(lubridate::year(时间) == 2023) %>%\n  group_by(应用) %>%\n  top_n(1, 月活) %>%\n  ungroup() %>%\n  arrange(desc(月活)) %>%\n  top_n(3, 月活) %>%\n  pull(应用)\n\n# 也可使用行计算，结果和上面一样\n# top3_app_names2 <- jisu_apps_long %>%\n#   filter(lubridate::year(时间) == 2023) %>%\n#   pivot_wider(names_from = 时间, values_from = 月活) %>%\n#   rowwise() %>%\n#   mutate(最大月活 = max(across(where(is.numeric)))) %>%\n#   ungroup() %>%\n#   top_n(3, 最大月活) %>%\n#   pull(应用)\n  \njisu_apps_long %>%\n  ggplot(aes(x = 时间, y = 月活)) +\n  geom_line(aes(group = 应用, color = 应用)) +\n  gghighlight(应用 %in% top3_app_names, use_direct_label = FALSE) +\n  theme_ipsum(base_family = \"PingFang SC\")\n\n\n\n\n最后按应用进行分面。\n\njisu_apps_long %>%\n  mutate(应用 = fct_reorder(应用, -月活, mean, na.rm = TRUE)) %>%\n  ggplot(aes(x = 时间, y = 月活)) +\n  geom_line(aes(group = 应用, color = 应用), size = 0.7) +\n  # 为了看清趋势采用对数坐标轴\n  scale_y_log10() +\n  theme_ipsum(base_family = \"PingFang SC\", grid = \"XY\") +\n  gghighlight(use_direct_label = FALSE) +\n  facet_wrap(~应用) +\n  guides(color = FALSE) +\n  labs(y = \"月活（万人）\")"
+  },
+  {
+    "objectID": "posts/使用 gghighlight 制图/index.html#参考资料",
+    "href": "posts/使用 gghighlight 制图/index.html#参考资料",
+    "title": "使用 gghighlight 制图",
+    "section": "参考资料",
+    "text": "参考资料\n\nIntroduction to gghighlight\nLine chart with small multiple"
+  },
+  {
+    "objectID": "posts/使用 geom_ribbon 为折线差值填充颜色/index.html",
+    "href": "posts/使用 geom_ribbon 为折线差值填充颜色/index.html",
+    "title": "使用 geom_ribbon 给双折线区间填充颜色",
+    "section": "",
+    "text": "平常看数据图表时，经常见到这么一种图表类型——一张图里有两条折线A和B，当A大于B时，AB空间里填充一种颜色；当B大于A时，AB空间里填充另一种颜色。\n例如《华盛顿邮报》制作的这张图：\n\n探索了一下，发现可以借助geom_ribbon函数实现类似功能。"
+  },
+  {
+    "objectID": "posts/使用 geom_ribbon 为折线差值填充颜色/index.html#包引入",
+    "href": "posts/使用 geom_ribbon 为折线差值填充颜色/index.html#包引入",
+    "title": "使用 geom_ribbon 给双折线区间填充颜色",
+    "section": "包引入",
+    "text": "包引入\n\nlibrary(tidyverse)\nlibrary(hrbrthemes)\nlibrary(patchwork)"
+  },
+  {
+    "objectID": "posts/使用 geom_ribbon 为折线差值填充颜色/index.html#数据准备和清洗",
+    "href": "posts/使用 geom_ribbon 为折线差值填充颜色/index.html#数据准备和清洗",
+    "title": "使用 geom_ribbon 给双折线区间填充颜色",
+    "section": "数据准备和清洗",
+    "text": "数据准备和清洗\n先导入数据。\n\napps_mau <- readxl::read_xlsx(\"QM数据.xlsx\", sheet = 1)\n\napps_mau数据集里面有快手、百度等移动应用的财报月活数据和QM监测到的月活数据。\n\nknitr::kable(head(apps_mau))\n\n\n\n\n时间\n财报数据\nQM数据\n应用名\n\n\n\n\n2020Q1\n4.95\n5.15\n快手（主站+极速版）\n\n\n2020Q2\n4.74\n4.97\n快手（主站+极速版）\n\n\n2020Q3\n4.79\n5.05\n快手（主站+极速版）\n\n\n2020Q4\n4.76\n5.22\n快手（主站+极速版）\n\n\n2021Q1\n5.20\n5.71\n快手（主站+极速版）\n\n\n2021Q2\n5.06\n5.26\n快手（主站+极速版）\n\n\n\n\n\n现在要做的是：当QM监测数据高于该应用的财报数据时，采用一种颜色填充；当QM监测数据低于财报数据时，采用另外一种颜色填充。\n对数据进行简单地清洗。\n\napps_mau_clean <- apps_mau %>%\n  # 把数据类型从字符串转换成时间，geom_ribbon的参数需要是数值型变量\n  mutate(时间 = zoo::as.yearqtr(时间)) %>%\n  # 因子排序，后续做分面图时按照月活差距排序\n  mutate(应用名 = fct_reorder(应用名, 财报数据 - QM数据, mean))\n\n\nknitr::kable(head(apps_mau_clean))\n\n\n\n\n时间\n财报数据\nQM数据\n应用名\n\n\n\n\n2020 Q1\n4.95\n5.15\n快手（主站+极速版）\n\n\n2020 Q2\n4.74\n4.97\n快手（主站+极速版）\n\n\n2020 Q3\n4.79\n5.05\n快手（主站+极速版）\n\n\n2020 Q4\n4.76\n5.22\n快手（主站+极速版）\n\n\n2021 Q1\n5.20\n5.71\n快手（主站+极速版）\n\n\n2021 Q2\n5.06\n5.26\n快手（主站+极速版）\n\n\n\n\n\n后续作图时， 由于geom_ribbon 使用宽数据，geom_line使用长数据，因此此处需做一个数据类型的转换。\n\napps_mau_longdata <- apps_mau_clean %>%\n  # 看QM数据相较于财报数据偏离比例有多少\n  mutate(diff = (QM数据 - 财报数据) / 财报数据,\n         diff_format = str_c(round(diff,2) * 100, \"%\")) %>%\n  pivot_longer(cols = c('财报数据', 'QM数据'),\n               names_to = '数据来源',\n               values_to = '月活') \n\n再来看看转换后的数据。\n\nknitr::kable(head(apps_mau_longdata))\n\n\n\n\n时间\n应用名\ndiff\ndiff_format\n数据来源\n月活\n\n\n\n\n2020 Q1\n快手（主站+极速版）\n0.0404040\n4%\n财报数据\n4.95\n\n\n2020 Q1\n快手（主站+极速版）\n0.0404040\n4%\nQM数据\n5.15\n\n\n2020 Q2\n快手（主站+极速版）\n0.0485232\n5%\n财报数据\n4.74\n\n\n2020 Q2\n快手（主站+极速版）\n0.0485232\n5%\nQM数据\n4.97\n\n\n2020 Q3\n快手（主站+极速版）\n0.0542797\n5%\n财报数据\n4.79\n\n\n2020 Q3\n快手（主站+极速版）\n0.0542797\n5%\nQM数据\n5.05"
+  },
+  {
+    "objectID": "posts/使用 geom_ribbon 为折线差值填充颜色/index.html#绘图",
+    "href": "posts/使用 geom_ribbon 为折线差值填充颜色/index.html#绘图",
+    "title": "使用 geom_ribbon 给双折线区间填充颜色",
+    "section": "绘图",
+    "text": "绘图\n绘图时会用到三个geom图形函数：geom_line用来绘制折线，geom_text用来绘制QM数据相较于财报数据的偏离值，而geom_ribbon用于给折线差值空间填充颜色。\n其中geom_ribbon的主要aes()参数是x、y、xmin、ymin、xmax、ymax，表示绘图空间的起始及结束坐标。另外，fill表示填充的颜色，alpha表示透明度。\n\napps_plot <- apps_mau_longdata %>%\n  # x = 时间的数据类型需是泛date类型,否则无效\n  ggplot(aes(x = 时间)) +\n  # 分组折线图\n  geom_line(aes(y = 月活, group = 数据来源, color = 数据来源)) +\n  # 标注出偏离比例\n  geom_text(data = apps_mau_longdata %>% filter(数据来源 == 'QM数据'),\n            aes(y = 月活, label = diff_format)) +\n  # 折线差值部分填充颜色\n  geom_ribbon(\n    data = apps_mau_clean %>% mutate(颜色 = ifelse(财报数据>QM数据, '财报数据', 'QM数据')),\n    mapping = aes(\n      # pmin和pmax函数表示在一组向量中分别取最小和最大值\n      ymin = pmin(财报数据, QM数据),\n      ymax = pmax(财报数据, QM数据),\n      fill = 颜色),\n    alpha = 0.3\n  ) +\n  facet_wrap(~ 应用名, ncol = 2) +\n  scale_x_continuous(\n    # 横轴标签只出现7个\n    breaks = scales::pretty_breaks(n = 7),\n    # 横纵标签默认为'2020-01的格式，将其格式化为2020Q1'\n    labels = function(x) format(zoo::as.yearqtr(x), \"%YQ%q\")) +\n  guides(fill = 'none') +\n  theme_ipsum(base_family = 'PingFang SC', grid = 'XY')\n\n\n需要注意的是，使用goem_ribbon有一个缺点：当两条折线交叉的时候，交叉点附近区域无法被正确填色（仔细看的话会发现，快手分面图中两线交汇的地方是空白的）。\n这是由于geom_ribbon的工作原理所导致的：geom_ribbon会以y轴的值作为区域的边界，所以当两条线交叉时，那一点的y值是不确定的，所以ggplot2不会在那个位置上色。\n针对这点，暂时没有发现特别好的解决方法。只能等生成svg图形后，在Figma里手动调整。"
+  },
+  {
+    "objectID": "posts/使用 geom_ribbon 为折线差值填充颜色/index.html#注意事项",
+    "href": "posts/使用 geom_ribbon 为折线差值填充颜色/index.html#注意事项",
+    "title": "使用 geom_ribbon 给双折线区间填充颜色",
+    "section": "注意事项",
+    "text": "注意事项\n1、数据结构方面。goem_line使用的是长数据，而goem_ribbon使用的是宽数据。将它们同时绘制在一张图里的时候，需要做数据转换，不能使用同一个数据集。\n2、数据类型方面。使用geom_ribbon绘图时，x轴和y轴都必须是数值型变量或者时间变量，数据类型不对的话虽不会报错，但也无法绘制出任何结果。这里debug了好久才发现问题，最后使用zoo pacakge的as.yearqtr函数将时间（2020Q1）由字符串格式转换成时间格式。"
   }
 ]
