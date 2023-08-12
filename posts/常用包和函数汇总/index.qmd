@@ -1,13 +1,45 @@
 ---
-title: "常用包和函数汇总"
+title: "R 常用包和函数汇总"
+author: "Boyce"
 date: '2023/03/04'
 categories: [R, 清单]
+execute: 
+  eval: false
 ---
 
 ## 数据清洗
 
--   列名清洗: `janitor::clean_names()`，将命名不一致的列名统一规范化
+### janitor
+
+列名清洗: `janitor::clean_names()`，将命名不一致的列名统一规范化
 
 ## 数据可视化
 
--   ggplot 主题风格拓展：`hrbrthemes`
+### hrbrthemes
+
+ggplot 主题风格拓展，使用方法可见[hrbrthemes：最好用的 ggplot 主题扩展包](https://whuhzx.github.io/QuartoBlog/posts/hrbrthemes%EF%BC%9A%E6%9C%80%E5%A5%BD%E7%94%A8%E7%9A%84ggplot%E4%B8%BB%E9%A2%98%E6%89%A9%E5%B1%95%E5%8C%85/)。
+
+### gghighlight
+
+帮助高亮图表，使用方法可见[使用 gghighlight 制图](https://whuhzx.github.io/QuartoBlog/posts/%E4%BD%BF%E7%94%A8%20gghighlight%20%E5%88%B6%E5%9B%BE/)。
+
+### waffle
+
+华夫饼图绘制包，使用方法可见[使用 waffle package 制作华夫饼图](https://whuhzx.github.io/QuartoBlog/posts/%E4%BD%BF%E7%94%A8%20waffle%20package%20%E5%88%B6%E4%BD%9C%E5%8D%8E%E5%A4%AB%E9%A5%BC%E5%9B%BE/)。
+
+### ggalluvial
+
+桑基图和凹凸图绘制包，使用方法可见[使用 ggalluvial 制作桑基图和凹凸图](https://whuhzx.github.io/QuartoBlog/posts/%E4%BD%BF%E7%94%A8%20ggalluvial%20%E5%88%B6%E4%BD%9C%E6%A1%91%E5%9F%BA%E5%9B%BE%E5%92%8C%E5%87%B9%E5%87%B8%E5%9B%BE/)。
+
+### ggwordcloud
+
+用ggplot语法绘制词云，使用方法可见[ggwordcloud: a word cloud geom for ggplot2](https://cran.r-project.org/web/packages/ggwordcloud/vignettes/ggwordcloud.html)及[R Charts: Word cloud in ggplot2 with ggwordcloud](https://r-charts.com/ranking/ggwordcloud/)。
+
+### patchwork
+
+快速组合不同图表：`p1 + p2`。使用方法详见[教程](https://patchwork.data-imaginist.com/articles/patchwork.html)。
+
+
+## 其他资源
+
+- R包开发可见[利用 ChatGPT 编写简单 R 包](https://whuhzx.github.io/QuartoBlog/posts/%E5%88%A9%E7%94%A8%20ChatGPT%20%E7%BC%96%E5%86%99%E7%AE%80%E5%8D%95%20R%20%E5%8C%85/)。

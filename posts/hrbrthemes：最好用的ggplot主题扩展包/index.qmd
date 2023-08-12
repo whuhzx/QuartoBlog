@@ -13,8 +13,8 @@ ggplot 好用归好用，但是默认主题给人的感觉还是过于呆板，�
 
 经过筛选，发现只有 `hrbrthemes` 满足自己的要求：第一，风格简约，足够美观；第二，语法与 ggplot2 保持一致，符合使用习惯。
 
-
 ## 使用方法
+
 ```{r}
 #| warning: false
 # 包引入
@@ -31,6 +31,7 @@ knitr::kable(head(airquality))
 ```
 
 ### 内置主题函数
+
 ```{r}
 # ggplot默认主题作图
 plot1 <- airquality %>%
@@ -61,6 +62,7 @@ airquality %>%
 ```
 
 2、`axis` 控制横纵轴的起始轴线，默认是删除的，如果需要保留，使用方法和 `grid` 类似：
+
 ```{r}
 airquality %>%
   ggplot(aes(x = Wind, y = Temp)) +
@@ -78,9 +80,7 @@ airquality %>%
   theme_ipsum(base_family = 'STXihei')
 ```
 
-
 4、除了以上参数，`theme_ipsum` 主题函数还可以设置如下参数：标题 `plot_title_`、副标题 `subtitle_`、分面标题 `strip_text_`、注释 `caption_`、横纵坐标值 `axis_title_`等。
-
 
 5、除了 `theme_ipsum`，还有 `theme_ipsum_es()`、`theme_tinyhand()`、`theme_ft_rc()` 等主题风格。
 
@@ -132,9 +132,10 @@ scales::show_col(ft_pal()(9))
 
 ```
 
-
 ## 相关资源
 
-* [hrbrthemes Github page](https://github.com/hrbrmstr/hrbrthemes)
+-   [hrbrthemes Github page](https://github.com/hrbrmstr/hrbrthemes)
 
-* [Man pages for hrbrthemes](https://rdrr.io/github/hrbrmstr/hrbrthemes/man/)
+-   [Man pages for hrbrthemes](https://rdrr.io/github/hrbrmstr/hrbrthemes/man/)
+
+-   [Introduction to gghighlight](https://cran.r-project.org/web/packages/gghighlight/vignettes/gghighlight.html)

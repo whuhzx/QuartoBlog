@@ -37,5 +37,11 @@
   },
   "posts/使用 geom_ribbon 为折线差值填充颜色/index.qmd": {
     "index.html": "eb812f41"
+  },
+  "posts/利用 ChatGPT 编写简单 R 包/index.qmd": {
+    "index.html": "11318631"
+  },
+  "posts/Quarto 常用语法汇总/index.qmd": {
+    "index.html": "6b57da58"
   }
 }

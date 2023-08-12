@@ -1,5 +1,6 @@
 ---
 title: "使用 waffle package 制作华夫饼图"
+author: "Boyce"
 date: "2022/12/07"
 categories: [R, ggplot2]
 ---
@@ -58,7 +59,6 @@ clean_data <- raw_data %>%
 knitr::kable(head(clean_data))
 ```
 
-
 ## 画图和调整
 
 直接上代码：
@@ -97,16 +97,16 @@ waffle_plot
 
 如果遇到首次使用geom_waffle()函数报错，可以用如下方法解决：
 
-* `remotes::install_github("hrbrmstr/waffle")`
+-   `remotes::install_github("hrbrmstr/waffle")`
 
-* 关闭Rstudio后重新打开，问题解决
+-   关闭Rstudio后重新打开，问题解决
 
-* 解决方法来自<https://github.com/hrbrmstr/waffle/issues/76>
+-   解决方法来自<https://github.com/hrbrmstr/waffle/issues/76>
 
 ## 相关资源
 
-* [waffle Github](https://github.com/hrbrmstr/waffle)
+-   [waffle Github](https://github.com/hrbrmstr/waffle)
 
-* [waffle 官方文档](https://cran.r-project.org/web/packages/waffle/waffle.pdf)
+-   [waffle 官方文档](https://cran.r-project.org/web/packages/waffle/waffle.pdf)
 
-* [R 使用 waffle 套件繪製鬆餅圖教學與範例](https://officeguide.cc/r-create-waffle-chart-visualizations-tutorial-examples/)
+-   [R 使用 waffle 套件繪製鬆餅圖教學與範例](https://officeguide.cc/r-create-waffle-chart-visualizations-tutorial-examples/)

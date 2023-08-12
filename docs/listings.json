@@ -2,6 +2,8 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/Quarto 常用语法汇总/index.html",
+      "/posts/利用 ChatGPT 编写简单 R 包/index.html",
       "/posts/使用 gghighlight 制图/index.html",
       "/posts/使用 geom_ribbon 为折线差值填充颜色/index.html",
       "/posts/在 Github 上部署 Quarto 的静态网页/index.html",

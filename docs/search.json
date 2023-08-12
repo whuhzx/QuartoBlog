@@ -2,16 +2,16 @@
   {
     "objectID": "posts/常用包和函数汇总/index.html",
     "href": "posts/常用包和函数汇总/index.html",
-    "title": "常用包和函数汇总",
+    "title": "R 常用包和函数汇总",
     "section": "",
     "text": "列名清洗: janitor::clean_names()，将命名不一致的列名统一规范化"
   },
   {
     "objectID": "posts/常用包和函数汇总/index.html#数据可视化",
     "href": "posts/常用包和函数汇总/index.html#数据可视化",
-    "title": "常用包和函数汇总",
+    "title": "R 常用包和函数汇总",
     "section": "数据可视化",
-    "text": "数据可视化\n\nggplot 主题风格拓展：hrbrthemes"
+    "text": "数据可视化\n\nhrbrthemes\nggplot 主题风格拓展，使用方法可见hrbrthemes：最好用的 ggplot 主题扩展包。\n\n\ngghighlight\n帮助高亮图表，使用方法可见使用 gghighlight 制图。\n\n\nwaffle\n华夫饼图绘制包，使用方法可见使用 waffle package 制作华夫饼图。\n\n\nggalluvial\n桑基图和凹凸图绘制包，使用方法可见使用 ggalluvial 制作桑基图和凹凸图。\n\n\nggwordcloud\n用ggplot语法绘制词云，使用方法可见ggwordcloud: a word cloud geom for ggplot2及R Charts: Word cloud in ggplot2 with ggwordcloud。\n\n\npatchwork\n快速组合不同图表：p1 + p2。使用方法详见教程。"
   },
   {
     "objectID": "posts/hrbrthemes：最好用的ggplot主题扩展包/index.html",
@@ -130,7 +130,7 @@
     "href": "index.html",
     "title": "Boyce’s Blog",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n使用 gghighlight 制图\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nAug 6, 2023\n\n\nBoyce\n\n\n\n\n\n\n  \n\n\n\n\n使用 geom_ribbon 给双折线区间填充颜色\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nAug 4, 2023\n\n\nBoyce\n\n\n\n\n\n\n  \n\n\n\n\n在 Github 上部署 Quarto 的静态网页\n\n\n\n\n\n\n\nGithub\n\n\nQuarto\n\n\n\n\n\n\n\n\n\n\n\nMar 5, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n常用包和函数汇总\n\n\n\n\n\n\n\nR\n\n\n清单\n\n\n\n\n\n\n\n\n\n\n\nMar 4, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nhrbrthemes：最好用的 ggplot 主题扩展包\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nFeb 25, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n使用 ggalluvial 制作桑基图和凹凸图\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nFeb 23, 2023\n\n\nBoyce\n\n\n\n\n\n\n  \n\n\n\n\n使用 waffle package 制作华夫饼图\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nDec 7, 2022\n\n\nBoyce\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\nQuarto 常用语法汇总\n\n\n\n\n\n\n\nQuarto\n\n\n清单\n\n\n\n\n\n\n\n\n\n\n\nAug 12, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n利用 ChatGPT 编写简单 R 包\n\n\n\n\n\n\n\nR\n\n\nChatGPT\n\n\nGithub\n\n\n\n\n\n\n\n\n\n\n\nAug 12, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n使用 gghighlight 制图\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nAug 6, 2023\n\n\nBoyce\n\n\n\n\n\n\n  \n\n\n\n\n使用 geom_ribbon 给双折线区间填充颜色\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nAug 4, 2023\n\n\nBoyce\n\n\n\n\n\n\n  \n\n\n\n\n在 Github 上部署 Quarto 的静态网页\n\n\n\n\n\n\n\nGithub\n\n\nQuarto\n\n\n\n\n\n\n\n\n\n\n\nMar 5, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nR 常用包和函数汇总\n\n\n\n\n\n\n\nR\n\n\n清单\n\n\n\n\n\n\n\n\n\n\n\nMar 4, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nhrbrthemes：最好用的 ggplot 主题扩展包\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nFeb 25, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n使用 ggalluvial 制作桑基图和凹凸图\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nFeb 23, 2023\n\n\nBoyce\n\n\n\n\n\n\n  \n\n\n\n\n使用 waffle package 制作华夫饼图\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nDec 7, 2022\n\n\nBoyce\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -250,5 +250,117 @@
     "title": "使用 geom_ribbon 给双折线区间填充颜色",
     "section": "注意事项",
     "text": "注意事项\n1、数据结构方面。goem_line使用的是长数据，而goem_ribbon使用的是宽数据。将它们同时绘制在一张图里的时候，需要做数据转换，不能使用同一个数据集。\n2、数据类型方面。使用geom_ribbon绘图时，x轴和y轴都必须是数值型变量或者时间变量，数据类型不对的话虽不会报错，但也无法绘制出任何结果。这里debug了好久才发现问题，最后使用zoo pacakge的as.yearqtr函数将时间（2020Q1）由字符串格式转换成时间格式。"
+  },
+  {
+    "objectID": "posts/利用 ChatGPT 编写简单 R 包/index.html",
+    "href": "posts/利用 ChatGPT 编写简单 R 包/index.html",
+    "title": "利用 ChatGPT 编写简单 R 包",
+    "section": "",
+    "text": "很久之前就想创建一个R包，便于在做数据分析的时候根据个人需求复用函数，但因为觉得相关文档太复杂而放弃了。\n这次试了试用ChatGPT来帮助编写，发现过程还是比较简单的。虽然也花时间扫了一遍Hadley Wickham编写的《R Package》，但是有ChatGPT的帮助，能够对书中的内容和底层的机制有更清楚地了解。\n这里简单记录一下过程。为了方便起见，编写的R包里只有一个函数。"
+  },
+  {
+    "objectID": "posts/利用 ChatGPT 编写简单 R 包/index.html#准备",
+    "href": "posts/利用 ChatGPT 编写简单 R 包/index.html#准备",
+    "title": "利用 ChatGPT 编写简单 R 包",
+    "section": "准备",
+    "text": "准备\n事先需要安装两个服务于R包开发的package，分别是devtools和roxygen2，后者主要用于自动生成包的帮助文档。\n\nlibrary(devtools)\nlibrary(roxygen2)\n\n在Rstudio中新建项目，并选择R Package，就会自动生成一个工程文件夹。文件目录大致如下：\n\nmyutils/\n|-- DESCRIPTION #描述文件，内容包括基本信息，如包的名称、版本、作者、描述、依赖等\n|-- NAMESPACE #文件指定了哪些函数或对象应该被导出（用户可以直接访问）以及哪些其他的包的函数应该被导入 \n|-- R/ #在目录中放置所有的R函数代码\n|   |-- function1.R\n|   |-- function2.R\n|-- man/ #在目录中放置函数的帮助文档。这些文件通常使用roxygen2注释在R文件中自动生成。\n|   |-- function1.Rd\n|   |-- function2.Rd\n|-- data/ #目录用于存放包中的数据集\n|   |-- dataset1.RData\n|-- inst/ #存放不适合其他类别的文件。\n|   |-- extdata/\n|   |   |-- some_additional_data.csv\n|-- tests/ #放置测试代码，通常使用testthat包来编写测试，此次不涉及\n|   |-- testthat/\n|   |   |-- test_function1.R\n|   |   |-- test_function2.R\n|-- vignettes/ #存放包的使用教程或详细文档\n|   |-- introduction.Rmd\n|-- LICENSE"
+  },
+  {
+    "objectID": "posts/利用 ChatGPT 编写简单 R 包/index.html#填写description文件",
+    "href": "posts/利用 ChatGPT 编写简单 R 包/index.html#填写description文件",
+    "title": "利用 ChatGPT 编写简单 R 包",
+    "section": "填写DESCRIPTION文件",
+    "text": "填写DESCRIPTION文件\n在DESCRIPTION文件中填入包的基本信息。\n如果R包需要引入外部package，需要在文件中加入Imports依赖，这里我们编写的函数需要引入tidyverse和tidytext两个包。\n\nPackage: myutils\nType: Package\nTitle: What the Package Does (Title Case)\nVersion: 0.1.0\nAuthor: Who wrote it\nMaintainer: The package maintainer <yourself@somewhere.net>\nDescription: More about what it does (maybe more than one line)\n    Use four spaces when indenting paragraphs within the Description.\nLicense: What license is it under?\nEncoding: UTF-8\nLazyData: true # 包中如果含有数据集，true表示library()不加载数据集，使用到数据集时才加载\nImports: \n    tidyverse,\n    tidytext"
+  },
+  {
+    "objectID": "posts/利用 ChatGPT 编写简单 R 包/index.html#添加函数",
+    "href": "posts/利用 ChatGPT 编写简单 R 包/index.html#添加函数",
+    "title": "利用 ChatGPT 编写简单 R 包",
+    "section": "添加函数",
+    "text": "添加函数\n这里添加一个我常使用的计算TGI的函数compute_tgi_top_n。\n#'后面填上函数的介绍，#' @param后面则是每个参数的含义，后续roxygen2会根据注释在R文件中自动生成帮助文件。\n#' @export表示这个函数可以被外部调用，如果不加入这个注释，表明只供内部使用，外部使用者在library(myutils)加载包后无法使用该函数。\n\n#' Compute dataset TGI\n#' @param x 数据集\n#' @param target 目标对象\n#' @param category 分组类型\n#' @param tgi_value 数值\n#' @param top_number 最大排名\n#' @export\ncompute_tgi_top_n <- function(x, target, category, tgi_value, top_number = 10){\n  x %>%\n    group_by(!!sym(target), !!sym(category)) %>%\n    summarise(value = sum(!!sym(tgi_value))) %>%\n    ungroup() %>%\n    mutate(total = sum(value)) %>%\n    group_by(!!sym(target)) %>%\n    mutate(target_ratio = value / sum(value)) %>%\n    ungroup() %>%\n    group_by(!!sym(category)) %>%\n    mutate(total_ratio = sum(value) / total) %>%\n    mutate(tgi = round(target_ratio / total_ratio * 100, 0)) %>%\n    ungroup() %>%\n    arrange(desc(tgi)) %>%\n    group_by(!!sym(target)) %>%\n    top_n(top_number, tgi) %>%\n    ggplot(aes(x = tgi, y = reorder_within(!!sym(category), tgi, !!sym(target)))) +\n    geom_col() +\n    geom_text(aes(label = tgi)) +\n    facet_wrap(vars(!!sym(target)), scale = \"free\") +\n    scale_y_reordered() +\n    theme(text = element_text(family = \"PingFang SC\"))\n}"
+  },
+  {
+    "objectID": "posts/利用 ChatGPT 编写简单 R 包/index.html#添加数据集",
+    "href": "posts/利用 ChatGPT 编写简单 R 包/index.html#添加数据集",
+    "title": "利用 ChatGPT 编写简单 R 包",
+    "section": "添加数据集",
+    "text": "添加数据集\n如果要在开发的包中加入固定数据集以供后续载入调用，可以将数据集放置在data目录下。\n根据《R Pacakge》一书，数据集的最佳保存格式为.rda。可以使用save(my_data, file = \"my_data.rda\")将数据集保存为该格式，或者使用usethis::use_data(my_data)自动保存。"
+  },
+  {
+    "objectID": "posts/利用 ChatGPT 编写简单 R 包/index.html#生成文档",
+    "href": "posts/利用 ChatGPT 编写简单 R 包/index.html#生成文档",
+    "title": "利用 ChatGPT 编写简单 R 包",
+    "section": "生成文档",
+    "text": "生成文档\n执行roxygenise()后，会在man目录下生成一个名为compute_tgi_top_n.Rmd的文件，里面是该函数的帮助文档。\n\nsetwd(\"path_to_myutils\")  # 将包的项目路径设置为工作目录\nroxygen2::roxygenise()\n\n执行roxygenise()后发生了什么？以下是ChatGPT给出的回答。\n\n- 解析roxygen注释：函数会检查你的R源代码文件，寻找以#'开始的roxygen注释。\n\n- 生成.Rd文件：对于源代码中的每个函数、类或数据集，roxygenise()会在man/目录中生成一个.Rd文件。这些文件为R包中的每个公共对象提供手册页。\n\n- 更新NAMESPACE文件：基于roxygen注释中的@export、@import、@importFrom等标签，NAMESPACE文件会被自动更新。例如，如果你在函数上方有#' @export注释，该函数将被导出，允许用户在加载包后直接访问它。\n\n- 生成vignettes：如果你在包中包含了vignettes（即长格式的文档或教程），并且使用roxygen2标签为它们编写了元数据，那么roxygenise()也会处理这些vignettes。\n\n- 其他文档更新：roxygen2也支持许多其他标签，这些标签可以帮助生成数据集的文档、包的描述和其他文档部分。"
+  },
+  {
+    "objectID": "posts/利用 ChatGPT 编写简单 R 包/index.html#将包安装到本地库中",
+    "href": "posts/利用 ChatGPT 编写简单 R 包/index.html#将包安装到本地库中",
+    "title": "利用 ChatGPT 编写简单 R 包",
+    "section": "将包安装到本地库中",
+    "text": "将包安装到本地库中\n使用devtools包内置的install()函数，就能够将包安装到本地库中，方便后续直接用library()调用。\n\ndevtools::install(\"myutils\")\n\n执行install()后发生了什么？ChatGPT给出了如下答案，有助于理解包安装背后的机制。\n\n- 构建：首先，R会将你的包的所有文件打包成一个.tar.gz文件（在Linux和Mac上）或.zip文件（在Windows上）。这个文件是R包的源代码格式。\n\n- 检查包的依赖关系：install()会查看myutils包的DESCRIPTION文件，找到任何在Depends、Imports或LinkingTo字段中列出的依赖关系。如果这些依赖的包还没有被安装，install()通常会尝试自动安装它们。\n\n- 编译：如果你的包包含任何C、C++或Fortran代码，R会尝试编译这些代码。这需要有合适的编译工具链。例如，在Windows上，你可能需要Rtools来编译C或C++代码。\n\n- 安装：一旦包被构建并编译（如果需要的话），它就会被安装到R的库中。这实际上就是将包的所有文件复制到R的包目录，通常是library/目录。\n\n- 加载：安装后，你可以使用library(myutils)命令加载并使用你的包。\n\n- 二进制包：在某些系统上，例如Windows，install()可能还会为你的包创建一个二进制版本，这样在未来安装包时可以更快。\n\n接下来就可以在本地加载library(myutils)后调用compute_tgi_top_n()函数了。也可以通过?compute_tgi_top_n来查看帮助文档。"
+  },
+  {
+    "objectID": "posts/利用 ChatGPT 编写简单 R 包/index.html#将包上传到github上",
+    "href": "posts/利用 ChatGPT 编写简单 R 包/index.html#将包上传到github上",
+    "title": "利用 ChatGPT 编写简单 R 包",
+    "section": "将包上传到Github上",
+    "text": "将包上传到Github上\n最后，我们进入包目录，将本地包初始化并新做一个版本。\n\ngit init\ngit add .\ngit commit -m \"first package version\"\n\n在个人Github主页上新建一个库。然后，将本地库和远程库建立关联。\n\ngit remote add origin git@github.com:your_username/myutils.git\n\n# 若显示远程库已存在，则加上set-url更新一下\ngit remote set-url origin git@github.com:your_username/myutils.git\n\n将本地库推送到Github上。\n\n# 重命名当前活动分支为main\ngit branch -M main\n\n# 将main分支推送到名为origin的远程仓库，并设置上游追踪关系\ngit push -u origin main\n\n推送完成，之后可以在任何电脑上使用install_github()命令来安装这个R包啦。\n\ndevtools::install_github(\"your_username/myutils\")"
+  },
+  {
+    "objectID": "posts/利用 ChatGPT 编写简单 R 包/index.html#相关资源",
+    "href": "posts/利用 ChatGPT 编写简单 R 包/index.html#相关资源",
+    "title": "利用 ChatGPT 编写简单 R 包",
+    "section": "相关资源",
+    "text": "相关资源\n\n《R Packages》\n为新手准备的现代化 R 包开发流程"
+  },
+  {
+    "objectID": "posts/常用包和函数汇总/index.html#其他资源",
+    "href": "posts/常用包和函数汇总/index.html#其他资源",
+    "title": "R 常用包和函数汇总",
+    "section": "其他资源",
+    "text": "其他资源\n\nR包开发可见利用 ChatGPT 编写简单 R 包。"
+  },
+  {
+    "objectID": "posts/Quarto 常用语法汇总/index.html",
+    "href": "posts/Quarto 常用语法汇总/index.html",
+    "title": "Quarto 常用语法汇总",
+    "section": "",
+    "text": "年纪大了记忆力不好，记录一下常用语法，避免每次都要重新翻阅和查询Quarto的文档。"
+  },
+  {
+    "objectID": "posts/Quarto 常用语法汇总/index.html#博文配置",
+    "href": "posts/Quarto 常用语法汇总/index.html#博文配置",
+    "title": "Quarto 常用语法汇总",
+    "section": "博文配置",
+    "text": "博文配置\n每篇博文开头需要配置的参数。\n\n---\ntitle: \"Quarto 常用语法汇总\"\nauthor: \"Boyce\"\ndate: \"2023/08/12\"\ncategories: [Quarto, 清单]\n---\n\nQuarto会根据.qmd文件的内容自动选择引擎来渲染文件。也可以在开头通过全局命令指定。\n\n---\ntitle: \"Quarto 常用语法汇总\"\nauthor: \"Boyce\"\nengine: knitr\n---\n\n如果需要代码块执行某些操作或者不执行某些操作，可以在开头使用execute进行全局设置。例如，eval: false表示只展示代码而不执行代码，也不会返回任何结果。\n\nexecute: \n  eval: false\n\n如果在单个代码块的开头修改execute，可以覆盖开头的全局配置。例如在代码第一行写入#| eval: true，表示在该代码块上执行代码。\n其他常用配置还包括：\n\nwarning: false表示执行代码但不返回警告。\necho: false 表示只展示输出结果，但不展示源代码。\nerror: true 表示在执行过程遇到报错也不会停止文档处理。\n\n关于execute的配置，详见文档。"
+  },
+  {
+    "objectID": "posts/Quarto 常用语法汇总/index.html#代码块",
+    "href": "posts/Quarto 常用语法汇总/index.html#代码块",
+    "title": "Quarto 常用语法汇总",
+    "section": "代码块",
+    "text": "代码块\n如果只需要展示代码块的样式，而不需要在其中高亮任何元素，可以直接使用{default}。\n如果觉得单行代码太长，想要在代码块中直接换行，可以在开头写入#| code-overflow: wrap。"
+  },
+  {
+    "objectID": "posts/Quarto 常用语法汇总/index.html#表格",
+    "href": "posts/Quarto 常用语法汇总/index.html#表格",
+    "title": "Quarto 常用语法汇总",
+    "section": "表格",
+    "text": "表格\n想在文章中展示表格样式，可以使用knitr::kable(dataset)。"
+  },
+  {
+    "objectID": "posts/Quarto 常用语法汇总/index.html#相关资源",
+    "href": "posts/Quarto 常用语法汇总/index.html#相关资源",
+    "title": "Quarto 常用语法汇总",
+    "section": "相关资源",
+    "text": "相关资源\n\nQuarto文档\nAwesome Quarto"
+  },
+  {
+    "objectID": "posts/Quarto 常用语法汇总/index.html#单篇博文配置",
+    "href": "posts/Quarto 常用语法汇总/index.html#单篇博文配置",
+    "title": "Quarto 常用语法汇总",
+    "section": "单篇博文配置",
+    "text": "单篇博文配置\n每篇博文开头需要配置的参数。\n\n---\ntitle: \"Quarto 常用语法汇总\"\nauthor: \"Boyce\"\ndate: \"2023/08/12\"\ncategories: [Quarto, 清单]\n---\n\nQuarto支持使用Knitr和Jupyter两类引擎，它会根据当面的.qmd文件内容自动选择引擎来渲染网页文件，我们也可以在开头通过全局命令指定，例如：\n\n---\nengine: knitr\n---\n\n如果需要代码块执行某些操作或者不执行某些操作，同样可以在开头使用execute进行全局设置。例如，eval: false表示只展示代码而不执行代码，也不会返回任何结果。\n\n---\nexecute: \n  eval: false\n---\n\n如果在单个代码块的开头修改execute，可以覆盖开头的全局配置。例如在代码第一行写入#| eval: true，表示在该代码块上执行代码。\n其他常用配置还包括：\n\nwarning: false表示执行代码但不返回警告。\necho: false 表示只展示输出结果，但不展示源代码。\nerror: true 表示在执行过程遇到报错也不会停止文档处理。\n\n关于execute的配置，详见文档。"
   }
 ]

@@ -1,6 +1,7 @@
 ---
 title: "使用 geom_ribbon 给双折线区间填充颜色"
-date: '2023/08/04'
+author: "Boyce"
+date: "2023/08/04"
 categories: [R, ggplot2]
 execute:
   warning: false
