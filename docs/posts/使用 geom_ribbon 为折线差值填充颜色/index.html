@@ -147,17 +147,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <a class="nav-link" href="../../about.html">
  <span class="menu-text">About</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../test.html">
- <span class="menu-text">test</span></a>
-  </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/"><i class="bi bi-github" role="img">
-</i> 
- <span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com"><i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://github.com/whuhzx"><i class="bi bi-github" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
@@ -224,10 +215,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <section id="背景介绍" class="level2">
 <h2 class="anchored" data-anchor-id="背景介绍">背景介绍</h2>
-<p>平常看数据图表时，经常见到这么一种图表类型——一张图里有两条折线A和B，当A大于B时，AB空间里填充一种颜色；当B大于A时，AB空间里填充另一种颜色。</p>
+<p>平常看数据图表时，经常见到这么一种图表类型——一张图里有两条折线 A 和 B，当 A 大于 B 时，AB 空间里填充一种颜色；当 B 大于 A 时，AB 空间里填充另一种颜色。</p>
 <p>例如《华盛顿邮报》制作的这张图：</p>
 <p><img src="Hot Dogs Can Explain How Our View of Inflation and Employment Cha.png" class="img-fluid" style="width:80.0%"></p>
-<p>探索了一下，发现可以借助<code>geom_ribbon</code>函数实现类似功能。</p>
+<p>探索了一下，发现可以借助 <code>geom_ribbon</code> 函数实现类似功能。</p>
 </section>
 <section id="包引入" class="level2">
 <h2 class="anchored" data-anchor-id="包引入">包引入</h2>
@@ -243,7 +234,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>apps_mau <span class="ot">&lt;-</span> readxl<span class="sc">::</span><span class="fu">read_xlsx</span>(<span class="st">"QM数据.xlsx"</span>, <span class="at">sheet =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p><code>apps_mau</code>数据集里面有快手、百度等移动应用的财报月活数据和QM监测到的月活数据。</p>
+<p><code>apps_mau</code> 数据集里面有快手、百度等移动应用的财报月活数据和 QM 监测到的月活数据。</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="fu">head</span>(apps_mau))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
@@ -297,11 +288,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </table>
 </div>
 </div>
-<p>现在要做的是：当QM监测数据高于该应用的财报数据时，采用一种颜色填充；当QM监测数据低于财报数据时，采用另外一种颜色填充。</p>
+<p>现在要做的是：当 QM 监测数据高于该应用的财报数据时，采用一种颜色填充；当 QM 监测数据低于财报数据时，采用另外一种颜色填充。</p>
 <p>对数据进行简单地清洗。</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>apps_mau_clean <span class="ot">&lt;-</span> apps_mau <span class="sc">%&gt;%</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># 把数据类型从字符串转换成时间，geom_ribbon的参数需要是数值型变量</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># 把数据类型从字符串转换成时间，geom_ribbon 的参数需要是数值型变量</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(时间 <span class="ot">=</span> zoo<span class="sc">::</span><span class="fu">as.yearqtr</span>(时间)) <span class="sc">%&gt;%</span></span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># 因子排序，后续做分面图时按照月活差距排序</span></span>
 <span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(应用名 <span class="ot">=</span> <span class="fu">fct_reorder</span>(应用名, 财报数据 <span class="sc">-</span> QM数据, mean))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -359,7 +350,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </table>
 </div>
 </div>
-<p>后续作图时， 由于<code>geom_ribbon</code> 使用宽数据，<code>geom_line</code>使用长数据，因此此处需做一个数据类型的转换。</p>
+<p>后续作图时， 由于 <code>geom_ribbon</code> 使用宽数据，<code>geom_line</code> 使用长数据，因此此处需做一个数据类型的转换。</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>apps_mau_longdata <span class="ot">&lt;-</span> apps_mau_clean <span class="sc">%&gt;%</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># 看QM数据相较于财报数据偏离比例有多少</span></span>
@@ -440,11 +431,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </section>
 <section id="绘图" class="level2">
 <h2 class="anchored" data-anchor-id="绘图">绘图</h2>
-<p>绘图时会用到三个<code>geom</code>图形函数：<code>geom_line</code>用来绘制折线，<code>geom_text</code>用来绘制QM数据相较于财报数据的偏离值，而<code>geom_ribbon</code>用于给折线差值空间填充颜色。</p>
-<p>其中<code>geom_ribbon</code>的主要<code>aes()</code>参数是<code>x</code>、<code>y</code>、<code>xmin</code>、<code>ymin</code>、<code>xmax</code>、<code>ymax</code>，表示绘图空间的起始及结束坐标。另外，<code>fill</code>表示填充的颜色，<code>alpha</code>表示透明度。</p>
+<p>绘图时会用到三个 <code>geom</code> 图形函数：<code>geom_line</code> 用来绘制折线，<code>geom_text</code> 用来绘制QM数据相较于财报数据的偏离值，而<code>geom_ribbon</code> 用于给折线差值空间填充颜色。</p>
+<p>其中 <code>geom_ribbon</code> 的主要 <code>aes()</code> 参数是 <code>x</code>、<code>y</code>、<code>xmin</code>、<code>ymin</code>、<code>xmax</code>、<code>ymax</code>，表示绘图空间的起始及结束坐标。另外，<code>fill</code> 表示填充的颜色，<code>alpha</code> 表示透明度。</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>apps_plot <span class="ot">&lt;-</span> apps_mau_longdata <span class="sc">%&gt;%</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># x = 时间的数据类型需是泛date类型,否则无效</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># x = 时间的数据类型需是泛 date 类型,否则无效</span></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> 时间)) <span class="sc">+</span></span>
 <span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># 分组折线图</span></span>
 <span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> 月活, <span class="at">group =</span> 数据来源, <span class="at">color =</span> 数据来源)) <span class="sc">+</span></span>
@@ -455,7 +446,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_ribbon</span>(</span>
 <span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">data =</span> apps_mau_clean <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(颜色 <span class="ot">=</span> <span class="fu">ifelse</span>(财报数据<span class="sc">&gt;</span>QM数据, <span class="st">'财报数据'</span>, <span class="st">'QM数据'</span>)),</span>
 <span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">mapping =</span> <span class="fu">aes</span>(</span>
-<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>      <span class="co"># pmin和pmax函数表示在一组向量中分别取最小和最大值</span></span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>      <span class="co"># pmin 和 pmax 函数表示在一组向量中分别取最小和最大值</span></span>
 <span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>      <span class="at">ymin =</span> <span class="fu">pmin</span>(财报数据, QM数据),</span>
 <span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>      <span class="at">ymax =</span> <span class="fu">pmax</span>(财报数据, QM数据),</span>
 <span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>      <span class="at">fill =</span> 颜色),</span>
@@ -465,20 +456,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(</span>
 <span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 横轴标签只出现7个</span></span>
 <span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">breaks =</span> scales<span class="sc">::</span><span class="fu">pretty_breaks</span>(<span class="at">n =</span> <span class="dv">7</span>),</span>
-<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 横纵标签默认为'2020-01的格式，将其格式化为2020Q1'</span></span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 横纵标签默认为'2020-01 的格式，将其格式化为 2020Q1'</span></span>
 <span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>    <span class="at">labels =</span> <span class="cf">function</span>(x) <span class="fu">format</span>(zoo<span class="sc">::</span><span class="fu">as.yearqtr</span>(x), <span class="st">"%YQ%q"</span>)) <span class="sc">+</span></span>
 <span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">guides</span>(<span class="at">fill =</span> <span class="st">'none'</span>) <span class="sc">+</span></span>
 <span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_ipsum</span>(<span class="at">base_family =</span> <span class="st">'PingFang SC'</span>, <span class="at">grid =</span> <span class="st">'XY'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><img src="apps_mau_plot.png" class="img-fluid"></p>
-<p>需要注意的是，使用<code>goem_ribbon</code>有一个缺点：当两条折线交叉的时候，交叉点附近区域无法被正确填色（仔细看的话会发现，快手分面图中两线交汇的地方是空白的）。</p>
-<p>这是由于<code>geom_ribbon</code>的工作原理所导致的：<code>geom_ribbon</code>会以y轴的值作为区域的边界，所以当两条线交叉时，那一点的y值是不确定的，所以ggplot2不会在那个位置上色。</p>
-<p>针对这点，暂时没有发现特别好的解决方法。只能等生成svg图形后，在Figma里手动调整。</p>
+<p>需要注意的是，使用 <code>goem_ribbon</code> 有一个缺点：当两条折线交叉的时候，交叉点附近区域无法被正确填色（仔细看的话会发现，快手分面图中两线交汇的地方是空白的）。</p>
+<p>这是由于<code>geom_ribbon</code>的工作原理所导致的：<code>geom_ribbon</code> 会以 y 轴的值作为区域的边界，所以当两条线交叉时，那一点的 y 值是不确定的，所以 ggplot2 不会在那个位置上色。</p>
+<p>针对这点，暂时没有发现特别好的解决方法。只能等生成 svg 图形后，在 Figma 里手动调整。</p>
 </section>
 <section id="注意事项" class="level2">
 <h2 class="anchored" data-anchor-id="注意事项">注意事项</h2>
-<p>1、数据结构方面。<code>goem_line</code>使用的是长数据，而<code>goem_ribbon</code>使用的是宽数据。将它们同时绘制在一张图里的时候，需要做数据转换，不能使用同一个数据集。</p>
-<p>2、数据类型方面。使用<code>geom_ribbon</code>绘图时，x轴和y轴都必须是数值型变量或者时间变量，数据类型不对的话虽不会报错，但也无法绘制出任何结果。这里debug了好久才发现问题，最后使用zoo pacakge的<code>as.yearqtr</code>函数将时间（2020Q1）由字符串格式转换成时间格式。</p>
+<p>1、数据结构方面。<code>goem_line</code> 使用的是长数据，而 <code>goem_ribbon</code> 使用的是宽数据。将它们同时绘制在一张图里的时候，需要做数据转换，不能使用同一个数据集。</p>
+<p>2、数据类型方面。使用 <code>geom_ribbon</code> 绘图时，x轴和y轴都必须是数值型变量或者时间变量，数据类型不对的话虽不会报错，但也无法绘制出任何结果。这里 debug 了好久才发现问题，最后使用 zoo pacakge 的 <code>as.yearqtr</code> 函数将时间（2020Q1）由字符串格式转换成时间格式。</p>
 
 
 </section>

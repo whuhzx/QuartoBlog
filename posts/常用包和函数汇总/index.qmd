@@ -17,7 +17,7 @@ execute:
 
 ### hrbrthemes
 
-ggplot 主题风格拓展，使用方法可见[hrbrthemes：最好用的 ggplot 主题扩展包](https://whuhzx.github.io/QuartoBlog/posts/hrbrthemes%EF%BC%9A%E6%9C%80%E5%A5%BD%E7%94%A8%E7%9A%84ggplot%E4%B8%BB%E9%A2%98%E6%89%A9%E5%B1%95%E5%8C%85/)。
+ggplot 主题风格拓展，使用方法可见 [hrbrthemes：最好用的 ggplot 主题扩展包](https://whuhzx.github.io/QuartoBlog/posts/hrbrthemes%EF%BC%9A%E6%9C%80%E5%A5%BD%E7%94%A8%E7%9A%84ggplot%E4%B8%BB%E9%A2%98%E6%89%A9%E5%B1%95%E5%8C%85/)。
 
 ### gghighlight
 
@@ -33,13 +33,12 @@ ggplot 主题风格拓展，使用方法可见[hrbrthemes：最好用的 ggplot 
 
 ### ggwordcloud
 
-用ggplot语法绘制词云，使用方法可见[ggwordcloud: a word cloud geom for ggplot2](https://cran.r-project.org/web/packages/ggwordcloud/vignettes/ggwordcloud.html)及[R Charts: Word cloud in ggplot2 with ggwordcloud](https://r-charts.com/ranking/ggwordcloud/)。
+用 ggplot 语法绘制词云，使用方法可见[ggwordcloud: a word cloud geom for ggplot2](https://cran.r-project.org/web/packages/ggwordcloud/vignettes/ggwordcloud.html)及[R Charts: Word cloud in ggplot2 with ggwordcloud](https://r-charts.com/ranking/ggwordcloud/)。
 
 ### patchwork
 
 快速组合不同图表：`p1 + p2`。使用方法详见[教程](https://patchwork.data-imaginist.com/articles/patchwork.html)。
 
-
 ## 其他资源
 
-- R包开发可见[利用 ChatGPT 编写简单 R 包](https://whuhzx.github.io/QuartoBlog/posts/%E5%88%A9%E7%94%A8%20ChatGPT%20%E7%BC%96%E5%86%99%E7%AE%80%E5%8D%95%20R%20%E5%8C%85/)。
+-   R 包开发可见[利用 ChatGPT 编写简单 R 包](https://whuhzx.github.io/QuartoBlog/posts/%E5%88%A9%E7%94%A8%20ChatGPT%20%E7%BC%96%E5%86%99%E7%AE%80%E5%8D%95%20R%20%E5%8C%85/)。

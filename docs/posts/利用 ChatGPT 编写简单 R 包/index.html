@@ -147,17 +147,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <a class="nav-link" href="../../about.html">
  <span class="menu-text">About</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../test.html">
- <span class="menu-text">test</span></a>
-  </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/"><i class="bi bi-github" role="img">
-</i> 
- <span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com"><i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://github.com/whuhzx"><i class="bi bi-github" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
@@ -175,6 +166,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
                                 <div class="quarto-categories">
                 <div class="quarto-category">R</div>
                 <div class="quarto-category">ChatGPT</div>
+                <div class="quarto-category">Github</div>
               </div>
                   </div>
   </div>
@@ -210,7 +202,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <ul>
   <li><a href="#背景介绍" id="toc-背景介绍" class="nav-link active" data-scroll-target="#背景介绍">背景介绍</a></li>
   <li><a href="#准备" id="toc-准备" class="nav-link" data-scroll-target="#准备">准备</a></li>
-  <li><a href="#填写description文件" id="toc-填写description文件" class="nav-link" data-scroll-target="#填写description文件">填写DESCRIPTION文件</a></li>
+  <li><a href="#填写-description-文件" id="toc-填写-description-文件" class="nav-link" data-scroll-target="#填写-description-文件">填写 DESCRIPTION 文件</a></li>
   <li><a href="#添加函数" id="toc-添加函数" class="nav-link" data-scroll-target="#添加函数">添加函数</a></li>
   <li><a href="#添加数据集" id="toc-添加数据集" class="nav-link" data-scroll-target="#添加数据集">添加数据集</a></li>
   <li><a href="#生成文档" id="toc-生成文档" class="nav-link" data-scroll-target="#生成文档">生成文档</a></li>
@@ -228,18 +220,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <section id="背景介绍" class="level2">
 <h2 class="anchored" data-anchor-id="背景介绍">背景介绍</h2>
-<p>很久之前就想创建一个R包，便于在做数据分析的时候根据个人需求复用函数，但因为觉得相关文档太复杂而放弃了。</p>
-<p>这次试了试用ChatGPT来帮助编写，发现过程还是比较简单的。虽然也花时间扫了一遍Hadley Wickham编写的<a href="https://r-pkgs.org/">《R Package》</a>，但是有ChatGPT的帮助，能够对书中的内容和底层的机制有更清楚地了解。</p>
+<p>很久之前就想创建一个 R 包，便于在做数据分析的时候根据个人需求复用函数，但因为觉得相关文档太复杂而放弃了。</p>
+<p>这次试了试用ChatGPT来帮助编写，发现过程还是比较简单的。虽然也花时间扫了一遍 Hadley Wickham 编写的<a href="https://r-pkgs.org/">《R Package》</a>，但是有 ChatGPT 的帮助，能够对书中的内容和底层的机制有更清楚地了解。</p>
 <p>这里简单记录一下过程。为了方便起见，编写的R包里只有一个函数。</p>
 </section>
 <section id="准备" class="level2">
 <h2 class="anchored" data-anchor-id="准备">准备</h2>
-<p>事先需要安装两个服务于R包开发的package，分别是<code>devtools</code>和<code>roxygen2</code>，后者主要用于自动生成包的帮助文档。</p>
+<p>事先需要安装两个服务于R包开发的 package，分别是 <code>devtools</code> 和 <code>roxygen2</code>，后者主要用于自动生成包的帮助文档。</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(devtools)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(roxygen2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>在Rstudio中新建项目，并选择<code>R Package</code>，就会自动生成一个工程文件夹。文件目录大致如下：</p>
+<p>在 RStudio 中新建项目，并选择 <code>R Package</code>，就会自动生成一个工程文件夹。文件目录大致如下：</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>myutils/</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>|-- DESCRIPTION #描述文件，内容包括基本信息，如包的名称、版本、作者、描述、依赖等</span>
@@ -264,10 +256,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>|-- LICENSE</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="填写description文件" class="level2">
-<h2 class="anchored" data-anchor-id="填写description文件">填写DESCRIPTION文件</h2>
-<p>在DESCRIPTION文件中填入包的基本信息。</p>
-<p>如果R包需要引入外部package，需要在文件中加入Imports依赖，这里我们编写的函数需要引入tidyverse和tidytext两个包。</p>
+<section id="填写-description-文件" class="level2">
+<h2 class="anchored" data-anchor-id="填写-description-文件">填写 DESCRIPTION 文件</h2>
+<p>在 DESCRIPTION 文件中填入包的基本信息。</p>
+<p>如果R包需要引入外部 package，需要在文件中加入 Imports 依赖，这里我们编写的函数需要引入 tidyverse 和 tidytext 两个包。</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>Package: myutils</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>Type: Package</span>
@@ -279,7 +271,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    Use four spaces when indenting paragraphs within the Description.</span>
 <span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>License: What license is it under?</span>
 <span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>Encoding: UTF-8</span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>LazyData: true # 包中如果含有数据集，true表示library()不加载数据集，使用到数据集时才加载</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>LazyData: true # 包中如果含有数据集，true 表示 library() 不加载数据集，使用到数据集时才加载</span>
 <span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>Imports: </span>
 <span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>    tidyverse,</span>
 <span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    tidytext</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -287,9 +279,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </section>
 <section id="添加函数" class="level2">
 <h2 class="anchored" data-anchor-id="添加函数">添加函数</h2>
-<p>这里添加一个我常使用的计算TGI的函数<code>compute_tgi_top_n</code>。</p>
-<p><code>#'</code>后面填上函数的介绍，<code>#' @param</code>后面则是每个参数的含义，后续roxygen2会根据注释在R文件中自动生成帮助文件。</p>
-<p><code>#' @export</code>表示这个函数可以被外部调用，如果不加入这个注释，表明只供内部使用，外部使用者在<code>library(myutils)</code>加载包后无法使用该函数。</p>
+<p>这里添加一个我常使用的计算TGI的函数 <code>compute_tgi_top_n</code>。</p>
+<p><code>#'</code> 后面填上函数的介绍，<code>#' @param</code> 后面则是每个参数的含义，后续 roxygen2 会根据注释在R文件中自动生成帮助文件。</p>
+<p><code>#' @export</code> 表示这个函数可以被外部调用，如果不加入这个注释，表明只供内部使用，外部使用者在 <code>library(myutils)</code> 加载包后无法使用该函数。</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">#' Compute dataset TGI</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co">#' @param x 数据集</span></span>
@@ -325,17 +317,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </section>
 <section id="添加数据集" class="level2">
 <h2 class="anchored" data-anchor-id="添加数据集">添加数据集</h2>
-<p>如果要在开发的包中加入固定数据集以供后续载入调用，可以将数据集放置在data目录下。</p>
-<p>根据<a href="https://r-pkgs.org/data.html">《R Pacakge》</a>一书，数据集的最佳保存格式为<code>.rda</code>。可以使用<code>save(my_data, file = "my_data.rda")</code>将数据集保存为该格式，或者使用<code>usethis::use_data(my_data)</code>自动保存。</p>
+<p>如果要在开发的包中加入固定数据集以供后续载入调用，可以将数据集放置在 <code>/data</code> 目录下。</p>
+<p>根据<a href="https://r-pkgs.org/data.html">《R Pacakge》</a>一书，数据集的最佳保存格式为 <code>.rda</code>。可以使用 <code>save(my_data, file = "my_data.rda")</code> 将数据集保存为该格式，或者使用 <code>usethis::use_data(my_data)</code> 自动保存。</p>
 </section>
 <section id="生成文档" class="level2">
 <h2 class="anchored" data-anchor-id="生成文档">生成文档</h2>
-<p>执行<code>roxygenise()</code>后，会在man目录下生成一个名为<code>compute_tgi_top_n.Rmd</code>的文件，里面是该函数的帮助文档。</p>
+<p>执行 <code>roxygenise()</code> 后，会在 <code>/man</code> 目录下生成一个名为<code>compute_tgi_top_n.Rmd</code> 的文件，里面是该函数的帮助文档。</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(<span class="st">"path_to_myutils"</span>)  <span class="co"># 将包的项目路径设置为工作目录</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>roxygen2<span class="sc">::</span><span class="fu">roxygenise</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>执行<code>roxygenise()</code>后发生了什么？以下是ChatGPT给出的回答。</p>
+<p>执行 <code>roxygenise()</code> 后发生了什么？以下是 ChatGPT 给出的回答。</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode markdown code-overflow-wrap code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>解析roxygen注释：函数会检查你的R源代码文件，寻找以#'开始的roxygen注释。</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -350,11 +342,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </section>
 <section id="将包安装到本地库中" class="level2">
 <h2 class="anchored" data-anchor-id="将包安装到本地库中">将包安装到本地库中</h2>
-<p>使用devtools包内置的<code>install()</code>函数，就能够将包安装到本地库中，方便后续直接用<code>library()</code>调用。</p>
+<p>使用 devtools 包内置的 <code>install()</code> 函数，就能够将包安装到本地库中，方便后续直接用 <code>library()</code> 调用。</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install</span>(<span class="st">"myutils"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>执行<code>install()</code>后发生了什么？ChatGPT给出了如下答案，有助于理解包安装背后的机制。</p>
+<p>执行 <code>install()</code> 后发生了什么？ChatGPT 给出了如下答案，有助于理解包安装背后的机制。</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode markdown code-overflow-wrap code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>构建：首先，R会将你的包的所有文件打包成一个.tar.gz文件（在Linux和Mac上）或.zip文件（在Windows上）。这个文件是R包的源代码格式。</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -368,7 +360,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>二进制包：在某些系统上，例如Windows，install()可能还会为你的包创建一个二进制版本，这样在未来安装包时可以更快。</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>接下来就可以在本地加载<code>library(myutils)</code>后调用<code>compute_tgi_top_n()</code>函数了。也可以通过<code>?compute_tgi_top_n</code>来查看帮助文档。</p>
+<p>接下来就可以在本地加载 <code>library(myutils)</code> 后调用 <code>compute_tgi_top_n()</code> 函数了。也可以通过 <code>?compute_tgi_top_n</code> 来查看帮助文档。</p>
 </section>
 <section id="将包上传到github上" class="level2">
 <h2 class="anchored" data-anchor-id="将包上传到github上">将包上传到Github上</h2>
@@ -378,22 +370,22 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"first package version"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>在个人Github主页上新建一个库。然后，将本地库和远程库建立关联。</p>
+<p>在个人 Github 主页上新建一个库。然后，将本地库和远程库建立关联。</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin git@github.com:your_username/myutils.git</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 若显示远程库已存在，则加上set-url更新一下</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 若显示远程库已存在，则加上 set-url 更新一下</span></span>
 <span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote set-url origin git@github.com:your_username/myutils.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>将本地库推送到Github上。</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 重命名当前活动分支为main</span></span>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 重命名当前活动分支为 main</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch <span class="at">-M</span> main</span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 将main分支推送到名为origin的远程仓库，并设置上游追踪关系</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 将main分支推送到名为 origin 的远程仓库，并设置上游追踪关系</span></span>
 <span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>推送完成，之后可以在任何电脑上使用<code>install_github()</code>命令来安装这个R包啦。</p>
+<p>推送完成，之后可以在任何电脑上使用 <code>install_github()</code> 命令来安装这个R包啦。</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"your_username/myutils"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>

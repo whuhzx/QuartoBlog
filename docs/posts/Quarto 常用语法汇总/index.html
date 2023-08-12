@@ -147,17 +147,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <a class="nav-link" href="../../about.html">
  <span class="menu-text">About</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../test.html">
- <span class="menu-text">test</span></a>
-  </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/"><i class="bi bi-github" role="img">
-</i> 
- <span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com"><i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://github.com/whuhzx"><i class="bi bi-github" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
@@ -221,7 +212,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 
-<p>年纪大了记忆力不好，记录一下常用语法，避免每次都要重新翻阅和查询Quarto的文档。</p>
+<p>年纪大了记忆力不好，记录一下常用语法，避免每次都要重新翻阅和查询 Quarto 的文档。</p>
 <section id="单篇博文配置" class="level2">
 <h2 class="anchored" data-anchor-id="单篇博文配置">单篇博文配置</h2>
 <p>每篇博文开头需要配置的参数。</p>
@@ -233,36 +224,36 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>categories: [Quarto, 清单]</span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>---</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>Quarto支持使用Knitr和Jupyter两类引擎，它会根据当面的<code>.qmd</code>文件内容自动选择引擎来渲染网页文件，我们也可以在开头通过全局命令指定，例如：</p>
+<p>Quarto 支持使用 Knitr 和 Jupyter 两类引擎，它会根据当面的 <code>.qmd</code> 文件内容自动选择引擎来渲染网页文件，我们也可以在开头通过全局命令指定，例如：</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>---</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>engine: knitr</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>---</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>如果需要代码块执行某些操作或者不执行某些操作，同样可以在开头使用<code>execute</code>进行全局设置。例如，<code>eval: false</code>表示只展示代码而不执行代码，也不会返回任何结果。</p>
+<p>如果需要代码块执行某些操作或者不执行某些操作，同样可以在开头使用 <code>execute</code> 进行全局设置。例如，<code>eval: false</code> 表示只展示代码而不执行代码，也不会返回任何结果。</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>---</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>execute: </span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  eval: false</span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>---</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>如果在单个代码块的开头修改<code>execute</code>，可以覆盖开头的全局配置。例如在代码第一行写入<code>#| eval: true</code>，表示在该代码块上执行代码。</p>
+<p>如果在单个代码块的开头修改 <code>execute</code>，可以覆盖开头的全局配置。例如在代码第一行写入 <code>#| eval: true</code>，表示在该代码块上执行代码。</p>
 <p>其他常用配置还包括：</p>
 <ul>
-<li><p><code>warning: false</code>表示执行代码但不返回警告。</p></li>
+<li><p><code>warning: false</code> 表示执行代码但不返回警告。</p></li>
 <li><p><code>echo: false</code> 表示只展示输出结果，但不展示源代码。</p></li>
 <li><p><code>error: true</code> 表示在执行过程遇到报错也不会停止文档处理。</p></li>
 </ul>
-<p>关于<code>execute</code>的配置，详见<a href="https://quarto.org/docs/reference/cells/cells-knitr.html#code-output">文档</a>。</p>
+<p>关于 <code>execute</code> 的配置，详见<a href="https://quarto.org/docs/reference/cells/cells-knitr.html#code-output">文档</a>。</p>
 </section>
 <section id="代码块" class="level2">
 <h2 class="anchored" data-anchor-id="代码块">代码块</h2>
-<p>如果只需要展示代码块的样式，而不需要在其中高亮任何元素，可以直接使用<code>{default}</code>。</p>
-<p>如果觉得单行代码太长，想要在代码块中直接换行，可以在开头写入<code>#| code-overflow: wrap</code>。</p>
+<p>如果只需要展示代码块的样式，而不需要在其中高亮任何元素，可以直接使用 <code>{default}</code>。</p>
+<p>如果觉得单行代码太长，想要在代码块中直接换行，可以在开头写入 <code>#| code-overflow: wrap</code>。</p>
 </section>
 <section id="表格" class="level2">
 <h2 class="anchored" data-anchor-id="表格">表格</h2>
-<p>想在文章中展示表格样式，可以使用<code>knitr::kable(dataset)</code>。</p>
+<p>想在文章中展示表格样式，可以使用 <code>knitr::kable(dataset)</code>。</p>
 </section>
 <section id="相关资源" class="level2">
 <h2 class="anchored" data-anchor-id="相关资源">相关资源</h2>

@@ -39,13 +39,13 @@ raw_data <- read_xlsx("sdg_07_40_page_spreadsheet.xlsx", sheet = 3, skip = 8, na
 ```{r}
 # 对原始数据进行数据清洗
 clean_data <- raw_data %>%
-  # 过滤掉带有NA的行
+  # 过滤掉带有 NA 的行
   drop_na() %>%
-  # 仅选择2020年的数据
+  # 仅选择 2020 年的数据
   select(Country = TIME, pct = `2020`) %>%
   # 过滤掉国家名太长的国家（主要表示某个区域或者国家联盟）
   filter(str_length(Country) <= 18) %>%
-  # 随机选择20个国家进行可视化
+  # 随机选择 20 个国家进行可视化
   sample_n(20) %>%
   mutate(pct = as.numeric(pct) %>% round(0)) %>%
   # 按照比例从大到小排序
@@ -85,7 +85,7 @@ waffle_plot <- clean_data %>%
 ```
 
 ```{r}
-# 输出ggplot制图结果
+# 输出 ggplot 制图结果
 waffle_plot
 ```
 
@@ -95,11 +95,11 @@ waffle_plot
 
 ## 注意事项
 
-如果遇到首次使用geom_waffle()函数报错，可以用如下方法解决：
+如果遇到首次使用 `geom_waffle()` 函数报错，可以用如下方法解决：
 
 -   `remotes::install_github("hrbrmstr/waffle")`
 
--   关闭Rstudio后重新打开，问题解决
+-   关闭 Rstudio 后重新打开，问题解决
 
 -   解决方法来自<https://github.com/hrbrmstr/waffle/issues/76>
 

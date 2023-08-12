@@ -11,7 +11,7 @@
     "href": "posts/常用包和函数汇总/index.html#数据可视化",
     "title": "R 常用包和函数汇总",
     "section": "数据可视化",
-    "text": "数据可视化\n\nhrbrthemes\nggplot 主题风格拓展，使用方法可见hrbrthemes：最好用的 ggplot 主题扩展包。\n\n\ngghighlight\n帮助高亮图表，使用方法可见使用 gghighlight 制图。\n\n\nwaffle\n华夫饼图绘制包，使用方法可见使用 waffle package 制作华夫饼图。\n\n\nggalluvial\n桑基图和凹凸图绘制包，使用方法可见使用 ggalluvial 制作桑基图和凹凸图。\n\n\nggwordcloud\n用ggplot语法绘制词云，使用方法可见ggwordcloud: a word cloud geom for ggplot2及R Charts: Word cloud in ggplot2 with ggwordcloud。\n\n\npatchwork\n快速组合不同图表：p1 + p2。使用方法详见教程。"
+    "text": "数据可视化\n\nhrbrthemes\nggplot 主题风格拓展，使用方法可见 hrbrthemes：最好用的 ggplot 主题扩展包。\n\n\ngghighlight\n帮助高亮图表，使用方法可见使用 gghighlight 制图。\n\n\nwaffle\n华夫饼图绘制包，使用方法可见使用 waffle package 制作华夫饼图。\n\n\nggalluvial\n桑基图和凹凸图绘制包，使用方法可见使用 ggalluvial 制作桑基图和凹凸图。\n\n\nggwordcloud\n用 ggplot 语法绘制词云，使用方法可见ggwordcloud: a word cloud geom for ggplot2及R Charts: Word cloud in ggplot2 with ggwordcloud。\n\n\npatchwork\n快速组合不同图表：p1 + p2。使用方法详见教程。"
   },
   {
     "objectID": "posts/hrbrthemes：最好用的ggplot主题扩展包/index.html",
@@ -221,7 +221,7 @@
     "href": "posts/使用 geom_ribbon 为折线差值填充颜色/index.html",
     "title": "使用 geom_ribbon 给双折线区间填充颜色",
     "section": "",
-    "text": "平常看数据图表时，经常见到这么一种图表类型——一张图里有两条折线A和B，当A大于B时，AB空间里填充一种颜色；当B大于A时，AB空间里填充另一种颜色。\n例如《华盛顿邮报》制作的这张图：\n\n探索了一下，发现可以借助geom_ribbon函数实现类似功能。"
+    "text": "平常看数据图表时，经常见到这么一种图表类型——一张图里有两条折线 A 和 B，当 A 大于 B 时，AB 空间里填充一种颜色；当 B 大于 A 时，AB 空间里填充另一种颜色。\n例如《华盛顿邮报》制作的这张图：\n\n探索了一下，发现可以借助 geom_ribbon 函数实现类似功能。"
   },
   {
     "objectID": "posts/使用 geom_ribbon 为折线差值填充颜色/index.html#包引入",
@@ -235,35 +235,35 @@
     "href": "posts/使用 geom_ribbon 为折线差值填充颜色/index.html#数据准备和清洗",
     "title": "使用 geom_ribbon 给双折线区间填充颜色",
     "section": "数据准备和清洗",
-    "text": "数据准备和清洗\n先导入数据。\n\napps_mau <- readxl::read_xlsx(\"QM数据.xlsx\", sheet = 1)\n\napps_mau数据集里面有快手、百度等移动应用的财报月活数据和QM监测到的月活数据。\n\nknitr::kable(head(apps_mau))\n\n\n\n\n时间\n财报数据\nQM数据\n应用名\n\n\n\n\n2020Q1\n4.95\n5.15\n快手（主站+极速版）\n\n\n2020Q2\n4.74\n4.97\n快手（主站+极速版）\n\n\n2020Q3\n4.79\n5.05\n快手（主站+极速版）\n\n\n2020Q4\n4.76\n5.22\n快手（主站+极速版）\n\n\n2021Q1\n5.20\n5.71\n快手（主站+极速版）\n\n\n2021Q2\n5.06\n5.26\n快手（主站+极速版）\n\n\n\n\n\n现在要做的是：当QM监测数据高于该应用的财报数据时，采用一种颜色填充；当QM监测数据低于财报数据时，采用另外一种颜色填充。\n对数据进行简单地清洗。\n\napps_mau_clean <- apps_mau %>%\n  # 把数据类型从字符串转换成时间，geom_ribbon的参数需要是数值型变量\n  mutate(时间 = zoo::as.yearqtr(时间)) %>%\n  # 因子排序，后续做分面图时按照月活差距排序\n  mutate(应用名 = fct_reorder(应用名, 财报数据 - QM数据, mean))\n\n\nknitr::kable(head(apps_mau_clean))\n\n\n\n\n时间\n财报数据\nQM数据\n应用名\n\n\n\n\n2020 Q1\n4.95\n5.15\n快手（主站+极速版）\n\n\n2020 Q2\n4.74\n4.97\n快手（主站+极速版）\n\n\n2020 Q3\n4.79\n5.05\n快手（主站+极速版）\n\n\n2020 Q4\n4.76\n5.22\n快手（主站+极速版）\n\n\n2021 Q1\n5.20\n5.71\n快手（主站+极速版）\n\n\n2021 Q2\n5.06\n5.26\n快手（主站+极速版）\n\n\n\n\n\n后续作图时， 由于geom_ribbon 使用宽数据，geom_line使用长数据，因此此处需做一个数据类型的转换。\n\napps_mau_longdata <- apps_mau_clean %>%\n  # 看QM数据相较于财报数据偏离比例有多少\n  mutate(diff = (QM数据 - 财报数据) / 财报数据,\n         diff_format = str_c(round(diff,2) * 100, \"%\")) %>%\n  pivot_longer(cols = c('财报数据', 'QM数据'),\n               names_to = '数据来源',\n               values_to = '月活') \n\n再来看看转换后的数据。\n\nknitr::kable(head(apps_mau_longdata))\n\n\n\n\n时间\n应用名\ndiff\ndiff_format\n数据来源\n月活\n\n\n\n\n2020 Q1\n快手（主站+极速版）\n0.0404040\n4%\n财报数据\n4.95\n\n\n2020 Q1\n快手（主站+极速版）\n0.0404040\n4%\nQM数据\n5.15\n\n\n2020 Q2\n快手（主站+极速版）\n0.0485232\n5%\n财报数据\n4.74\n\n\n2020 Q2\n快手（主站+极速版）\n0.0485232\n5%\nQM数据\n4.97\n\n\n2020 Q3\n快手（主站+极速版）\n0.0542797\n5%\n财报数据\n4.79\n\n\n2020 Q3\n快手（主站+极速版）\n0.0542797\n5%\nQM数据\n5.05"
+    "text": "数据准备和清洗\n先导入数据。\n\napps_mau <- readxl::read_xlsx(\"QM数据.xlsx\", sheet = 1)\n\napps_mau 数据集里面有快手、百度等移动应用的财报月活数据和 QM 监测到的月活数据。\n\nknitr::kable(head(apps_mau))\n\n\n\n\n时间\n财报数据\nQM数据\n应用名\n\n\n\n\n2020Q1\n4.95\n5.15\n快手（主站+极速版）\n\n\n2020Q2\n4.74\n4.97\n快手（主站+极速版）\n\n\n2020Q3\n4.79\n5.05\n快手（主站+极速版）\n\n\n2020Q4\n4.76\n5.22\n快手（主站+极速版）\n\n\n2021Q1\n5.20\n5.71\n快手（主站+极速版）\n\n\n2021Q2\n5.06\n5.26\n快手（主站+极速版）\n\n\n\n\n\n现在要做的是：当 QM 监测数据高于该应用的财报数据时，采用一种颜色填充；当 QM 监测数据低于财报数据时，采用另外一种颜色填充。\n对数据进行简单地清洗。\n\napps_mau_clean <- apps_mau %>%\n  # 把数据类型从字符串转换成时间，geom_ribbon 的参数需要是数值型变量\n  mutate(时间 = zoo::as.yearqtr(时间)) %>%\n  # 因子排序，后续做分面图时按照月活差距排序\n  mutate(应用名 = fct_reorder(应用名, 财报数据 - QM数据, mean))\n\n\nknitr::kable(head(apps_mau_clean))\n\n\n\n\n时间\n财报数据\nQM数据\n应用名\n\n\n\n\n2020 Q1\n4.95\n5.15\n快手（主站+极速版）\n\n\n2020 Q2\n4.74\n4.97\n快手（主站+极速版）\n\n\n2020 Q3\n4.79\n5.05\n快手（主站+极速版）\n\n\n2020 Q4\n4.76\n5.22\n快手（主站+极速版）\n\n\n2021 Q1\n5.20\n5.71\n快手（主站+极速版）\n\n\n2021 Q2\n5.06\n5.26\n快手（主站+极速版）\n\n\n\n\n\n后续作图时， 由于 geom_ribbon 使用宽数据，geom_line 使用长数据，因此此处需做一个数据类型的转换。\n\napps_mau_longdata <- apps_mau_clean %>%\n  # 看QM数据相较于财报数据偏离比例有多少\n  mutate(diff = (QM数据 - 财报数据) / 财报数据,\n         diff_format = str_c(round(diff,2) * 100, \"%\")) %>%\n  pivot_longer(cols = c('财报数据', 'QM数据'),\n               names_to = '数据来源',\n               values_to = '月活') \n\n再来看看转换后的数据。\n\nknitr::kable(head(apps_mau_longdata))\n\n\n\n\n时间\n应用名\ndiff\ndiff_format\n数据来源\n月活\n\n\n\n\n2020 Q1\n快手（主站+极速版）\n0.0404040\n4%\n财报数据\n4.95\n\n\n2020 Q1\n快手（主站+极速版）\n0.0404040\n4%\nQM数据\n5.15\n\n\n2020 Q2\n快手（主站+极速版）\n0.0485232\n5%\n财报数据\n4.74\n\n\n2020 Q2\n快手（主站+极速版）\n0.0485232\n5%\nQM数据\n4.97\n\n\n2020 Q3\n快手（主站+极速版）\n0.0542797\n5%\n财报数据\n4.79\n\n\n2020 Q3\n快手（主站+极速版）\n0.0542797\n5%\nQM数据\n5.05"
   },
   {
     "objectID": "posts/使用 geom_ribbon 为折线差值填充颜色/index.html#绘图",
     "href": "posts/使用 geom_ribbon 为折线差值填充颜色/index.html#绘图",
     "title": "使用 geom_ribbon 给双折线区间填充颜色",
     "section": "绘图",
-    "text": "绘图\n绘图时会用到三个geom图形函数：geom_line用来绘制折线，geom_text用来绘制QM数据相较于财报数据的偏离值，而geom_ribbon用于给折线差值空间填充颜色。\n其中geom_ribbon的主要aes()参数是x、y、xmin、ymin、xmax、ymax，表示绘图空间的起始及结束坐标。另外，fill表示填充的颜色，alpha表示透明度。\n\napps_plot <- apps_mau_longdata %>%\n  # x = 时间的数据类型需是泛date类型,否则无效\n  ggplot(aes(x = 时间)) +\n  # 分组折线图\n  geom_line(aes(y = 月活, group = 数据来源, color = 数据来源)) +\n  # 标注出偏离比例\n  geom_text(data = apps_mau_longdata %>% filter(数据来源 == 'QM数据'),\n            aes(y = 月活, label = diff_format)) +\n  # 折线差值部分填充颜色\n  geom_ribbon(\n    data = apps_mau_clean %>% mutate(颜色 = ifelse(财报数据>QM数据, '财报数据', 'QM数据')),\n    mapping = aes(\n      # pmin和pmax函数表示在一组向量中分别取最小和最大值\n      ymin = pmin(财报数据, QM数据),\n      ymax = pmax(财报数据, QM数据),\n      fill = 颜色),\n    alpha = 0.3\n  ) +\n  facet_wrap(~ 应用名, ncol = 2) +\n  scale_x_continuous(\n    # 横轴标签只出现7个\n    breaks = scales::pretty_breaks(n = 7),\n    # 横纵标签默认为'2020-01的格式，将其格式化为2020Q1'\n    labels = function(x) format(zoo::as.yearqtr(x), \"%YQ%q\")) +\n  guides(fill = 'none') +\n  theme_ipsum(base_family = 'PingFang SC', grid = 'XY')\n\n\n需要注意的是，使用goem_ribbon有一个缺点：当两条折线交叉的时候，交叉点附近区域无法被正确填色（仔细看的话会发现，快手分面图中两线交汇的地方是空白的）。\n这是由于geom_ribbon的工作原理所导致的：geom_ribbon会以y轴的值作为区域的边界，所以当两条线交叉时，那一点的y值是不确定的，所以ggplot2不会在那个位置上色。\n针对这点，暂时没有发现特别好的解决方法。只能等生成svg图形后，在Figma里手动调整。"
+    "text": "绘图\n绘图时会用到三个 geom 图形函数：geom_line 用来绘制折线，geom_text 用来绘制QM数据相较于财报数据的偏离值，而geom_ribbon 用于给折线差值空间填充颜色。\n其中 geom_ribbon 的主要 aes() 参数是 x、y、xmin、ymin、xmax、ymax，表示绘图空间的起始及结束坐标。另外，fill 表示填充的颜色，alpha 表示透明度。\n\napps_plot <- apps_mau_longdata %>%\n  # x = 时间的数据类型需是泛 date 类型,否则无效\n  ggplot(aes(x = 时间)) +\n  # 分组折线图\n  geom_line(aes(y = 月活, group = 数据来源, color = 数据来源)) +\n  # 标注出偏离比例\n  geom_text(data = apps_mau_longdata %>% filter(数据来源 == 'QM数据'),\n            aes(y = 月活, label = diff_format)) +\n  # 折线差值部分填充颜色\n  geom_ribbon(\n    data = apps_mau_clean %>% mutate(颜色 = ifelse(财报数据>QM数据, '财报数据', 'QM数据')),\n    mapping = aes(\n      # pmin 和 pmax 函数表示在一组向量中分别取最小和最大值\n      ymin = pmin(财报数据, QM数据),\n      ymax = pmax(财报数据, QM数据),\n      fill = 颜色),\n    alpha = 0.3\n  ) +\n  facet_wrap(~ 应用名, ncol = 2) +\n  scale_x_continuous(\n    # 横轴标签只出现7个\n    breaks = scales::pretty_breaks(n = 7),\n    # 横纵标签默认为'2020-01 的格式，将其格式化为 2020Q1'\n    labels = function(x) format(zoo::as.yearqtr(x), \"%YQ%q\")) +\n  guides(fill = 'none') +\n  theme_ipsum(base_family = 'PingFang SC', grid = 'XY')\n\n\n需要注意的是，使用 goem_ribbon 有一个缺点：当两条折线交叉的时候，交叉点附近区域无法被正确填色（仔细看的话会发现，快手分面图中两线交汇的地方是空白的）。\n这是由于geom_ribbon的工作原理所导致的：geom_ribbon 会以 y 轴的值作为区域的边界，所以当两条线交叉时，那一点的 y 值是不确定的，所以 ggplot2 不会在那个位置上色。\n针对这点，暂时没有发现特别好的解决方法。只能等生成 svg 图形后，在 Figma 里手动调整。"
   },
   {
     "objectID": "posts/使用 geom_ribbon 为折线差值填充颜色/index.html#注意事项",
     "href": "posts/使用 geom_ribbon 为折线差值填充颜色/index.html#注意事项",
     "title": "使用 geom_ribbon 给双折线区间填充颜色",
     "section": "注意事项",
-    "text": "注意事项\n1、数据结构方面。goem_line使用的是长数据，而goem_ribbon使用的是宽数据。将它们同时绘制在一张图里的时候，需要做数据转换，不能使用同一个数据集。\n2、数据类型方面。使用geom_ribbon绘图时，x轴和y轴都必须是数值型变量或者时间变量，数据类型不对的话虽不会报错，但也无法绘制出任何结果。这里debug了好久才发现问题，最后使用zoo pacakge的as.yearqtr函数将时间（2020Q1）由字符串格式转换成时间格式。"
+    "text": "注意事项\n1、数据结构方面。goem_line 使用的是长数据，而 goem_ribbon 使用的是宽数据。将它们同时绘制在一张图里的时候，需要做数据转换，不能使用同一个数据集。\n2、数据类型方面。使用 geom_ribbon 绘图时，x轴和y轴都必须是数值型变量或者时间变量，数据类型不对的话虽不会报错，但也无法绘制出任何结果。这里 debug 了好久才发现问题，最后使用 zoo pacakge 的 as.yearqtr 函数将时间（2020Q1）由字符串格式转换成时间格式。"
   },
   {
     "objectID": "posts/利用 ChatGPT 编写简单 R 包/index.html",
     "href": "posts/利用 ChatGPT 编写简单 R 包/index.html",
     "title": "利用 ChatGPT 编写简单 R 包",
     "section": "",
-    "text": "很久之前就想创建一个R包，便于在做数据分析的时候根据个人需求复用函数，但因为觉得相关文档太复杂而放弃了。\n这次试了试用ChatGPT来帮助编写，发现过程还是比较简单的。虽然也花时间扫了一遍Hadley Wickham编写的《R Package》，但是有ChatGPT的帮助，能够对书中的内容和底层的机制有更清楚地了解。\n这里简单记录一下过程。为了方便起见，编写的R包里只有一个函数。"
+    "text": "很久之前就想创建一个 R 包，便于在做数据分析的时候根据个人需求复用函数，但因为觉得相关文档太复杂而放弃了。\n这次试了试用ChatGPT来帮助编写，发现过程还是比较简单的。虽然也花时间扫了一遍 Hadley Wickham 编写的《R Package》，但是有 ChatGPT 的帮助，能够对书中的内容和底层的机制有更清楚地了解。\n这里简单记录一下过程。为了方便起见，编写的R包里只有一个函数。"
   },
   {
     "objectID": "posts/利用 ChatGPT 编写简单 R 包/index.html#准备",
     "href": "posts/利用 ChatGPT 编写简单 R 包/index.html#准备",
     "title": "利用 ChatGPT 编写简单 R 包",
     "section": "准备",
-    "text": "准备\n事先需要安装两个服务于R包开发的package，分别是devtools和roxygen2，后者主要用于自动生成包的帮助文档。\n\nlibrary(devtools)\nlibrary(roxygen2)\n\n在Rstudio中新建项目，并选择R Package，就会自动生成一个工程文件夹。文件目录大致如下：\n\nmyutils/\n|-- DESCRIPTION #描述文件，内容包括基本信息，如包的名称、版本、作者、描述、依赖等\n|-- NAMESPACE #文件指定了哪些函数或对象应该被导出（用户可以直接访问）以及哪些其他的包的函数应该被导入 \n|-- R/ #在目录中放置所有的R函数代码\n|   |-- function1.R\n|   |-- function2.R\n|-- man/ #在目录中放置函数的帮助文档。这些文件通常使用roxygen2注释在R文件中自动生成。\n|   |-- function1.Rd\n|   |-- function2.Rd\n|-- data/ #目录用于存放包中的数据集\n|   |-- dataset1.RData\n|-- inst/ #存放不适合其他类别的文件。\n|   |-- extdata/\n|   |   |-- some_additional_data.csv\n|-- tests/ #放置测试代码，通常使用testthat包来编写测试，此次不涉及\n|   |-- testthat/\n|   |   |-- test_function1.R\n|   |   |-- test_function2.R\n|-- vignettes/ #存放包的使用教程或详细文档\n|   |-- introduction.Rmd\n|-- LICENSE"
+    "text": "准备\n事先需要安装两个服务于R包开发的 package，分别是 devtools 和 roxygen2，后者主要用于自动生成包的帮助文档。\n\nlibrary(devtools)\nlibrary(roxygen2)\n\n在 RStudio 中新建项目，并选择 R Package，就会自动生成一个工程文件夹。文件目录大致如下：\n\nmyutils/\n|-- DESCRIPTION #描述文件，内容包括基本信息，如包的名称、版本、作者、描述、依赖等\n|-- NAMESPACE #文件指定了哪些函数或对象应该被导出（用户可以直接访问）以及哪些其他的包的函数应该被导入 \n|-- R/ #在目录中放置所有的R函数代码\n|   |-- function1.R\n|   |-- function2.R\n|-- man/ #在目录中放置函数的帮助文档。这些文件通常使用roxygen2注释在R文件中自动生成。\n|   |-- function1.Rd\n|   |-- function2.Rd\n|-- data/ #目录用于存放包中的数据集\n|   |-- dataset1.RData\n|-- inst/ #存放不适合其他类别的文件。\n|   |-- extdata/\n|   |   |-- some_additional_data.csv\n|-- tests/ #放置测试代码，通常使用testthat包来编写测试，此次不涉及\n|   |-- testthat/\n|   |   |-- test_function1.R\n|   |   |-- test_function2.R\n|-- vignettes/ #存放包的使用教程或详细文档\n|   |-- introduction.Rmd\n|-- LICENSE"
   },
   {
     "objectID": "posts/利用 ChatGPT 编写简单 R 包/index.html#填写description文件",
@@ -277,35 +277,35 @@
     "href": "posts/利用 ChatGPT 编写简单 R 包/index.html#添加函数",
     "title": "利用 ChatGPT 编写简单 R 包",
     "section": "添加函数",
-    "text": "添加函数\n这里添加一个我常使用的计算TGI的函数compute_tgi_top_n。\n#'后面填上函数的介绍，#' @param后面则是每个参数的含义，后续roxygen2会根据注释在R文件中自动生成帮助文件。\n#' @export表示这个函数可以被外部调用，如果不加入这个注释，表明只供内部使用，外部使用者在library(myutils)加载包后无法使用该函数。\n\n#' Compute dataset TGI\n#' @param x 数据集\n#' @param target 目标对象\n#' @param category 分组类型\n#' @param tgi_value 数值\n#' @param top_number 最大排名\n#' @export\ncompute_tgi_top_n <- function(x, target, category, tgi_value, top_number = 10){\n  x %>%\n    group_by(!!sym(target), !!sym(category)) %>%\n    summarise(value = sum(!!sym(tgi_value))) %>%\n    ungroup() %>%\n    mutate(total = sum(value)) %>%\n    group_by(!!sym(target)) %>%\n    mutate(target_ratio = value / sum(value)) %>%\n    ungroup() %>%\n    group_by(!!sym(category)) %>%\n    mutate(total_ratio = sum(value) / total) %>%\n    mutate(tgi = round(target_ratio / total_ratio * 100, 0)) %>%\n    ungroup() %>%\n    arrange(desc(tgi)) %>%\n    group_by(!!sym(target)) %>%\n    top_n(top_number, tgi) %>%\n    ggplot(aes(x = tgi, y = reorder_within(!!sym(category), tgi, !!sym(target)))) +\n    geom_col() +\n    geom_text(aes(label = tgi)) +\n    facet_wrap(vars(!!sym(target)), scale = \"free\") +\n    scale_y_reordered() +\n    theme(text = element_text(family = \"PingFang SC\"))\n}"
+    "text": "添加函数\n这里添加一个我常使用的计算TGI的函数 compute_tgi_top_n。\n#' 后面填上函数的介绍，#' @param 后面则是每个参数的含义，后续 roxygen2 会根据注释在R文件中自动生成帮助文件。\n#' @export 表示这个函数可以被外部调用，如果不加入这个注释，表明只供内部使用，外部使用者在 library(myutils) 加载包后无法使用该函数。\n\n#' Compute dataset TGI\n#' @param x 数据集\n#' @param target 目标对象\n#' @param category 分组类型\n#' @param tgi_value 数值\n#' @param top_number 最大排名\n#' @export\ncompute_tgi_top_n <- function(x, target, category, tgi_value, top_number = 10){\n  x %>%\n    group_by(!!sym(target), !!sym(category)) %>%\n    summarise(value = sum(!!sym(tgi_value))) %>%\n    ungroup() %>%\n    mutate(total = sum(value)) %>%\n    group_by(!!sym(target)) %>%\n    mutate(target_ratio = value / sum(value)) %>%\n    ungroup() %>%\n    group_by(!!sym(category)) %>%\n    mutate(total_ratio = sum(value) / total) %>%\n    mutate(tgi = round(target_ratio / total_ratio * 100, 0)) %>%\n    ungroup() %>%\n    arrange(desc(tgi)) %>%\n    group_by(!!sym(target)) %>%\n    top_n(top_number, tgi) %>%\n    ggplot(aes(x = tgi, y = reorder_within(!!sym(category), tgi, !!sym(target)))) +\n    geom_col() +\n    geom_text(aes(label = tgi)) +\n    facet_wrap(vars(!!sym(target)), scale = \"free\") +\n    scale_y_reordered() +\n    theme(text = element_text(family = \"PingFang SC\"))\n}"
   },
   {
     "objectID": "posts/利用 ChatGPT 编写简单 R 包/index.html#添加数据集",
     "href": "posts/利用 ChatGPT 编写简单 R 包/index.html#添加数据集",
     "title": "利用 ChatGPT 编写简单 R 包",
     "section": "添加数据集",
-    "text": "添加数据集\n如果要在开发的包中加入固定数据集以供后续载入调用，可以将数据集放置在data目录下。\n根据《R Pacakge》一书，数据集的最佳保存格式为.rda。可以使用save(my_data, file = \"my_data.rda\")将数据集保存为该格式，或者使用usethis::use_data(my_data)自动保存。"
+    "text": "添加数据集\n如果要在开发的包中加入固定数据集以供后续载入调用，可以将数据集放置在 /data 目录下。\n根据《R Pacakge》一书，数据集的最佳保存格式为 .rda。可以使用 save(my_data, file = \"my_data.rda\") 将数据集保存为该格式，或者使用 usethis::use_data(my_data) 自动保存。"
   },
   {
     "objectID": "posts/利用 ChatGPT 编写简单 R 包/index.html#生成文档",
     "href": "posts/利用 ChatGPT 编写简单 R 包/index.html#生成文档",
     "title": "利用 ChatGPT 编写简单 R 包",
     "section": "生成文档",
-    "text": "生成文档\n执行roxygenise()后，会在man目录下生成一个名为compute_tgi_top_n.Rmd的文件，里面是该函数的帮助文档。\n\nsetwd(\"path_to_myutils\")  # 将包的项目路径设置为工作目录\nroxygen2::roxygenise()\n\n执行roxygenise()后发生了什么？以下是ChatGPT给出的回答。\n\n- 解析roxygen注释：函数会检查你的R源代码文件，寻找以#'开始的roxygen注释。\n\n- 生成.Rd文件：对于源代码中的每个函数、类或数据集，roxygenise()会在man/目录中生成一个.Rd文件。这些文件为R包中的每个公共对象提供手册页。\n\n- 更新NAMESPACE文件：基于roxygen注释中的@export、@import、@importFrom等标签，NAMESPACE文件会被自动更新。例如，如果你在函数上方有#' @export注释，该函数将被导出，允许用户在加载包后直接访问它。\n\n- 生成vignettes：如果你在包中包含了vignettes（即长格式的文档或教程），并且使用roxygen2标签为它们编写了元数据，那么roxygenise()也会处理这些vignettes。\n\n- 其他文档更新：roxygen2也支持许多其他标签，这些标签可以帮助生成数据集的文档、包的描述和其他文档部分。"
+    "text": "生成文档\n执行 roxygenise() 后，会在 /man 目录下生成一个名为compute_tgi_top_n.Rmd 的文件，里面是该函数的帮助文档。\n\nsetwd(\"path_to_myutils\")  # 将包的项目路径设置为工作目录\nroxygen2::roxygenise()\n\n执行 roxygenise() 后发生了什么？以下是 ChatGPT 给出的回答。\n\n- 解析roxygen注释：函数会检查你的R源代码文件，寻找以#'开始的roxygen注释。\n\n- 生成.Rd文件：对于源代码中的每个函数、类或数据集，roxygenise()会在man/目录中生成一个.Rd文件。这些文件为R包中的每个公共对象提供手册页。\n\n- 更新NAMESPACE文件：基于roxygen注释中的@export、@import、@importFrom等标签，NAMESPACE文件会被自动更新。例如，如果你在函数上方有#' @export注释，该函数将被导出，允许用户在加载包后直接访问它。\n\n- 生成vignettes：如果你在包中包含了vignettes（即长格式的文档或教程），并且使用roxygen2标签为它们编写了元数据，那么roxygenise()也会处理这些vignettes。\n\n- 其他文档更新：roxygen2也支持许多其他标签，这些标签可以帮助生成数据集的文档、包的描述和其他文档部分。"
   },
   {
     "objectID": "posts/利用 ChatGPT 编写简单 R 包/index.html#将包安装到本地库中",
     "href": "posts/利用 ChatGPT 编写简单 R 包/index.html#将包安装到本地库中",
     "title": "利用 ChatGPT 编写简单 R 包",
     "section": "将包安装到本地库中",
-    "text": "将包安装到本地库中\n使用devtools包内置的install()函数，就能够将包安装到本地库中，方便后续直接用library()调用。\n\ndevtools::install(\"myutils\")\n\n执行install()后发生了什么？ChatGPT给出了如下答案，有助于理解包安装背后的机制。\n\n- 构建：首先，R会将你的包的所有文件打包成一个.tar.gz文件（在Linux和Mac上）或.zip文件（在Windows上）。这个文件是R包的源代码格式。\n\n- 检查包的依赖关系：install()会查看myutils包的DESCRIPTION文件，找到任何在Depends、Imports或LinkingTo字段中列出的依赖关系。如果这些依赖的包还没有被安装，install()通常会尝试自动安装它们。\n\n- 编译：如果你的包包含任何C、C++或Fortran代码，R会尝试编译这些代码。这需要有合适的编译工具链。例如，在Windows上，你可能需要Rtools来编译C或C++代码。\n\n- 安装：一旦包被构建并编译（如果需要的话），它就会被安装到R的库中。这实际上就是将包的所有文件复制到R的包目录，通常是library/目录。\n\n- 加载：安装后，你可以使用library(myutils)命令加载并使用你的包。\n\n- 二进制包：在某些系统上，例如Windows，install()可能还会为你的包创建一个二进制版本，这样在未来安装包时可以更快。\n\n接下来就可以在本地加载library(myutils)后调用compute_tgi_top_n()函数了。也可以通过?compute_tgi_top_n来查看帮助文档。"
+    "text": "将包安装到本地库中\n使用 devtools 包内置的 install() 函数，就能够将包安装到本地库中，方便后续直接用 library() 调用。\n\ndevtools::install(\"myutils\")\n\n执行 install() 后发生了什么？ChatGPT 给出了如下答案，有助于理解包安装背后的机制。\n\n- 构建：首先，R会将你的包的所有文件打包成一个.tar.gz文件（在Linux和Mac上）或.zip文件（在Windows上）。这个文件是R包的源代码格式。\n\n- 检查包的依赖关系：install()会查看myutils包的DESCRIPTION文件，找到任何在Depends、Imports或LinkingTo字段中列出的依赖关系。如果这些依赖的包还没有被安装，install()通常会尝试自动安装它们。\n\n- 编译：如果你的包包含任何C、C++或Fortran代码，R会尝试编译这些代码。这需要有合适的编译工具链。例如，在Windows上，你可能需要Rtools来编译C或C++代码。\n\n- 安装：一旦包被构建并编译（如果需要的话），它就会被安装到R的库中。这实际上就是将包的所有文件复制到R的包目录，通常是library/目录。\n\n- 加载：安装后，你可以使用library(myutils)命令加载并使用你的包。\n\n- 二进制包：在某些系统上，例如Windows，install()可能还会为你的包创建一个二进制版本，这样在未来安装包时可以更快。\n\n接下来就可以在本地加载 library(myutils) 后调用 compute_tgi_top_n() 函数了。也可以通过 ?compute_tgi_top_n 来查看帮助文档。"
   },
   {
     "objectID": "posts/利用 ChatGPT 编写简单 R 包/index.html#将包上传到github上",
     "href": "posts/利用 ChatGPT 编写简单 R 包/index.html#将包上传到github上",
     "title": "利用 ChatGPT 编写简单 R 包",
     "section": "将包上传到Github上",
-    "text": "将包上传到Github上\n最后，我们进入包目录，将本地包初始化并新做一个版本。\n\ngit init\ngit add .\ngit commit -m \"first package version\"\n\n在个人Github主页上新建一个库。然后，将本地库和远程库建立关联。\n\ngit remote add origin git@github.com:your_username/myutils.git\n\n# 若显示远程库已存在，则加上set-url更新一下\ngit remote set-url origin git@github.com:your_username/myutils.git\n\n将本地库推送到Github上。\n\n# 重命名当前活动分支为main\ngit branch -M main\n\n# 将main分支推送到名为origin的远程仓库，并设置上游追踪关系\ngit push -u origin main\n\n推送完成，之后可以在任何电脑上使用install_github()命令来安装这个R包啦。\n\ndevtools::install_github(\"your_username/myutils\")"
+    "text": "将包上传到Github上\n最后，我们进入包目录，将本地包初始化并新做一个版本。\n\ngit init\ngit add .\ngit commit -m \"first package version\"\n\n在个人 Github 主页上新建一个库。然后，将本地库和远程库建立关联。\n\ngit remote add origin git@github.com:your_username/myutils.git\n\n# 若显示远程库已存在，则加上 set-url 更新一下\ngit remote set-url origin git@github.com:your_username/myutils.git\n\n将本地库推送到Github上。\n\n# 重命名当前活动分支为 main\ngit branch -M main\n\n# 将main分支推送到名为 origin 的远程仓库，并设置上游追踪关系\ngit push -u origin main\n\n推送完成，之后可以在任何电脑上使用 install_github() 命令来安装这个R包啦。\n\ndevtools::install_github(\"your_username/myutils\")"
   },
   {
     "objectID": "posts/利用 ChatGPT 编写简单 R 包/index.html#相关资源",
@@ -319,14 +319,14 @@
     "href": "posts/常用包和函数汇总/index.html#其他资源",
     "title": "R 常用包和函数汇总",
     "section": "其他资源",
-    "text": "其他资源\n\nR包开发可见利用 ChatGPT 编写简单 R 包。"
+    "text": "其他资源\n\nR 包开发可见利用 ChatGPT 编写简单 R 包。"
   },
   {
     "objectID": "posts/Quarto 常用语法汇总/index.html",
     "href": "posts/Quarto 常用语法汇总/index.html",
     "title": "Quarto 常用语法汇总",
     "section": "",
-    "text": "年纪大了记忆力不好，记录一下常用语法，避免每次都要重新翻阅和查询Quarto的文档。"
+    "text": "年纪大了记忆力不好，记录一下常用语法，避免每次都要重新翻阅和查询 Quarto 的文档。"
   },
   {
     "objectID": "posts/Quarto 常用语法汇总/index.html#博文配置",
@@ -340,14 +340,14 @@
     "href": "posts/Quarto 常用语法汇总/index.html#代码块",
     "title": "Quarto 常用语法汇总",
     "section": "代码块",
-    "text": "代码块\n如果只需要展示代码块的样式，而不需要在其中高亮任何元素，可以直接使用{default}。\n如果觉得单行代码太长，想要在代码块中直接换行，可以在开头写入#| code-overflow: wrap。"
+    "text": "代码块\n如果只需要展示代码块的样式，而不需要在其中高亮任何元素，可以直接使用 {default}。\n如果觉得单行代码太长，想要在代码块中直接换行，可以在开头写入 #| code-overflow: wrap。"
   },
   {
     "objectID": "posts/Quarto 常用语法汇总/index.html#表格",
     "href": "posts/Quarto 常用语法汇总/index.html#表格",
     "title": "Quarto 常用语法汇总",
     "section": "表格",
-    "text": "表格\n想在文章中展示表格样式，可以使用knitr::kable(dataset)。"
+    "text": "表格\n想在文章中展示表格样式，可以使用 knitr::kable(dataset)。"
   },
   {
     "objectID": "posts/Quarto 常用语法汇总/index.html#相关资源",
@@ -361,6 +361,13 @@
     "href": "posts/Quarto 常用语法汇总/index.html#单篇博文配置",
     "title": "Quarto 常用语法汇总",
     "section": "单篇博文配置",
-    "text": "单篇博文配置\n每篇博文开头需要配置的参数。\n\n---\ntitle: \"Quarto 常用语法汇总\"\nauthor: \"Boyce\"\ndate: \"2023/08/12\"\ncategories: [Quarto, 清单]\n---\n\nQuarto支持使用Knitr和Jupyter两类引擎，它会根据当面的.qmd文件内容自动选择引擎来渲染网页文件，我们也可以在开头通过全局命令指定，例如：\n\n---\nengine: knitr\n---\n\n如果需要代码块执行某些操作或者不执行某些操作，同样可以在开头使用execute进行全局设置。例如，eval: false表示只展示代码而不执行代码，也不会返回任何结果。\n\n---\nexecute: \n  eval: false\n---\n\n如果在单个代码块的开头修改execute，可以覆盖开头的全局配置。例如在代码第一行写入#| eval: true，表示在该代码块上执行代码。\n其他常用配置还包括：\n\nwarning: false表示执行代码但不返回警告。\necho: false 表示只展示输出结果，但不展示源代码。\nerror: true 表示在执行过程遇到报错也不会停止文档处理。\n\n关于execute的配置，详见文档。"
+    "text": "单篇博文配置\n每篇博文开头需要配置的参数。\n\n---\ntitle: \"Quarto 常用语法汇总\"\nauthor: \"Boyce\"\ndate: \"2023/08/12\"\ncategories: [Quarto, 清单]\n---\n\nQuarto 支持使用 Knitr 和 Jupyter 两类引擎，它会根据当面的 .qmd 文件内容自动选择引擎来渲染网页文件，我们也可以在开头通过全局命令指定，例如：\n\n---\nengine: knitr\n---\n\n如果需要代码块执行某些操作或者不执行某些操作，同样可以在开头使用 execute 进行全局设置。例如，eval: false 表示只展示代码而不执行代码，也不会返回任何结果。\n\n---\nexecute: \n  eval: false\n---\n\n如果在单个代码块的开头修改 execute，可以覆盖开头的全局配置。例如在代码第一行写入 #| eval: true，表示在该代码块上执行代码。\n其他常用配置还包括：\n\nwarning: false 表示执行代码但不返回警告。\necho: false 表示只展示输出结果，但不展示源代码。\nerror: true 表示在执行过程遇到报错也不会停止文档处理。\n\n关于 execute 的配置，详见文档。"
+  },
+  {
+    "objectID": "posts/利用 ChatGPT 编写简单 R 包/index.html#填写-description-文件",
+    "href": "posts/利用 ChatGPT 编写简单 R 包/index.html#填写-description-文件",
+    "title": "利用 ChatGPT 编写简单 R 包",
+    "section": "填写 DESCRIPTION 文件",
+    "text": "填写 DESCRIPTION 文件\n在 DESCRIPTION 文件中填入包的基本信息。\n如果R包需要引入外部 package，需要在文件中加入 Imports 依赖，这里我们编写的函数需要引入 tidyverse 和 tidytext 两个包。\n\nPackage: myutils\nType: Package\nTitle: What the Package Does (Title Case)\nVersion: 0.1.0\nAuthor: Who wrote it\nMaintainer: The package maintainer <yourself@somewhere.net>\nDescription: More about what it does (maybe more than one line)\n    Use four spaces when indenting paragraphs within the Description.\nLicense: What license is it under?\nEncoding: UTF-8\nLazyData: true # 包中如果含有数据集，true 表示 library() 不加载数据集，使用到数据集时才加载\nImports: \n    tidyverse,\n    tidytext"
   }
 ]

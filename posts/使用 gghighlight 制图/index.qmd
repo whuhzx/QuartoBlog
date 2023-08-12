@@ -23,7 +23,7 @@ library(hrbrthemes)
 jisu_apps <- readxl::read_xlsx("QM数据.xlsx", sheet = 3) 
 ```
 
-jisu_apps数据集中是不同极速版App的月活变化数据。
+jisu_apps 数据集中是不同极速版 App 的月活变化数据。
 
 ```{r}
 knitr::kable(head(jisu_apps))
@@ -42,7 +42,7 @@ knitr::kable(head(jisu_apps_long))
 
 ## 使用 gghighlight 制图
 
-其实整个pacakge里主要使用的就是`gghighlight()`函数。
+其实整个pacakge里主要使用的就是 `gghighlight()` 函数。
 
 先看没有高亮任一线条的样子。
 
@@ -53,7 +53,7 @@ jisu_apps_long %>%
   theme_ipsum(base_family = "PingFang SC")
 ```
 
-再来高亮指定名称的线条。其中`label_params`主要用来调整高亮线条的名称样式，参数和`geom_label_repel`一致。
+再来高亮指定名称的线条。其中`label_params` 主要用来调整高亮线条的名称样式，参数和 `geom_label_repel` 一致。
 
 ```{r}
 jisu_apps_long %>%
@@ -63,7 +63,7 @@ jisu_apps_long %>%
   theme_ipsum(base_family = "PingFang SC")
 ```
 
-线条名称可以改用图例的形式，而不直接在线条结尾处展现标签。这里需使用`use_direct_label`参数。
+线条名称可以改用图例的形式，而不直接在线条结尾处展现标签。这里需使用 `use_direct_label` 参数。
 
 ```{r}
 jisu_apps_long %>%
@@ -73,7 +73,7 @@ jisu_apps_long %>%
   theme_ipsum(base_family = "PingFang SC")
 ```
 
-还可以使用函数筛选需要高亮的线条。例如通过`max(月活) > 10000`筛选出月活过亿的应用。
+还可以使用函数筛选需要高亮的线条。例如通过 `max(月活) > 10000` 筛选出月活过亿的应用。
 
 ```{r}
 jisu_apps_long %>%
@@ -83,7 +83,7 @@ jisu_apps_long %>%
   theme_ipsum(base_family = "PingFang SC")
 ```
 
-结合`max_highlight`参数，指定高亮的最大线条数。
+结合 `max_highlight` 参数，指定高亮的最大线条数。
 
 ```{r}
 jisu_apps_long %>%
@@ -93,10 +93,9 @@ jisu_apps_long %>%
   theme_ipsum(base_family = "PingFang SC")
 ```
 
-如果有更细粒度的需求，例如2023年月活最高的三个应用，则无法通过`gghighlight()`内置参数直接实现，需要先计算得到这三个应用的名称。
+如果有更细粒度的需求，例如 2023 年月活最高的三个应用，则无法通过 `gghighlight()` 内置参数直接实现，需要先计算得到这三个应用的名称。
 
 ```{r}
-
 top3_app_names <- jisu_apps_long %>%
   filter(lubridate::year(时间) == 2023) %>%
   group_by(应用) %>%
