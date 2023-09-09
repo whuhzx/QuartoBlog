@@ -4,7 +4,7 @@
     "href": "posts/常用包和函数汇总/index.html",
     "title": "R 常用包和函数汇总",
     "section": "",
-    "text": "列名清洗: janitor::clean_names()，将命名不一致的列名统一规范化"
+    "text": "数据集摘要：gtExtras::gt_plt_summary()，展现每个变量的描述性统计指标，并用可视化的方式展现变量的分布。\n\n\n\n列名清洗: janitor::clean_names()，将命名不一致的列名统一规范化。"
   },
   {
     "objectID": "posts/常用包和函数汇总/index.html#数据可视化",
@@ -130,7 +130,7 @@
     "href": "index.html",
     "title": "Boyce’s Blog",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\nQuarto 常用语法汇总\n\n\n\n\n\n\n\nQuarto\n\n\n清单\n\n\n\n\n\n\n\n\n\n\n\nAug 12, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n利用 ChatGPT 编写简单 R 包\n\n\n\n\n\n\n\nR\n\n\nChatGPT\n\n\nGithub\n\n\n\n\n\n\n\n\n\n\n\nAug 12, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n使用 gghighlight 制图\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nAug 6, 2023\n\n\nBoyce\n\n\n\n\n\n\n  \n\n\n\n\n使用 geom_ribbon 给双折线区间填充颜色\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nAug 4, 2023\n\n\nBoyce\n\n\n\n\n\n\n  \n\n\n\n\n在 Github 上部署 Quarto 的静态网页\n\n\n\n\n\n\n\nGithub\n\n\nQuarto\n\n\n\n\n\n\n\n\n\n\n\nMar 5, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nR 常用包和函数汇总\n\n\n\n\n\n\n\nR\n\n\n清单\n\n\n\n\n\n\n\n\n\n\n\nMar 4, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nhrbrthemes：最好用的 ggplot 主题扩展包\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nFeb 25, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n使用 ggalluvial 制作桑基图和凹凸图\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nFeb 23, 2023\n\n\nBoyce\n\n\n\n\n\n\n  \n\n\n\n\n使用 waffle package 制作华夫饼图\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nDec 7, 2022\n\n\nBoyce\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n文本可视化的一种方式：词语在两个数据集中的排名对比\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nSep 9, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuarto 常用语法汇总\n\n\n\n\n\n\n\nQuarto\n\n\n清单\n\n\n\n\n\n\n\n\n\n\n\nAug 12, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n利用 ChatGPT 编写简单 R 包\n\n\n\n\n\n\n\nR\n\n\nChatGPT\n\n\nGithub\n\n\n\n\n\n\n\n\n\n\n\nAug 12, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n使用 gghighlight 制图\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nAug 6, 2023\n\n\nBoyce\n\n\n\n\n\n\n  \n\n\n\n\n使用 geom_ribbon 给双折线区间填充颜色\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nAug 4, 2023\n\n\nBoyce\n\n\n\n\n\n\n  \n\n\n\n\n在 Github 上部署 Quarto 的静态网页\n\n\n\n\n\n\n\nGithub\n\n\nQuarto\n\n\n\n\n\n\n\n\n\n\n\nMar 5, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nR 常用包和函数汇总\n\n\n\n\n\n\n\nR\n\n\n清单\n\n\n\n\n\n\n\n\n\n\n\nMar 4, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nhrbrthemes：最好用的 ggplot 主题扩展包\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nFeb 25, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n使用 ggalluvial 制作桑基图和凹凸图\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nFeb 23, 2023\n\n\nBoyce\n\n\n\n\n\n\n  \n\n\n\n\n使用 waffle package 制作华夫饼图\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nDec 7, 2022\n\n\nBoyce\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -369,5 +369,33 @@
     "title": "利用 ChatGPT 编写简单 R 包",
     "section": "填写 DESCRIPTION 文件",
     "text": "填写 DESCRIPTION 文件\n在 DESCRIPTION 文件中填入包的基本信息。\n如果R包需要引入外部 package，需要在文件中加入 Imports 依赖，这里我们编写的函数需要引入 tidyverse 和 tidytext 两个包。\n\nPackage: myutils\nType: Package\nTitle: What the Package Does (Title Case)\nVersion: 0.1.0\nAuthor: Who wrote it\nMaintainer: The package maintainer <yourself@somewhere.net>\nDescription: More about what it does (maybe more than one line)\n    Use four spaces when indenting paragraphs within the Description.\nLicense: What license is it under?\nEncoding: UTF-8\nLazyData: true # 包中如果含有数据集，true 表示 library() 不加载数据集，使用到数据集时才加载\nImports: \n    tidyverse,\n    tidytext"
+  },
+  {
+    "objectID": "posts/文本可视化的一种方式：词语在两个数据集中的排名对比/index.html",
+    "href": "posts/文本可视化的一种方式：词语在两个数据集中的排名对比/index.html",
+    "title": "文本可视化的一种方式：词语在两个数据集中的排名对比",
+    "section": "",
+    "text": "文本是社交媒体上最易获得的数据，但可视化形式却相对单一，基本上是词云一招鲜。\n这背后其实更多是分析思路的问题，即不考虑其他维度（时间、关系、分类等），把所有文本一视同仁，简单粗暴地进行分词后做成词云。\n而引入对比的视角，不仅可以打开分析思路，还能让文本数据的表现形式更加丰富。\n举个例子，当我们想分析短视频平台上”村BA”比赛评论的特色时，可以引入对比，即比较”村BA”和 NBA 评论的区别，进而提炼出”村BA”运动的特色，这会比单独分析”村BA”会更加有趣。"
+  },
+  {
+    "objectID": "posts/文本可视化的一种方式：词语在两个数据集中的排名对比/index.html#包引入",
+    "href": "posts/文本可视化的一种方式：词语在两个数据集中的排名对比/index.html#包引入",
+    "title": "文本可视化的一种方式：词语在两个数据集中的排名对比",
+    "section": "包引入",
+    "text": "包引入\n\nlibrary(tidyverse)\nlibrary(hrbrthemes)\nlibrary(gghighlight)\nlibrary(readxl)"
+  },
+  {
+    "objectID": "posts/文本可视化的一种方式：词语在两个数据集中的排名对比/index.html#数据引入和清洗",
+    "href": "posts/文本可视化的一种方式：词语在两个数据集中的排名对比/index.html#数据引入和清洗",
+    "title": "文本可视化的一种方式：词语在两个数据集中的排名对比",
+    "section": "数据引入和清洗",
+    "text": "数据引入和清洗\n先从 NBA 和”村BA”相关短视频中各随机选取 50 万条评论，分词后筛选出词频最高的 1000 个词。\n\ncomments_word_top1000 <- read_xlsx(\"comments_word_top1000.xlsx\")\n\nknitr::kable(head(comments_word_top1000))\n\n\n\n\nsegword\nNBA\n村BA\ntotal\n\n\n\n\n赞\n175390\n222006\n397396\n\n\n玫瑰\n159561\n30730\n190291\n\n\n666\n68798\n29446\n98244\n\n\nNA\n60378\n22901\n83279\n\n\n爱心\n64769\n18192\n82961\n\n\n捂脸\n29914\n51536\n81450\n\n\n\n\n\n但这里不能直接使用词频进行对比，因为 NBA 和”村BA”两个数据集的词语数量不同，无法直接比较。因此我们改为使用排名，即单个词语在各自数据集中的排名。\n\nclean_comments_word <- comments_word_top1000 %>%\n  mutate(NBA = rank(-NBA, ties.method = \"min\"),\n         村BA = rank(-村BA, ties.method = \"min\")) %>%\n  select(-total)\n\n\nknitr::kable(head(clean_comments_word))\n\n\n\n\nsegword\nNBA\n村BA\n\n\n\n\n赞\n1\n1\n\n\n玫瑰\n2\n4\n\n\n666\n3\n5\n\n\nNA\n5\n8\n\n\n爱心\n4\n11\n\n\n捂脸\n7\n2\n\n\n\n\n\n这里使用了 rank 函数返回排名。其中 ties.method 参数表示当两个数值大小一致时采取的计算方法，默认返回均值。\n\nknitr::kable(\n  tibble(\n  origin = rank(c(1,2,3,3,4)),\n  min = rank(c(1,2,3,3,4), ties.method = \"min\"),\n  max = rank(c(1,2,3,3,4), ties.method = \"max\"))\n)\n\n\n\n\norigin\nmin\nmax\n\n\n\n\n1.0\n1\n1\n\n\n2.0\n2\n2\n\n\n3.5\n3\n4\n\n\n3.5\n3\n4\n\n\n5.0\n5\n5\n\n\n\n\n\n接下来，我们肉眼筛选出能够表达 NBA 和”村BA”各自特色的评论词语，以及能够表达两类比赛共同点的评论词语。\n\nselected_word <- c(\"詹姆斯\", \"库里\", \"欧文\", \"奥尼尔\",\"人民\",\"接地气\",\"纯粹\", \"热爱\", \"气氛\",  \"厉害\",  \"漂亮\", \"加油\", \"支持\")"
+  },
+  {
+    "objectID": "posts/文本可视化的一种方式：词语在两个数据集中的排名对比/index.html#可视化制图",
+    "href": "posts/文本可视化的一种方式：词语在两个数据集中的排名对比/index.html#可视化制图",
+    "title": "文本可视化的一种方式：词语在两个数据集中的排名对比",
+    "section": "可视化制图",
+    "text": "可视化制图\n为了对比这些词语在两个数据集中的排位差距，可以采用类折线图的可视化形式。\n\nclean_comments_word %>%\n  filter(segword %in% selected_word) %>%\n  pivot_longer(cols = c(\"NBA\", \"村BA\"), names_to = \"type\", values_to = \"n\") %>%\n  ggplot(aes(x = type, y = n)) +\n  geom_line(aes(group = segword)) +\n  geom_text(aes(label = segword), family = \"PingFang SC\") +\n  labs(x = \"\", y = \"评论词排名\") +\n  scale_y_reverse() + # 翻转纵坐标轴，排名高的放在上面比较合理\n  hrbrthemes::theme_ipsum(base_family = \"PingFang SC\", grid = \"XY\")\n\n\n\n\n如前所述（也可从图中直观看见），我们可以将这些词语大致分为三类。接着，我们根据词语在两个数据集中的排名差距（以300为界）分成三类，再通过分面的可视化形式展示各自的特点。\n\nclean_comments_word %>%\n  filter(segword %in% selected_word) %>%\n  mutate(facet = case_when(\n    NBA - 村BA >= 300 ~ \"村BA\\n纯粹热爱\",\n    NBA - 村BA <= -300 ~ \"NBA\\n召唤英雄\",\n    .default = \"共同点\\n为体育喝彩\"\n  )) %>%\n  pivot_longer(cols = c(\"NBA\", \"村BA\"), names_to = \"type\", values_to = \"n\") %>%\n  ggplot(aes(x = type, y = n)) +\n  geom_line(aes(group = segword)) +\n  gghighlight(use_direct_label = FALSE) +\n  geom_text(aes(label = segword), family = \"PingFang SC\") +\n  labs(x = \"\", y = \"评论词排名\") +\n  scale_y_reverse() + # 翻转纵坐标轴，排名高的放在上面比较合理\n  facet_wrap(~facet) +\n  hrbrthemes::theme_ipsum(base_family = \"PingFang SC\", grid = \"XY\")\n\n\n\n\n到这里，图表雏形已经出来了。但还有两个地方可以改进，一是词语的文本会在左右两轴同时出现，太过冗余，现在想要让词语在哪个数据集中排位高，就出现在哪边；二是起始坐标轴应该为 1 而不是 0。\n\nclean_comments_word %>%\n  filter(segword %in% selected_word) %>%\n  mutate(facet = case_when(\n    NBA - 村BA >= 300 ~ \"村BA\\n纯粹热爱\",\n    NBA - 村BA <= -300 ~ \"NBA\\n召唤英雄\",\n    .default = '共同点\\n为体育喝彩'\n  )) %>%\n  # 设置过滤，返回排名高的数据集名称\n  mutate(text_filter = ifelse(NBA >= 村BA, \"村BA\", \"NBA\")) %>%\n  pivot_longer(cols = c(\"NBA\", \"村BA\"), names_to = \"type\", values_to = \"n\") %>%\n  ggplot(aes(x = type, y = n)) +\n  geom_line(aes(group = segword)) +\n  gghighlight(use_direct_label = FALSE) +\n  # 利用之前设置的过滤条件\n  geom_text(data = . %>% filter(type == text_filter),\n            aes(label = segword), family = \"PingFang SC\") +\n  labs(x = \"\", y = \"评论词排名\") +\n  # 手动设置纵坐标轴\n  scale_y_reverse(breaks = c(1,250, 500, 750, 1000), labels = c(1,250, 500, 750, 1000)) +\n  facet_wrap(~facet) +\n  hrbrthemes::theme_ipsum(base_family = \"PingFang SC\", grid = \"XY\")\n\n\n\n\n到此大功告成，如果有需要，还可在设计软件中进一步调整。"
   }
 ]

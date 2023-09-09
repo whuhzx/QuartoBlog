@@ -7,11 +7,16 @@ execute:
   eval: false
 ---
 
-## 数据清洗
+## 数据摘要和清洗
+
+### gtExtras
+
+数据集摘要：`gtExtras::gt_plt_summary()`，展现每个变量的描述性统计指标，并用可视化的方式展现变量的分布。
 
 ### janitor
 
-列名清洗: `janitor::clean_names()`，将命名不一致的列名统一规范化
+列名清洗： `janitor::clean_names()`，将命名不一致的列名统一规范化。
+
 
 ## 数据可视化
 

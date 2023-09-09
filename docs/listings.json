@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/文本可视化的一种方式：词语在两个数据集中的排名对比/index.html",
       "/posts/Quarto 常用语法汇总/index.html",
       "/posts/利用 ChatGPT 编写简单 R 包/index.html",
       "/posts/使用 gghighlight 制图/index.html",
