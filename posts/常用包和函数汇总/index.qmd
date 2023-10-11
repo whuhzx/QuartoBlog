@@ -18,15 +18,7 @@ execute:
 列名清洗： `janitor::clean_names()`，将命名不一致的列名统一规范化。
 
 
-## 数据可视化
-
-### hrbrthemes
-
-ggplot 主题风格拓展，使用方法可见 [hrbrthemes：最好用的 ggplot 主题扩展包](https://whuhzx.github.io/QuartoBlog/posts/hrbrthemes%EF%BC%9A%E6%9C%80%E5%A5%BD%E7%94%A8%E7%9A%84ggplot%E4%B8%BB%E9%A2%98%E6%89%A9%E5%B1%95%E5%8C%85/)。
-
-### gghighlight
-
-帮助高亮图表，使用方法可见[使用 gghighlight 制图](https://whuhzx.github.io/QuartoBlog/posts/%E4%BD%BF%E7%94%A8%20gghighlight%20%E5%88%B6%E5%9B%BE/)。
+## 数据图表
 
 ### waffle
 
@@ -38,7 +30,31 @@ ggplot 主题风格拓展，使用方法可见 [hrbrthemes：最好用的 ggplot
 
 ### ggwordcloud
 
-用 ggplot 语法绘制词云，使用方法可见[ggwordcloud: a word cloud geom for ggplot2](https://cran.r-project.org/web/packages/ggwordcloud/vignettes/ggwordcloud.html)及[R Charts: Word cloud in ggplot2 with ggwordcloud](https://r-charts.com/ranking/ggwordcloud/)。
+用 ggplot 语法绘制词云，使用方法可见 [ggwordcloud: a word cloud geom for ggplot2](https://cran.r-project.org/web/packages/ggwordcloud/vignettes/ggwordcloud.html) 及 [R Charts: Word cloud in ggplot2 with ggwordcloud](https://r-charts.com/ranking/ggwordcloud/)。
+
+## 字体处理
+
+### systemfonts 和 showtext
+
+在作图时找到中文字体对应的英文名，并渲染中文字体，使用方法可见[作图时如何正确渲染中文字体](https://whuhzx.github.io/QuartoBlog/posts/%E4%BD%9C%E5%9B%BE%E6%97%B6%E5%A6%82%E4%BD%95%E6%AD%A3%E7%A1%AE%E6%B8%B2%E6%9F%93%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93/)。
+
+### ggtext
+
+在 ggplot2 中，提供了额外的富文本使用方法（例如HTML和CSS格式的文本），可以更加灵活地格式化标签、标题和其他文本，用法可见[文档](https://github.com/wilkelab/ggtext)。
+
+### ggfittext
+
+可以自动调整文本大小，以适应图形布局，当需要处理密集的图形和标签时较为有用。用法可见[文档](https://wilkox.org/ggfittext)。
+
+## 其他数据可视化组件
+
+### hrbrthemes
+
+ggplot 主题风格拓展，使用方法可见 [hrbrthemes：最好用的 ggplot 主题扩展包](https://whuhzx.github.io/QuartoBlog/posts/hrbrthemes%EF%BC%9A%E6%9C%80%E5%A5%BD%E7%94%A8%E7%9A%84ggplot%E4%B8%BB%E9%A2%98%E6%89%A9%E5%B1%95%E5%8C%85/)。
+
+### gghighlight
+
+帮助高亮图表，使用方法可见[使用 gghighlight 制图](https://whuhzx.github.io/QuartoBlog/posts/%E4%BD%BF%E7%94%A8%20gghighlight%20%E5%88%B6%E5%9B%BE/)。
 
 ### patchwork
 

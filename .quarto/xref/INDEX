@@ -46,5 +46,8 @@
   },
   "posts/文本可视化的一种方式：词语在两个数据集中的排名对比/index.qmd": {
     "index.html": "b2bcb59e"
+  },
+  "posts/作图时如何正确渲染中文字体/index.qmd": {
+    "index.html": "4d2fb77d"
   }
 }

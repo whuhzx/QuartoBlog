@@ -4,7 +4,7 @@
     "href": "posts/常用包和函数汇总/index.html",
     "title": "R 常用包和函数汇总",
     "section": "",
-    "text": "数据集摘要：gtExtras::gt_plt_summary()，展现每个变量的描述性统计指标，并用可视化的方式展现变量的分布。\n\n\n\n列名清洗: janitor::clean_names()，将命名不一致的列名统一规范化。"
+    "text": "数据集摘要：gtExtras::gt_plt_summary()，展现每个变量的描述性统计指标，并用可视化的方式展现变量的分布。\n\n\n\n列名清洗： janitor::clean_names()，将命名不一致的列名统一规范化。"
   },
   {
     "objectID": "posts/常用包和函数汇总/index.html#数据可视化",
@@ -130,7 +130,7 @@
     "href": "index.html",
     "title": "Boyce’s Blog",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n文本可视化的一种方式：词语在两个数据集中的排名对比\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nSep 9, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuarto 常用语法汇总\n\n\n\n\n\n\n\nQuarto\n\n\n清单\n\n\n\n\n\n\n\n\n\n\n\nAug 12, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n利用 ChatGPT 编写简单 R 包\n\n\n\n\n\n\n\nR\n\n\nChatGPT\n\n\nGithub\n\n\n\n\n\n\n\n\n\n\n\nAug 12, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n使用 gghighlight 制图\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nAug 6, 2023\n\n\nBoyce\n\n\n\n\n\n\n  \n\n\n\n\n使用 geom_ribbon 给双折线区间填充颜色\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nAug 4, 2023\n\n\nBoyce\n\n\n\n\n\n\n  \n\n\n\n\n在 Github 上部署 Quarto 的静态网页\n\n\n\n\n\n\n\nGithub\n\n\nQuarto\n\n\n\n\n\n\n\n\n\n\n\nMar 5, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nR 常用包和函数汇总\n\n\n\n\n\n\n\nR\n\n\n清单\n\n\n\n\n\n\n\n\n\n\n\nMar 4, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nhrbrthemes：最好用的 ggplot 主题扩展包\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nFeb 25, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n使用 ggalluvial 制作桑基图和凹凸图\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nFeb 23, 2023\n\n\nBoyce\n\n\n\n\n\n\n  \n\n\n\n\n使用 waffle package 制作华夫饼图\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nDec 7, 2022\n\n\nBoyce\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n作图时如何正确渲染中文字体\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nOct 11, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n文本可视化的一种方式：词语在两个数据集中的排名对比\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nSep 9, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuarto 常用语法汇总\n\n\n\n\n\n\n\nQuarto\n\n\n清单\n\n\n\n\n\n\n\n\n\n\n\nAug 12, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n利用 ChatGPT 编写简单 R 包\n\n\n\n\n\n\n\nR\n\n\nChatGPT\n\n\nGithub\n\n\n\n\n\n\n\n\n\n\n\nAug 12, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n使用 gghighlight 制图\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nAug 6, 2023\n\n\nBoyce\n\n\n\n\n\n\n  \n\n\n\n\n使用 geom_ribbon 给双折线区间填充颜色\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nAug 4, 2023\n\n\nBoyce\n\n\n\n\n\n\n  \n\n\n\n\n在 Github 上部署 Quarto 的静态网页\n\n\n\n\n\n\n\nGithub\n\n\nQuarto\n\n\n\n\n\n\n\n\n\n\n\nMar 5, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nR 常用包和函数汇总\n\n\n\n\n\n\n\nR\n\n\n清单\n\n\n\n\n\n\n\n\n\n\n\nMar 4, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nhrbrthemes：最好用的 ggplot 主题扩展包\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nFeb 25, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n使用 ggalluvial 制作桑基图和凹凸图\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nFeb 23, 2023\n\n\nBoyce\n\n\n\n\n\n\n  \n\n\n\n\n使用 waffle package 制作华夫饼图\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nDec 7, 2022\n\n\nBoyce\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -397,5 +397,40 @@
     "title": "文本可视化的一种方式：词语在两个数据集中的排名对比",
     "section": "可视化制图",
     "text": "可视化制图\n为了对比这些词语在两个数据集中的排位差距，可以采用类折线图的可视化形式。\n\nclean_comments_word %>%\n  filter(segword %in% selected_word) %>%\n  pivot_longer(cols = c(\"NBA\", \"村BA\"), names_to = \"type\", values_to = \"n\") %>%\n  ggplot(aes(x = type, y = n)) +\n  geom_line(aes(group = segword)) +\n  geom_text(aes(label = segword), family = \"PingFang SC\") +\n  labs(x = \"\", y = \"评论词排名\") +\n  scale_y_reverse() + # 翻转纵坐标轴，排名高的放在上面比较合理\n  hrbrthemes::theme_ipsum(base_family = \"PingFang SC\", grid = \"XY\")\n\n\n\n\n如前所述（也可从图中直观看见），我们可以将这些词语大致分为三类。接着，我们根据词语在两个数据集中的排名差距（以300为界）分成三类，再通过分面的可视化形式展示各自的特点。\n\nclean_comments_word %>%\n  filter(segword %in% selected_word) %>%\n  mutate(facet = case_when(\n    NBA - 村BA >= 300 ~ \"村BA\\n纯粹热爱\",\n    NBA - 村BA <= -300 ~ \"NBA\\n召唤英雄\",\n    .default = \"共同点\\n为体育喝彩\"\n  )) %>%\n  pivot_longer(cols = c(\"NBA\", \"村BA\"), names_to = \"type\", values_to = \"n\") %>%\n  ggplot(aes(x = type, y = n)) +\n  geom_line(aes(group = segword)) +\n  gghighlight(use_direct_label = FALSE) +\n  geom_text(aes(label = segword), family = \"PingFang SC\") +\n  labs(x = \"\", y = \"评论词排名\") +\n  scale_y_reverse() + # 翻转纵坐标轴，排名高的放在上面比较合理\n  facet_wrap(~facet) +\n  hrbrthemes::theme_ipsum(base_family = \"PingFang SC\", grid = \"XY\")\n\n\n\n\n到这里，图表雏形已经出来了。但还有两个地方可以改进，一是词语的文本会在左右两轴同时出现，太过冗余，现在想要让词语在哪个数据集中排位高，就出现在哪边；二是起始坐标轴应该为 1 而不是 0。\n\nclean_comments_word %>%\n  filter(segword %in% selected_word) %>%\n  mutate(facet = case_when(\n    NBA - 村BA >= 300 ~ \"村BA\\n纯粹热爱\",\n    NBA - 村BA <= -300 ~ \"NBA\\n召唤英雄\",\n    .default = '共同点\\n为体育喝彩'\n  )) %>%\n  # 设置过滤，返回排名高的数据集名称\n  mutate(text_filter = ifelse(NBA >= 村BA, \"村BA\", \"NBA\")) %>%\n  pivot_longer(cols = c(\"NBA\", \"村BA\"), names_to = \"type\", values_to = \"n\") %>%\n  ggplot(aes(x = type, y = n)) +\n  geom_line(aes(group = segword)) +\n  gghighlight(use_direct_label = FALSE) +\n  # 利用之前设置的过滤条件\n  geom_text(data = . %>% filter(type == text_filter),\n            aes(label = segword), family = \"PingFang SC\") +\n  labs(x = \"\", y = \"评论词排名\") +\n  # 手动设置纵坐标轴\n  scale_y_reverse(breaks = c(1,250, 500, 750, 1000), labels = c(1,250, 500, 750, 1000)) +\n  facet_wrap(~facet) +\n  hrbrthemes::theme_ipsum(base_family = \"PingFang SC\", grid = \"XY\")\n\n\n\n\n到此大功告成，如果有需要，还可在设计软件中进一步调整。"
+  },
+  {
+    "objectID": "posts/作图时如何正确渲染中文字体/index.html",
+    "href": "posts/作图时如何正确渲染中文字体/index.html",
+    "title": "作图时如何正确渲染中文字体",
+    "section": "",
+    "text": "在 RStudio 中使用 ggplot 作图时，常常需要指定中文字体，但是 ggplot 无法识别字体的中文名称。\n在 MacOS 下又没有一个简便的方式可以查到阿里普惠体、字制区喜脉体等中文字体对应的英文名。在网上查询也不方便且不可靠，因为字体安装的来源不同，英文名也可能不一样。\n后来发现使用 systemfonts 包可以很方便地解决这个问题。安装包后，使用 system_fonts() 函数 会返回一个表格。表格中有系统下所有已安装的字体名称、字体文件路径、字体家族、字重等等信息，很容易就可以通过筛选功能找到自己所需要的字体名称。\n\nlibrary(systemfonts)\nknitr::kable(head(system_fonts()))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\npath\nindex\nname\nfamily\nstyle\nweight\nwidth\nitalic\nmonospace\n\n\n\n\n/System/Library/Fonts/Supplemental/Shree714.ttc\n1\nShreeDev0714-Bold\nShree Devanagari 714\nBold\nbold\nnormal\nFALSE\nFALSE\n\n\n/System/Library/Fonts/Supplemental/Muna.ttc\n0\nMuna\nMuna\nRegular\nnormal\nnormal\nFALSE\nFALSE\n\n\n/System/Library/Fonts/Supplemental/Academy Engraved LET Fonts.ttf\n0\nAcademyEngravedLetPlain\nAcademy Engraved LET\nPlain\nnormal\nnormal\nFALSE\nFALSE\n\n\n/System/Library/Fonts/Supplemental/Impact.ttf\n0\nImpact\nImpact\nRegular\nheavy\nsemicondensed\nFALSE\nFALSE\n\n\n/System/Library/AssetsV2/com_apple_MobileAsset_Font7/ad8c3bb76851adc11dc4772c1a7a00caf83e3037.asset/AssetData/Ornanong.ttc\n1\nPSLOrnanongPro-Italic\nPSL Ornanong Pro\nItalic\nnormal\nnormal\nTRUE\nFALSE\n\n\n/System/Library/AssetsV2/com_apple_MobileAsset_Font7/5a3fc034b64879656271c040cab38b65d4ea6548.asset/AssetData/LiSongPro.ttf\n0\nLiSongPro\nLiSong Pro\nLight\nlight\nnormal\nFALSE\nFALSE\n\n\n\n\n\n经查询，阿里普惠体在本地的英文名为 Alibaba-PuHuiTi-R。\n但在有些情况下，使用 ggplot 时可以正常显示字体，当需要将其保存为 pdf、svg 等文件格式时，会出现无法成功渲染字体的报错。这时候就需要使用 showtext 包来处理，具体使用方法可见文档。\n\nlibrary(showtext)\n\n# 打开开关，打开后默认使用 showtext 渲染字体\nshowtext_auto()\n\n# 加载字体，family参数为自定义的字体名称，路径为本地字体文件 .ttf 的路径\nfont_add(family = \"PuHuiTi\", regular = \"/Library/Fonts/Alibaba-PuHuiTi-Regular.ttf\")\n\n# 使用字体时，直接填入之前自定义的字体 PuHuiTi\ndf %>%\n  ggplot(aes(x = n, y = hetu)) +\n  geom_col() +\n  theme_ipsum(base_family = \"PuHuiTi\") +\n  ggsave(\"plot.svg\")\n\n# 关闭开关\nshowtext_auto(enable = FALSE)\n\n但这样的方法也有很大的问题：特别是在以 svg 格式保存后，这时设计软件中所有的字体都变成了路径，也就没有了字体的属性，即无法再改成别的字体，或者调整字号、字重等。"
+  },
+  {
+    "objectID": "posts/作图时如何正确渲染中文字体/index.html#相关资源",
+    "href": "posts/作图时如何正确渲染中文字体/index.html#相关资源",
+    "title": "作图时如何正确渲染中文字体",
+    "section": "相关资源",
+    "text": "相关资源\n\nSystemfonts Github Pages\nshowtext: Using Fonts More Easily in R Graphs"
+  },
+  {
+    "objectID": "posts/常用包和函数汇总/index.html#数据图表",
+    "href": "posts/常用包和函数汇总/index.html#数据图表",
+    "title": "R 常用包和函数汇总",
+    "section": "数据图表",
+    "text": "数据图表\n\nwaffle\n华夫饼图绘制包，使用方法可见使用 waffle package 制作华夫饼图。\n\n\nggalluvial\n桑基图和凹凸图绘制包，使用方法可见使用 ggalluvial 制作桑基图和凹凸图。\n\n\nggwordcloud\n用 ggplot 语法绘制词云，使用方法可见 ggwordcloud: a word cloud geom for ggplot2 及 R Charts: Word cloud in ggplot2 with ggwordcloud。"
+  },
+  {
+    "objectID": "posts/常用包和函数汇总/index.html#字体处理",
+    "href": "posts/常用包和函数汇总/index.html#字体处理",
+    "title": "R 常用包和函数汇总",
+    "section": "字体处理",
+    "text": "字体处理\n\nsystemfonts 和 showtext\n在作图时找到中文字体对应的英文名，并渲染中文字体，使用方法可见作图时如何正确渲染中文字体。\n\n\nggtext\n在 ggplot2 中，提供了额外的富文本使用方法（例如HTML和CSS格式的文本），可以更加灵活地格式化标签、标题和其他文本，用法可见文档。\n\n\nggfittext\n可以自动调整文本大小，以适应图形布局，当需要处理密集的图形和标签时较为有用。用法可见文档。"
+  },
+  {
+    "objectID": "posts/常用包和函数汇总/index.html#其他数据可视化组件",
+    "href": "posts/常用包和函数汇总/index.html#其他数据可视化组件",
+    "title": "R 常用包和函数汇总",
+    "section": "其他数据可视化组件",
+    "text": "其他数据可视化组件\n\nhrbrthemes\nggplot 主题风格拓展，使用方法可见 hrbrthemes：最好用的 ggplot 主题扩展包。\n\n\ngghighlight\n帮助高亮图表，使用方法可见使用 gghighlight 制图。\n\n\npatchwork\n快速组合不同图表：p1 + p2。使用方法详见教程。"
   }
 ]

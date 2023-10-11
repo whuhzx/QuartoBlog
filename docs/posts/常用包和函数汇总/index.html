@@ -141,13 +141,22 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#gtextras" id="toc-gtextras" class="nav-link" data-scroll-target="#gtextras">gtExtras</a></li>
   <li><a href="#janitor" id="toc-janitor" class="nav-link" data-scroll-target="#janitor">janitor</a></li>
   </ul></li>
-  <li><a href="#数据可视化" id="toc-数据可视化" class="nav-link" data-scroll-target="#数据可视化">数据可视化</a>
+  <li><a href="#数据图表" id="toc-数据图表" class="nav-link" data-scroll-target="#数据图表">数据图表</a>
   <ul class="collapse">
-  <li><a href="#hrbrthemes" id="toc-hrbrthemes" class="nav-link" data-scroll-target="#hrbrthemes">hrbrthemes</a></li>
-  <li><a href="#gghighlight" id="toc-gghighlight" class="nav-link" data-scroll-target="#gghighlight">gghighlight</a></li>
   <li><a href="#waffle" id="toc-waffle" class="nav-link" data-scroll-target="#waffle">waffle</a></li>
   <li><a href="#ggalluvial" id="toc-ggalluvial" class="nav-link" data-scroll-target="#ggalluvial">ggalluvial</a></li>
   <li><a href="#ggwordcloud" id="toc-ggwordcloud" class="nav-link" data-scroll-target="#ggwordcloud">ggwordcloud</a></li>
+  </ul></li>
+  <li><a href="#字体处理" id="toc-字体处理" class="nav-link" data-scroll-target="#字体处理">字体处理</a>
+  <ul class="collapse">
+  <li><a href="#systemfonts-和-showtext" id="toc-systemfonts-和-showtext" class="nav-link" data-scroll-target="#systemfonts-和-showtext">systemfonts 和 showtext</a></li>
+  <li><a href="#ggtext" id="toc-ggtext" class="nav-link" data-scroll-target="#ggtext">ggtext</a></li>
+  <li><a href="#ggfittext" id="toc-ggfittext" class="nav-link" data-scroll-target="#ggfittext">ggfittext</a></li>
+  </ul></li>
+  <li><a href="#其他数据可视化组件" id="toc-其他数据可视化组件" class="nav-link" data-scroll-target="#其他数据可视化组件">其他数据可视化组件</a>
+  <ul class="collapse">
+  <li><a href="#hrbrthemes" id="toc-hrbrthemes" class="nav-link" data-scroll-target="#hrbrthemes">hrbrthemes</a></li>
+  <li><a href="#gghighlight" id="toc-gghighlight" class="nav-link" data-scroll-target="#gghighlight">gghighlight</a></li>
   <li><a href="#patchwork" id="toc-patchwork" class="nav-link" data-scroll-target="#patchwork">patchwork</a></li>
   </ul></li>
   <li><a href="#其他资源" id="toc-其他资源" class="nav-link" data-scroll-target="#其他资源">其他资源</a></li>
@@ -168,19 +177,11 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="janitor" class="level3">
 <h3 class="anchored" data-anchor-id="janitor">janitor</h3>
-<p>列名清洗: <code>janitor::clean_names()</code>，将命名不一致的列名统一规范化。</p>
+<p>列名清洗： <code>janitor::clean_names()</code>，将命名不一致的列名统一规范化。</p>
 </section>
 </section>
-<section id="数据可视化" class="level2">
-<h2 class="anchored" data-anchor-id="数据可视化">数据可视化</h2>
-<section id="hrbrthemes" class="level3">
-<h3 class="anchored" data-anchor-id="hrbrthemes">hrbrthemes</h3>
-<p>ggplot 主题风格拓展，使用方法可见 <a href="https://whuhzx.github.io/QuartoBlog/posts/hrbrthemes%EF%BC%9A%E6%9C%80%E5%A5%BD%E7%94%A8%E7%9A%84ggplot%E4%B8%BB%E9%A2%98%E6%89%A9%E5%B1%95%E5%8C%85/">hrbrthemes：最好用的 ggplot 主题扩展包</a>。</p>
-</section>
-<section id="gghighlight" class="level3">
-<h3 class="anchored" data-anchor-id="gghighlight">gghighlight</h3>
-<p>帮助高亮图表，使用方法可见<a href="https://whuhzx.github.io/QuartoBlog/posts/%E4%BD%BF%E7%94%A8%20gghighlight%20%E5%88%B6%E5%9B%BE/">使用 gghighlight 制图</a>。</p>
-</section>
+<section id="数据图表" class="level2">
+<h2 class="anchored" data-anchor-id="数据图表">数据图表</h2>
 <section id="waffle" class="level3">
 <h3 class="anchored" data-anchor-id="waffle">waffle</h3>
 <p>华夫饼图绘制包，使用方法可见<a href="https://whuhzx.github.io/QuartoBlog/posts/%E4%BD%BF%E7%94%A8%20waffle%20package%20%E5%88%B6%E4%BD%9C%E5%8D%8E%E5%A4%AB%E9%A5%BC%E5%9B%BE/">使用 waffle package 制作华夫饼图</a>。</p>
@@ -191,7 +192,33 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="ggwordcloud" class="level3">
 <h3 class="anchored" data-anchor-id="ggwordcloud">ggwordcloud</h3>
-<p>用 ggplot 语法绘制词云，使用方法可见<a href="https://cran.r-project.org/web/packages/ggwordcloud/vignettes/ggwordcloud.html">ggwordcloud: a word cloud geom for ggplot2</a>及<a href="https://r-charts.com/ranking/ggwordcloud/">R Charts: Word cloud in ggplot2 with ggwordcloud</a>。</p>
+<p>用 ggplot 语法绘制词云，使用方法可见 <a href="https://cran.r-project.org/web/packages/ggwordcloud/vignettes/ggwordcloud.html">ggwordcloud: a word cloud geom for ggplot2</a> 及 <a href="https://r-charts.com/ranking/ggwordcloud/">R Charts: Word cloud in ggplot2 with ggwordcloud</a>。</p>
+</section>
+</section>
+<section id="字体处理" class="level2">
+<h2 class="anchored" data-anchor-id="字体处理">字体处理</h2>
+<section id="systemfonts-和-showtext" class="level3">
+<h3 class="anchored" data-anchor-id="systemfonts-和-showtext">systemfonts 和 showtext</h3>
+<p>在作图时找到中文字体对应的英文名，并渲染中文字体，使用方法可见<a href="https://whuhzx.github.io/QuartoBlog/posts/%E4%BD%9C%E5%9B%BE%E6%97%B6%E5%A6%82%E4%BD%95%E6%AD%A3%E7%A1%AE%E6%B8%B2%E6%9F%93%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93/">作图时如何正确渲染中文字体</a>。</p>
+</section>
+<section id="ggtext" class="level3">
+<h3 class="anchored" data-anchor-id="ggtext">ggtext</h3>
+<p>在 ggplot2 中，提供了额外的富文本使用方法（例如HTML和CSS格式的文本），可以更加灵活地格式化标签、标题和其他文本，用法可见<a href="https://github.com/wilkelab/ggtext">文档</a>。</p>
+</section>
+<section id="ggfittext" class="level3">
+<h3 class="anchored" data-anchor-id="ggfittext">ggfittext</h3>
+<p>可以自动调整文本大小，以适应图形布局，当需要处理密集的图形和标签时较为有用。用法可见<a href="https://wilkox.org/ggfittext">文档</a>。</p>
+</section>
+</section>
+<section id="其他数据可视化组件" class="level2">
+<h2 class="anchored" data-anchor-id="其他数据可视化组件">其他数据可视化组件</h2>
+<section id="hrbrthemes" class="level3">
+<h3 class="anchored" data-anchor-id="hrbrthemes">hrbrthemes</h3>
+<p>ggplot 主题风格拓展，使用方法可见 <a href="https://whuhzx.github.io/QuartoBlog/posts/hrbrthemes%EF%BC%9A%E6%9C%80%E5%A5%BD%E7%94%A8%E7%9A%84ggplot%E4%B8%BB%E9%A2%98%E6%89%A9%E5%B1%95%E5%8C%85/">hrbrthemes：最好用的 ggplot 主题扩展包</a>。</p>
+</section>
+<section id="gghighlight" class="level3">
+<h3 class="anchored" data-anchor-id="gghighlight">gghighlight</h3>
+<p>帮助高亮图表，使用方法可见<a href="https://whuhzx.github.io/QuartoBlog/posts/%E4%BD%BF%E7%94%A8%20gghighlight%20%E5%88%B6%E5%9B%BE/">使用 gghighlight 制图</a>。</p>
 </section>
 <section id="patchwork" class="level3">
 <h3 class="anchored" data-anchor-id="patchwork">patchwork</h3>
