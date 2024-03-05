@@ -49,5 +49,47 @@
   },
   "posts/作图时如何正确渲染中文字体/index.qmd": {
     "index.html": "4d2fb77d"
+  },
+  "posts/ggplot2中如何统一不同图表中类别变量的颜色/index.qmd": {
+    "index.html": "5c409190"
+  },
+  "posts/个性化搜索：google 自定义搜索引擎/index.qmd": {
+    "index.html": "75078c0c"
+  },
+  "posts/《我们是谁？大数据下的人类行为观察》读书笔记/index.qmd": {
+    "index.html": "721037be"
+  },
+  "posts/「图政」实习小记/「图政」实习小记.qmd": {
+    "「图政」实习小记.html": "182dce07"
+  },
+  "posts/全局代理方案：土行孙 + Proxifier/index.qmd": {
+    "index.html": "ca21b9ad"
+  },
+  "posts/如何有效地获取信息/index.qmd": {
+    "index.html": "52de7270"
+  },
+  "posts/新的开始/index.qmd": {
+    "index.html": "c81df656"
+  },
+  "posts/「图政」实习小记/index.qmd": {
+    "index.html": "cd078954"
+  },
+  "posts/又是找资料/index.qmd": {
+    "index.html": "56271ab7"
+  },
+  "posts/Echarts3.0使用体验/index.qmd": {
+    "index.html": "89a7a3a3"
+  },
+  "posts/Linux 学习笔记：ssh 远程免密登录/index.qmd": {
+    "index.html": "85862a5a"
+  },
+  "posts/RSS 订阅方案：Inoreader+Feed43.qmd": {
+    "RSS 订阅方案：Inoreader+Feed43.html": "8bafffaa"
+  },
+  "posts/Scrapy 学习感想及资源汇集.qmd": {
+    "Scrapy 学习感想及资源汇集.html": "bb855cab"
+  },
+  "posts/Windows 下的常用软件.qmd": {
+    "Windows 下的常用软件.html": "e09ca6fb"
   }
 }

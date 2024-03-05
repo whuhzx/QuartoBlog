@@ -1,0 +1,165 @@
+---
+title: "Linux 学习笔记：ssh 远程免密登录"
+date: "2018/01/31"
+categories: [Linux]
+execute: 
+  eval: false
+---
+
+近日在学习 Linux，虽然在 Mac OS 下 Linux 的大部分指令都可以使用，但是觉得既然准备学习 Linux，还是用原生的系统进行操作会比较好。
+
+于是尝试了一下 DigitalOcean 的 VPS ，选择的是月租 5 刀的低配套餐，主机位于洛杉矶，安装的是 CentOS。配置成功后 DigitalOcean 会将远程主机的 ip 和登录密码发送到邮箱。
+
+现在首先要做的是用自己的 Mac 登录这台远程主机，使用的方法是 ssh 登录。这里顺便把过程记录一下。
+
+## ssh 协议和原理
+
+ssh 是一种加密的网络传输协议，能够实现不同计算机之间的远程加密登录。具体内容详见参考文献中阮一峰的文章以及慕课网 Tony 老师的视频讲解。
+
+传统的加密方式是对称加密，即加密和解密需要使用同一组密码。这样造成的结果是，如果一台计算机想要把信息加密发送给对方，首先要让对方知道加密的密码，这样对方在接收到加密信息之后才能解开。但是加密的密码在传输的过程中又容易被中间人截获，因此这种方式存在着很大的风险。
+
+而 ssh 采用的是另一种非对称加密。简单来说，计算机会自动生成**一对**密匙（公钥和私钥），我们可以用其中一把进行加密，然后对方用另一把进行解密。
+
+例如 A 要向 B 发送一则加密信息，A 可以选择用自己的私钥对信息进行加密， B 则可以用 A 提供的公钥解密；另一种方式是 A 可以用 B 提供的公钥加密，B 再用自己的私钥进行解密。
+
+在整个信息传递的过程之中，A 和 B 的私钥始终都握在自己手中，只有自己知道。只要他们能够保证自己手中的私钥在本机不泄露，那么他们传递的加密信息就是安全的。
+
+我理解的原理大致是这样，接下来是登录步骤。
+
+## 登录步骤
+### 生成密钥
+如果本地主机没有密钥的话，首先需要生成一对密钥。
+
+```{r}
+ssh-keygen -t rsa
+```
+
+此时，我本地主机的`/Users/Boyce/.ssh`目录下会生成两个新文件，分别是`id_isa`和`id_rsa.pub`。其中`id_isa`是私钥，`id_rsa.pub`是公钥。
+
+### 密码登录
+
+接着用 ssh 命令登录自己的远程主机
+
+```{default}
+ssh root@host
+```
+
+这时，远程主机会把自己的公钥传送给我们, 终端会问是否要继续连接
+
+```{default}
+	$ ssh user@host
+	　　The authenticity of host 'host(***)' can't be established.
+	　　RSA key fingerprint is ***
+	　　Are you sure you want to continue connecting (yes/no)?
+```
+
+输入 yes 以后，表示同意继续连接。之后终端会让我们输入远程主机的登录密码，这段密码会以远程主机的公钥进行加密，然后传回远程主机。远程主机再用自己的私钥对其进行解密，如果解密后登录密码正确就可以进行正常连接了。
+
+连接成功后这台远程主机的公钥会被保存在本机`/Users/Boyce/.ssh/`目录下的 `known_hosts` 文件中，可以进入该目录用`vim known_host`进行查看。
+
+### 公钥免密登录
+虽然连接成功，但是如果使用这种方法，每次连接服务器都需要输入一遍登录密码，这样很麻烦。
+
+于是我们选择另外一种方法，就是把自己的公钥上传到远程主机上，这样每次我们连接远程主机的时候，远程主机都会向我们发送一段随机字符，然后我们用自己的私钥对信息进行加密发送回去，远程主机再用我们提供的公钥进行解密。
+
+这样来回一次后，如果远程主机确认信息无误，我们的计算机就可以直接登录而不需要再输入密码了。
+
+具体步骤是我们先要把自己本机上的公钥传送给远程主机，命令如下
+
+```{default}
+  ssh-copy-id root@host
+```
+
+这时终端会让我们再次输入远程主机的密码，输入成功后我们计算机上的公钥就保存在了远程主机`/root/.ssh/`目录下的`authorized_keys`文件中了。接着我们再用 ssh 命令进行登录
+
+```{default}
+	ssh root@host
+```
+
+一般情况下这样就已经能够免密直接登录了。但是终端却要我再次输入本机的私钥，
+
+```{default}
+  Enter passphrase for key /Users/Boyce/.ssh/id_rsa
+```
+
+google 之后发现原来这是 Mac Sierra 系统的问题，该版本的系统不再自动保存 ssh keys 到 keychain 中。在网上找到[两种解决方案][1]，第一种是在本机的`/Users/Boyce/.ssh/`目录下增加一个`config`配置文件；第二种方案是修改开机启动项，让电脑每次开机的时候执行更新 keychain 的操作。第一种方式试了之后发现无效，于是选择第二种方式。
+
+具体做法是首先用`ssh-add`命令把私钥添加到 keychain 中，
+
+```{default}
+	ssh-add -K /Users/Boyce/.ssh/id_rsa
+```
+
+接着进入本机开机启动项的目录`/Users/Boyce/Library/LaunchAgents`，新建一个以`.plist`为结尾的文件，例如 `addsshkeytoagent.plist`
+
+```{default}
+	cd /Users/Boyce/Library/LaunchAgents
+	vim addsshkeytoagent.plist
+```
+
+进入插入模式，把以下代码片段复制进去后保存退出。
+
+```{default}
+	<?xml version="1.0" encoding="UTF-8"?>
+	<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+	<plist version="1.0">
+	<dict>
+		<key>Label</key>
+		<string>ssh-add-a</string>
+		<key>ProgramArguments</key>
+		<array>
+			<string>ssh-add</string>
+			<string>-A</string>
+		</array>
+		<key>RunAtLoad</key>
+		<true/>
+	</dict>
+	</plist>
+	
+	<!-- @@@@LingonWhatStart:ssh-add -A@@@@LingonWhatEnd -->
+```
+
+现在就我们可以用 ssh 免密直接登录远程主机了。
+
+```{default}
+	ssh root@host
+```
+
+### 使用别名登录
+
+但是这里仍旧有一个问题，就是远程主机的 ip 地址太难记忆了。我们可以为远程主机设置一个别名，例如这台主机是在 DigitalOcean 上购买的，就姑且叫它 do 吧。
+
+首先进入`/Users/Boyce/.ssh/`目录下， 用 `vim config`在 config 文件中加入如下信息
+
+```{default}
+	Host do
+		HostName example.com
+		User  root
+```
+
+保存退出后就可以用别名登录远程主机了
+
+```{default}
+	ssh do
+```
+
+登录成功！
+
+```{default}
+	[root@Boyce_ocean ~]
+```
+
+## 参考文献
+- [阮一峰：SSH原理与运用（一）：远程登录][2]
+- [阮一峰：SSH原理与运用（二）：远程操作与端口转发][3]
+- [Tony：SSH 协议原理][4]
+- [MacOS X 终端里 SSH 会话管理][5]
+- [Saving SSH keys in macOS Sierra keychain][6]
+
+
+[1]:	https://github.com/jirsbek/SSH-keys-in-macOS-Sierra-keychain
+[2]:	http://www.ruanyifeng.com/blog/2011/12/ssh_remote_login.html
+[3]:	http://www.ruanyifeng.com/blog/2011/12/ssh_port_forwarding.html
+[4]:	https://www.imooc.com/learn/258
+[5]:	http://codelife.me/blog/2012/09/01/ssh-session-profile-management-in-terminal-of-macos-x/
+[6]:	https://github.com/jirsbek/SSH-keys-in-macOS-Sierra-keychain

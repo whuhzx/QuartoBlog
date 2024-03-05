@@ -1,0 +1,104 @@
+---
+title: "Windows 常用软件"
+date: "2015/05/25"
+tags: [工具, 清单]
+---
+
+几天前给笔记本新插了一个内存条，顺便重装了系统。联想 Y470，Windows7 系统，才用了三年，就已经慢得跑不动了。
+
+这回没用 Ghost 重装，而是去下了官方镜像。没想到系统补丁就打了足足有好几个小时。再加上重装软件，前前后后竟忙活了有三天时间。  
+
+Windows 系统其它方面还好，就是太折腾人了。发现自己近来也是愈没有心思瞎折腾，希望能够早日换上 Mac 吧。
+
+但是在此之前，还是把在 Windows 下的常用软件整理在这里。其中大多数软件本身也是跨平台的。
+
+## 浏览器
+
+### [chrome](https://www.google.com/chrome/browser/desktop/index.html)
+
+主力浏览器
+
+- 各种优秀的插件大大拓展了 Chrome 的功能，基本上任何需求都能够找到相应的插件。
+
+- 配合 Google 账号，可以在多平台上同步书签和历史记录。
+
+- 和Gmail、Youtube、Google Drive、Google Calendar 等 Google 服务构成一个完整的生态系统。
+
+- <code>F12</code>开发者工具对于前端开发很友好，调试起来相当方便。
+
+### [Firefox](https://www.mozilla.org/en-US/firefox/new/)
+
+备用浏览器。平常浏览网页一般用chrome浏览器，当需要隐藏自己的行踪时，用[Firefox + Tor](https://program-think.blogspot.com/2014/10/gfw-tor-meek.html)方案解决。
+
+
+## 网盘
+### [Dropbox](https://www.dropbox.com/downloading)
+有 2G 的免费空间。主要用于同步重要的个人资料和文件，含有个人隐私的东西放在百度云里不放心。Dropbox 在大陆被墙，需要配合科学上网工具使用，我用的 VPN 是 [Jayproxy](http://jproxy.io/)，提供 Dropbox 的代理。
+
+### [百度云](http://yun.baidu.com/cloud/download/)
+
+- 免费容量足足有 1T。
+
+- 跨平台，同步速度快，用起来挺方便。
+
+- 主要用来同步电子书、电影、课堂材料和设计素材，私人资料是不敢放里面的。
+
+### [BitTorrent](http://www.bittorrent.com/)
+
+用来同步科学上网工具，具体原理及用法详见编程随想的文章——[BT Sync：不仅是同步利器，而且是分布式网盘](https://program-think.blogspot.com/2015/01/BitTorrent-Sync.html)。
+
+
+## 代码编辑器
+
+### [Sublime Text3](http://www.sublimetext.com/3)
+
+才用了一个多月，还不太熟悉。但是到目前为止，体验十分不错。
+
+- 界面好看，跨平台。
+
+- 各种 Snippets 提高敲代码的速度。
+
+- 配合<code>Emmet</code>、<code>SidebarEnhancements</code>、<code>TernJS</code>等插件，提高生产效率。
+
+
+## 清理
+
+### [CCleaner](http://www.piriform.com/ccleaner)
+
+一款十分优秀的系统清理软件。可以清理系统的垃圾文件、注册表，也可以清理浏览器缓存、Cookies 和历史记录。
+
+
+## 密码管理
+### [Keepass](http://keepass.info/download.html)
+开源软件，跨平台。用 Keepass 之前经常被各种账号密码搅得心烦意乱。常常是注册完一个账号，密码过两天就忘。Keepass 可以帮助我们管理各个网站和应用上的账号密码。有了它，我们只要记住一个密码就够了。
+
+## 下载
+### [迅雷](http://dl.xunlei.com/)
+买了会员。虽然迅雷的安全性堪忧，但是下载速度是真快。现在还不忍舍弃。
+
+
+## 影音
+### [Potplayer](https://potplayer.daum.net/)
+
+一款优秀的视频软件。支持各种奇怪的音视频格式，字幕同步也十分给力。我主要用它来看电影、打录音稿。
+
+
+## 图片
+### [Picasa](https://picasa.google.com/)
+
+Google 家的图片管理和编辑软件。如果只是对图片进行简单处理，Picasa 就够用了。
+
+
+## 压缩
+### [7-zip](http://www.7-zip.org/)
+这没什么好说的。方便的压缩软件。
+
+
+## 其它
+### [flux](https://justgetflux.com/)
+
+一款可以调节屏幕色温的软件，据说能够保护视力。是否真正能够保护视力我不知道，但是用了之后眼睛确实不那么容易疲劳了。
+
+### [Clover](http://cn.ejie.me)
+
+Windows 资源管理器。可以将多个 Windows 窗口合并在一个页面上，就像 Chrome 同时开启多个网页一样。还可以 给Windows 窗口添加书签。用起来很方便，但是有的时候不稳定。

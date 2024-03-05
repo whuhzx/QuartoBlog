@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.475">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Boyce">
+
+<title>Boyce’s Blog - Scrapy 学习感想及资源汇集</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Boyce’s Blog</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/whuhzx"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Scrapy 学习感想及资源汇集</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">Python</div>
+                <div class="quarto-category">爬虫</div>
+                <div class="quarto-category">清单</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Boyce </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">2015/11/20</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#http-基础" id="toc-http-基础" class="nav-link active" data-scroll-target="#http-基础">HTTP 基础</a></li>
+  <li><a href="#xpath" id="toc-xpath" class="nav-link" data-scroll-target="#xpath">Xpath</a></li>
+  <li><a href="#正则表达式" id="toc-正则表达式" class="nav-link" data-scroll-target="#正则表达式">正则表达式</a></li>
+  <li><a href="#scrapy-文档" id="toc-scrapy-文档" class="nav-link" data-scroll-target="#scrapy-文档">Scrapy 文档</a></li>
+  <li><a href="#scrapy-的相关视频" id="toc-scrapy-的相关视频" class="nav-link" data-scroll-target="#scrapy-的相关视频">Scrapy 的相关视频</a></li>
+  <li><a href="#scrapy-的相关文章" id="toc-scrapy-的相关文章" class="nav-link" data-scroll-target="#scrapy-的相关文章">Scrapy 的相关文章</a></li>
+  <li><a href="#scrapy-案例" id="toc-scrapy-案例" class="nav-link" data-scroll-target="#scrapy-案例">Scrapy 案例</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<p>最近一段时间一直在学 Python，想通过 Python 来写一些有趣的小爬虫。</p>
+<p>其实就语法来说，如果有了一定的 Javascript 基础，Python 的语法学起来并不会很困难。真正困难的是怎样配置运行环境，以及怎样在遇到 bug 的时候进行有效排查。</p>
+<p>在学 Requests 库的时候尚不会觉得很吃力，因为文档的内容本身比较少，遇到问题多调试几下也就解决了。但是学习 Scrapy，对于一个像我这样的 Python 初学者而言，单单看 Scrapy 的文档还是很困难的。</p>
+<p>首先是文档本身很长，并且里面有很多生僻的概念。第一次遇到这些概念，无论是中英文都读不太懂。</p>
+<p>其次是 Scrapy 调试起来比较困难（当然是相较于 Requests 而言的），很多时候遇到问题也不知道如何解决。</p>
+<p>最后是学习 Scrapy 要涉及到很多的知识领域，而且这些都是之前自己并没有接触过的。在学的过程中会发现，原来不仅仅要学习 Python，还要学 HTTP 协议，要学习 Xpath，要学习正则表达式，甚至还要学习 Linux。</p>
+<p>我原先用的是 Windows 的开发环境，在安装以及调试的时候遇到了各种问题，好不容易安装成功却发现 Scrapy shell 无法使用。无奈之下安装了一个 VitualBox 虚拟机，在 Linux 下进行开发。</p>
+<p>虽然学习 Linux 基础也花了很多时间（慕课网上有非常好的视频教程，Tony 老师的讲得特别棒，链接<a href="http://www.imooc.com/space/teacher/id/279399">见此</a>），但是现在想起来绝对是超值。因为学 Linux 可以加深我们对计算机系统的理解。</p>
+<p>所以，一路学下来的过程还是比较坎坷的，也曾几度想要放弃，但好歹坚持下去了。虽然现在看文档还是有一大部分不能理解，但是至少是能爬点东西下来了。</p>
+<p>所以就想把自己在学习过程中遇到的好东西整理出来，以后再找起来也就没那么费力。</p>
+<section id="http-基础" class="level2">
+<h2 class="anchored" data-anchor-id="http-基础">HTTP 基础</h2>
+<ul>
+<li><a href="http://book.douban.com/subject/25863515/">图解HTTP</a> 可以了解 HTTP 协议的基础知识和概念，写得挺通俗的一本书</li>
+</ul>
+</section>
+<section id="xpath" class="level2">
+<h2 class="anchored" data-anchor-id="xpath">Xpath</h2>
+<p>用 Xpath 可以简单地进行结构化的网页数据提取</p>
+<ul>
+<li><p><a href="http://www.w3school.com.cn/xpath/">W3School 教程</a></p></li>
+<li><p><a href="http://www.jikexueyuan.com/course/902.html">极客学院：XPath 与多线程爬虫</a></p></li>
+</ul>
+</section>
+<section id="正则表达式" class="level2">
+<h2 class="anchored" data-anchor-id="正则表达式">正则表达式</h2>
+<p>当遇到比较复杂的网页内容时，可以用正则表达式进行精确地字符串匹配。但是正则学习起来还是很复杂的，到现在我也只能做简单的匹配。从视频入门可能会相对容易一些。</p>
+<ul>
+<li><p><a href="http://www.jikexueyuan.com/course/777.html">极客学院：基本的正则表达式</a></p></li>
+<li><p><a href="http://www.imooc.com/learn/550">慕课网：Python 正则表达式</a></p></li>
+<li><p><a href="http://www.cnblogs.com/huxi/archive/2010/07/04/1771073.html">Python 正则表达式指南</a></p></li>
+<li><p><a href="http://wiki.ubuntu.org.cn/Python%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97">Ubuntu：Python 正则表达式操作指南</a></p></li>
+</ul>
+</section>
+<section id="scrapy-文档" class="level2">
+<h2 class="anchored" data-anchor-id="scrapy-文档">Scrapy 文档</h2>
+<p>虽然文档很难读，但是还是最重要的参考资料</p>
+<ul>
+<li><p><a href="https://scrapy-chs.readthedocs.org/zh_CN/0.24/">中文文档0.24</a></p></li>
+<li><p><a href="http://doc.scrapy.org/en/0.24/">英文文档0.24</a></p></li>
+</ul>
+</section>
+<section id="scrapy-的相关视频" class="level2">
+<h2 class="anchored" data-anchor-id="scrapy-的相关视频">Scrapy 的相关视频</h2>
+<p>没有相关基础的话可以先从视频入手。极客学院 kingname 老师讲课的语速虽然偏慢，但是逻辑还是很清晰的。课程有提供源码，按照里面的步骤自己操作一遍，会很有收获。</p>
+<ul>
+<li><p><a href="http://www.jikexueyuan.com/course/1287.html">极客学院：定向爬虫：Scrapy初探</a></p></li>
+<li><p><a href="http://www.jikexueyuan.com/course/1439.html">极客学院：定向爬虫：MongoDB与Scrapy</a></p></li>
+<li><p><a href="http://www.jikexueyuan.com/course/1713.html">极客学院：定向爬虫：动态加载网页的爬取</a></p></li>
+</ul>
+</section>
+<section id="scrapy-的相关文章" class="level2">
+<h2 class="anchored" data-anchor-id="scrapy-的相关文章">Scrapy 的相关文章</h2>
+<p>首推 young-hz 在 CSDN 上写的系列文章，通读一遍，会对 Scrapy 的结构和运作机制有一个比较清楚的了解</p>
+<ul>
+<li><p><a href="http://blog.csdn.net/u012150179/article/details/32343635">Scrapy 研究探索（一）——基础入门</a></p></li>
+<li><p><a href="http://blog.csdn.net/u012150179/article/details/32911511">Scrapy 研究探索（二）——爬w3school.com.cn</a></p></li>
+<li><p><a href="http://blog.csdn.net/u012150179/article/details/34441655">Scrapy研究探索（三）——Scrapy核心架构与代码运行分析</a></p></li>
+<li><p><a href="http://blog.csdn.net/u012150179/article/details/34450547">Scrapy研究探索（四）——中文输出与中文保存</a></p></li>
+<li><p><a href="http://blog.csdn.net/u012150179/article/details/34486677">Scrapy研究探索（五）——自动多网页爬取（抓取某人博客所有文章）</a></p></li>
+<li><p><a href="http://blog.csdn.net/u012150179/article/details/34913315">Scrapy研究探索（六）——自动爬取网页之II（CrawlSpider）</a></p></li>
+<li><p><a href="http://blog.csdn.net/u012150179/article/details/35774323">Scrapy研究探索（七）——如何防止被ban之策略大集合</a></p></li>
+</ul>
+<p>然后还有其它一些不错的文章</p>
+<ul>
+<li><p><a href="http://www.jianshu.com/p/a8aad3bf4dc4">学习Scrapy入门</a></p></li>
+<li><p><a href="http://blog.csdn.net/pleasecallmewhy/article/details/19642329">爬虫框架Scrapy的第一个爬虫示例入门教程</a></p></li>
+<li><p><a href="http://www.jianshu.com/p/b7f41df6202d">Scrapy模拟登录</a></p></li>
+<li><p><a href="http://www.jianshu.com/p/36a39ea71bfd">Scrapy笔记—微博模拟登录及抓取微博内容</a></p></li>
+<li><p><a href="http://wuchong.me/blog/2015/05/22/running-scrapy-dynamic-and-configurable/">使用Scrapy定制可动态配置的爬虫</a></p></li>
+<li><p><a href="http://wuchong.me/blog/2015/05/22/running-scrapy-programmatically/">编程方式下运行 Scrapy spider</a></p></li>
+<li><p><a href="http://wuchong.me/blog/2015/05/22/using-redis-and-sqlalchemy-to-checkd-dup-and-store-scrapy-item/">使用Redis和SQLAlchemy对Scrapy Item去重并存储</a></p></li>
+</ul>
+</section>
+<section id="scrapy-案例" class="level2">
+<h2 class="anchored" data-anchor-id="scrapy-案例">Scrapy 案例</h2>
+<ul>
+<li><a href="https://github.com/geekan/scrapy-examples">scrapy-examples</a> github 上的开源项目，里面有知乎、豆瓣、亚马逊等十个网站的爬虫源码，可以模仿学习。</li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

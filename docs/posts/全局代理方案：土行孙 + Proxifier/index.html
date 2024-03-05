@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.475">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Boyce">
+
+<title>Boyce’s Blog - 全局代理方案：土行孙 + Proxifier</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Boyce’s Blog</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/whuhzx"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">全局代理方案：土行孙 + Proxifier</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">科学上网</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Boyce </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">2016/03/28</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#注册土行孙帐号" id="toc-注册土行孙帐号" class="nav-link active" data-scroll-target="#注册土行孙帐号">注册土行孙帐号</a></li>
+  <li><a href="#下载安装-proxifier" id="toc-下载安装-proxifier" class="nav-link" data-scroll-target="#下载安装-proxifier">下载安装 Proxifier</a></li>
+  <li><a href="#配置-proxifier" id="toc-配置-proxifier" class="nav-link" data-scroll-target="#配置-proxifier">配置 Proxifier</a>
+  <ul class="collapse">
+  <li><a href="#设置代理服务器" id="toc-设置代理服务器" class="nav-link" data-scroll-target="#设置代理服务器">设置代理服务器</a></li>
+  <li><a href="#设置代理规则" id="toc-设置代理规则" class="nav-link" data-scroll-target="#设置代理规则">设置代理规则</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<p>多数时候，科学上网的目的是为了在 Web 上浏览墙外信息，比如上 Twitter、Facebook 及各类新闻网站，而这一行为基由浏览器即可完成。</p>
+<p>所以，一般情况下，我们只要购买一个 HTTP 代理帐号，给浏览器装上插件，就可以实现自由上网。我自己使用的是<a href="https://itxs.in">土行孙</a>。</p>
+<p>但是，当需求变得复杂，比如需要让桌面上的软件也实现代理的时候，就会遇到一些困难和障碍。比如我自己就曾遇到过以下问题：</p>
+<ul>
+<li><p>墙内无法使用桌面版的 <a href="https://import.io">import.io</a> 抓取网页数据</p></li>
+<li><p>zotero 无法调用 google scholar 的 API 更新论文的被引用次数</p></li>
+<li><p>excel 无法调用 google map 的 API 获取给定地点的经纬坐标</p></li>
+</ul>
+<p>其实，不少常用软件，如 Dropbox，在「设置」或「首选项」的选项卡内都会内置有代理功能，我们只需要在相关界面内填入自己的代理服务器、帐号和密码即可实现软件代理。</p>
+<p>但是对于那些没有代理功能的软件，像上面提到的 import.io 和 zotero，我们很多时候就无能为力了。</p>
+<p>为了使用这些软件，以前我会使用<a href="https://psiphon.ca/zh/download.html">赛风</a>这样具有全局代理功能的 VPN。但是由于筑墙技术的不断进步，赛风越来越不稳定，每次用这种方法都会非常耗时费力。</p>
+<p>后来在网上寻找解决方案的时候发现了一款叫 Proxifier 的软件，惊喜地发现它不仅可以实现网络的全局代理，还可以根据自己的需要让指定的软件实现代理功能。具体步骤如下：</p>
+<section id="注册土行孙帐号" class="level2">
+<h2 class="anchored" data-anchor-id="注册土行孙帐号">注册土行孙帐号</h2>
+<p>对于常用 HTTP 代理的选择，强烈推荐<a href="https://itxs.in">土行孙</a>，它有很多优点。</p>
+<ul>
+<li><p>服务稳定。用了三个多月，唯一的一次故障通过网站自带的「服务自检」功能立刻解决了。</p></li>
+<li><p>跨平台、多设备支持。基本套餐有 20G 的流量，用完为止，不限同时在线的设备数量。</p></li>
+<li><p>智能分流。能自动识别流量，需要翻墙就走代理，不需要翻墙就直接访问。如果遇到不能识别的网站，可以手动添加网址。</p></li>
+<li><p>配置方便。除了可以很方便地代理浏览器，还可以代理终端，甚至可以配置 AnyConnect 和 Surge</p></li>
+</ul>
+<p>当然，用其它的 HTTP 代理或者 SOCKS 代理配合 Proxifier 应该也能够实现同样的功能，但是我没有试过。</p>
+</section>
+<section id="下载安装-proxifier" class="level2">
+<h2 class="anchored" data-anchor-id="下载安装-proxifier">下载安装 Proxifier</h2>
+<p><a href="https://www.proxifier.com/download.htm">下载地址</a></p>
+</section>
+<section id="配置-proxifier" class="level2">
+<h2 class="anchored" data-anchor-id="配置-proxifier">配置 Proxifier</h2>
+<section id="设置代理服务器" class="level3">
+<h3 class="anchored" data-anchor-id="设置代理服务器">设置代理服务器</h3>
+<ul>
+<li><p>点击菜单栏中的 Profile - Proxy Servers</p></li>
+<li><p>点击 Add 添加并配置代理服务器</p></li>
+<li><p>填写服务器地址（Address）和端口（Port）</p></li>
+<li><p>选择代理的协议类型，土行孙为 HTTPS</p></li>
+<li><p>在Authentication下选中 Enable</p></li>
+<li><p>填写代理的帐号（Username）密码（Password）</p></li>
+<li><p>点击确定</p></li>
+</ul>
+</section>
+<section id="设置代理规则" class="level3">
+<h3 class="anchored" data-anchor-id="设置代理规则">设置代理规则</h3>
+<ul>
+<li><p>点击设置代理规则的图标 Proxification Rules</p></li>
+<li><p>规则中有两个默认的设置，分别是 Localhost 和 Default 。如果需要实现全局代理，则将 Default 的 Action 从 Direct 改为代理服务器</p></li>
+<li><p>点击Add添加规则，在 Name 中填写规则名称，在 Applications 中添加软件的路径，最后在 Action 选中代理服务器即可</p></li>
+</ul>
+<p>现在打开应用软件，软件已经可以走代理了。日志中还可以查看到代理应用每次发起的网络请求。</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

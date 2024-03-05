@@ -1,0 +1,78 @@
+---
+title: "个性化搜索：google 自定义搜索引擎"
+date: "2015/09/26"
+categories: [工具]
+---
+
+## 背景
+
+google 的搜索语法虽然已经很强大，但是仍然无法满足我们的全部需求。
+
+如果希望能够在某些媒体的网站内搜索一个特定的议题，这就需要将**检索范围**限定在这些网站，进行**站内搜索**。但是试过各种方法后，遗憾地发现 google 并不支持多个<code>site</code>语法的组合。
+
+为什么「站内搜索」如此重要？互联网是一个很好的知识获取平台，我们可以在上面找到大多数想要知道的内容。
+
+但是正因为互联网上的信息太过海量，人很容易被淹没在如此巨大的信息流中。而且伴随着优质信息而来的是无数劣质的信息，人工筛选十分耗费精力。
+
+而「站内搜索」可以帮助精准定位，快速找到我们想要的东西。
+
+这种搜索方式适用于搜索目标非常明确，且对搜索结果的全面性要求不那么高的情况。因为使用站内搜索，在节省时间的同时也会让我们错失掉其它网站的优质信源。
+
+所以，在搜索之前，首先要考虑：我们想搜索的是什么？是否要求搜索结果非常全面？我们愿意为获取结果花费多少的时间和精力？思考清楚这些问题，再决定最佳的搜索方式。
+
+回到正题。在网上找了很久的关于多站点搜索的解决方案，无意中发现了 google 自定义搜索引擎。按照[官方文档](https://developers.google.com/custom-search/docs/overview)的描述,
+
+> Google Custom Search enables you to create a search engine for your website, your blog, or a collection of websites. 
+
+
+> There are two main use cases for Custom Search - you can create a search engine that searches only the contents of one website (site search), or you can create one that focuses on a particular topic from multiple sites.
+
+其实，它首先是一个针对网站管理者和网页开发者设立的服务。开发者可以通过设置自定义搜索引擎来优化自己的网站，为用户提供更好的站内搜索服务。
+
+但是普通用户只要注册了 google 账号也能够使用。利用它强大的多站点搜索功能，我们就可以定制自己所需要的个性化搜索了。
+
+下面是具体的使用方法。
+
+## 注册
+不用说，科学上网是必要前提，不翻墙是用不了 google 的任何服务的。之后，你还需要注册一个 google 账号。
+
+## 登陆
+打开自定义搜索引擎[页面](https://cse.google.com/cse/)，用自己的 google 账号登陆。
+
+## 添加
+
+- 点击「新增搜索引擎」
+
+- 依次填入要搜索的网站
+
+- 给搜索引擎起一个名字
+
+- 点击「创建」
+
+第二步中要理解「单个网页」、「整个网站」和「网站的某些部分」的区别，首先要理解URL，详见[此处](http://blog.csdn.net/pleasecallmewhy/article/details/8922826)。
+
+以财新网来举例，
+
+> [www.caixin.com](http://www.caixin.com/) 是整个财新网
+
+> [weekly.caixin.com](http://weekly.caixin.com/)  是财新网的某些部分，即只包括《财新周刊》的内容
+
+> [weekly.caixin.com/2015-08-14/100839890.html](http://weekly.caixin.com/2015-08-14/100839890.html)  就只是财新网中的一个网页，内容是一篇具体文章
+
+## 设置
+
+添加成功后，点击「控制台」，进入设置页面。
+
+设置页面内容很多，但是大多数都是我们不需要关心的。我们只要设置两个地方，一个是在<code>搜索功能 — 高级 — 网页搜索设置</code>中，把<code>Results Browsing History</code>调为「启用」，最后点击「保存」。启用后，我们才能返回前一次的搜索结果。
+
+另一个要设置外观。在<code>外观 — 布局 </code>中，把「叠加」改成「全宽」。「叠加」的搜索结果会弹出一个新的页面，操作起来很不方便。
+
+## 使用
+
+设置到这里就大功告成了。接下来，回到自定义搜索的主页面。在「公开网址」下点击页面链接就可以使用了。
+
+## 注意
+
+自定义搜索引擎的检索结果只能显示**10页**。也就是说**100条**以后的检索结果我们是看不到的。在网络上没找到可以突破限制的方法，不知道付费用户是否有这方面的限制。
+
+既然有这样的限制，就需要我们更好地提炼关键词。然后配合<code>intitle</code>、<code>""</code>等语法减小搜索范围了。

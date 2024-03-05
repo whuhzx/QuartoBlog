@@ -130,7 +130,7 @@
     "href": "index.html",
     "title": "Boyce’s Blog",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n作图时如何正确渲染中文字体\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nOct 11, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n文本可视化的一种方式：词语在两个数据集中的排名对比\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nSep 9, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuarto 常用语法汇总\n\n\n\n\n\n\n\nQuarto\n\n\n清单\n\n\n\n\n\n\n\n\n\n\n\nAug 12, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n利用 ChatGPT 编写简单 R 包\n\n\n\n\n\n\n\nR\n\n\nChatGPT\n\n\nGithub\n\n\n\n\n\n\n\n\n\n\n\nAug 12, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n使用 gghighlight 制图\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nAug 6, 2023\n\n\nBoyce\n\n\n\n\n\n\n  \n\n\n\n\n使用 geom_ribbon 给双折线区间填充颜色\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nAug 4, 2023\n\n\nBoyce\n\n\n\n\n\n\n  \n\n\n\n\n在 Github 上部署 Quarto 的静态网页\n\n\n\n\n\n\n\nGithub\n\n\nQuarto\n\n\n\n\n\n\n\n\n\n\n\nMar 5, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nR 常用包和函数汇总\n\n\n\n\n\n\n\nR\n\n\n清单\n\n\n\n\n\n\n\n\n\n\n\nMar 4, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nhrbrthemes：最好用的 ggplot 主题扩展包\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nFeb 25, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n使用 ggalluvial 制作桑基图和凹凸图\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nFeb 23, 2023\n\n\nBoyce\n\n\n\n\n\n\n  \n\n\n\n\n使用 waffle package 制作华夫饼图\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nDec 7, 2022\n\n\nBoyce\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n作图时如何正确渲染中文字体\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nOct 11, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n文本可视化的一种方式：词语在两个数据集中的排名对比\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nSep 9, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuarto 常用语法汇总\n\n\n\n\n\n\n\nQuarto\n\n\n清单\n\n\n\n\n\n\n\n\n\n\n\nAug 12, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n利用 ChatGPT 编写简单 R 包\n\n\n\n\n\n\n\nR\n\n\nChatGPT\n\n\nGithub\n\n\n\n\n\n\n\n\n\n\n\nAug 12, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n使用 gghighlight 制图\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nAug 6, 2023\n\n\nBoyce\n\n\n\n\n\n\n  \n\n\n\n\n使用 geom_ribbon 给双折线区间填充颜色\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nAug 4, 2023\n\n\nBoyce\n\n\n\n\n\n\n  \n\n\n\n\n在 Github 上部署 Quarto 的静态网页\n\n\n\n\n\n\n\nGithub\n\n\nQuarto\n\n\n\n\n\n\n\n\n\n\n\nMar 5, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nR 常用包和函数汇总\n\n\n\n\n\n\n\nR\n\n\n清单\n\n\n\n\n\n\n\n\n\n\n\nMar 4, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nhrbrthemes：最好用的 ggplot 主题扩展包\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nFeb 25, 2023\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n使用 ggalluvial 制作桑基图和凹凸图\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nFeb 23, 2023\n\n\nBoyce\n\n\n\n\n\n\n  \n\n\n\n\n使用 waffle package 制作华夫饼图\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nDec 7, 2022\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot2 中如何统一不同图表中类别变量的颜色\n\n\n\n\n\n\n\nR\n\n\nggplot2\n\n\n\n\n\n\n\n\n\n\n\nMay 12, 2019\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLinux 学习笔记：ssh 远程免密登录\n\n\n\n\n\n\n\nLinux\n\n\n\n\n\n\n\n\n\n\n\nJan 31, 2018\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n《我们是谁？大数据下的人类行为观察》读书笔记\n\n\n\n\n\n\n\n读书笔记\n\n\n数据分析\n\n\n\n\n\n\n\n\n\n\n\nApr 24, 2017\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n全局代理方案：土行孙 + Proxifier\n\n\n\n\n\n\n\n科学上网\n\n\n\n\n\n\n\n\n\n\n\nMar 28, 2016\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n又是找资料\n\n\n\n\n\n\n\n工具\n\n\n\n\n\n\n\n\n\n\n\nMar 2, 2016\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRSS 订阅方案：Inoreader + Feed43\n\n\n\n\n\n\n\n工具\n\n\n\n\n\n\n\n\n\n\n\nDec 13, 2015\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEcharts3.0 使用体验\n\n\n\n\n\n\n\n\n\n\n\n\nDec 4, 2015\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nScrapy 学习感想及资源汇集\n\n\n\n\n\n\n\nPython\n\n\n爬虫\n\n\n清单\n\n\n\n\n\n\n\n\n\n\n\nNov 20, 2015\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n个性化搜索：google 自定义搜索引擎\n\n\n\n\n\n\n\n工具\n\n\n\n\n\n\n\n\n\n\n\nSep 26, 2015\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n「图政」实习小记\n\n\n\n\n\n\n\n日记\n\n\n指标\n\n\n\n\n\n\n\n\n\n\n\nSep 18, 2015\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n如何有效地获取信息\n\n\n\n\n\n\n\n工具\n\n\n\n\n\n\n\n\n\n\n\nSep 5, 2015\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWindows 常用软件\n\n\n\n\n\n\n\n\n\n\n\n\nMay 25, 2015\n\n\nBoyce\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n新的开始\n\n\n\n\n\n\n\n日记\n\n\n\n\n\n\n\n\n\n\n\nMay 5, 2015\n\n\nBoyce\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -432,5 +432,446 @@
     "title": "R 常用包和函数汇总",
     "section": "其他数据可视化组件",
     "text": "其他数据可视化组件\n\nhrbrthemes\nggplot 主题风格拓展，使用方法可见 hrbrthemes：最好用的 ggplot 主题扩展包。\n\n\ngghighlight\n帮助高亮图表，使用方法可见使用 gghighlight 制图。\n\n\npatchwork\n快速组合不同图表：p1 + p2。使用方法详见教程。"
+  },
+  {
+    "objectID": "posts/ggplot2中如何统一不同图表中类别变量的颜色/index.html",
+    "href": "posts/ggplot2中如何统一不同图表中类别变量的颜色/index.html",
+    "title": "ggplot2 中如何统一不同图表中类别变量的颜色",
+    "section": "",
+    "text": "在用 ggplot2 绘图的时候，经常会遇到一个问题：同样的类别在不同的图表里渲染出来的颜色不一样。\n比如要画两张图，图一比较的是中日韩三国的 GDP 增长率，图二比较的是中美日三国的 GDP 增长率，但是默认的配色方案下，中国在图一中可能用红色表示，到图二又变成了蓝色表示。\n颜色是重要的视觉编码，为了不让人产生误解，同样的类别自然需要统一颜色。这里记录一下这类问题解决的方法和思路。\n首先载入本文将要用到的包。\n\nlibrary(tidyverse)\nlibrary(nycflights13)\nlibrary(scales)\nlibrary(ggridges)\n\n本文将使用 Hadley Wickham 贡献的 nycflights13 数据集，该数据集包含了纽约市三大机场的 33 多万条航班飞行数据。\n来看看 nycflights13::flights 数据集的具体信息：flights 中的每行数据都表示一次航班的飞行情况，变量包括航班的起飞降落时间、起始地、目的地、航班号、延迟时间等等。\n\nknitr::kable(head(flights))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nmonth\nday\ndep_time\nsched_dep_time\ndep_delay\narr_time\nsched_arr_time\narr_delay\ncarrier\nflight\ntailnum\norigin\ndest\nair_time\ndistance\nhour\nminute\ntime_hour\n\n\n\n\n2013\n1\n1\n517\n515\n2\n830\n819\n11\nUA\n1545\nN14228\nEWR\nIAH\n227\n1400\n5\n15\n2013-01-01 05:00:00\n\n\n2013\n1\n1\n533\n529\n4\n850\n830\n20\nUA\n1714\nN24211\nLGA\nIAH\n227\n1416\n5\n29\n2013-01-01 05:00:00\n\n\n2013\n1\n1\n542\n540\n2\n923\n850\n33\nAA\n1141\nN619AA\nJFK\nMIA\n160\n1089\n5\n40\n2013-01-01 05:00:00\n\n\n2013\n1\n1\n544\n545\n-1\n1004\n1022\n-18\nB6\n725\nN804JB\nJFK\nBQN\n183\n1576\n5\n45\n2013-01-01 05:00:00\n\n\n2013\n1\n1\n554\n600\n-6\n812\n837\n-25\nDL\n461\nN668DN\nLGA\nATL\n116\n762\n6\n0\n2013-01-01 06:00:00\n\n\n2013\n1\n1\n554\n558\n-4\n740\n728\n12\nUA\n1696\nN39463\nEWR\nORD\n150\n719\n5\n58\n2013-01-01 05:00:00\n\n\n\n\n\n现在的任务是：分别找到三大机场执飞数量排名前五的航空公司，并用柱状图表示出来。\n数据集中我们将使用到的是变量是 carrier 和 origin。carrier 表示当次航班所属航空公司的代码，origin 表示航班起飞的机场。\n\n# 查看航空公司\nknitr::kable(flights %>% count(carrier, sort = TRUE))\n\n\n\n\ncarrier\nn\n\n\n\n\nUA\n58665\n\n\nB6\n54635\n\n\nEV\n54173\n\n\nDL\n48110\n\n\nAA\n32729\n\n\nMQ\n26397\n\n\nUS\n20536\n\n\n9E\n18460\n\n\nWN\n12275\n\n\nVX\n5162\n\n\nFL\n3260\n\n\nAS\n714\n\n\nF9\n685\n\n\nYV\n601\n\n\nHA\n342\n\n\nOO\n32\n\n\n\n\n\n\n# 查看航班起飞机场\nknitr::kable(flights %>% count(origin, sort = TRUE))\n\n\n\n\norigin\nn\n\n\n\n\nEWR\n120835\n\n\nJFK\n111279\n\n\nLGA\n104662\n\n\n\n\n\n由于航空公司过多，我们筛选出执飞数量最多的十家航空公司进行分析。\n\n# 得到执飞次数最多的十家公司\ntop10Carrier <- flights %>% \n  count(carrier, sort = TRUE) %>%\n  top_n(10, n)\n\n# 用semi_join()过滤出这十家航空公司的数据\nflights_sample <- flights %>% \n  semi_join(top10Carrier, by = \"carrier\") %>%\n  # 将carrier从字符串变成因子，方便后续分析\n  mutate(carrier = as.factor(carrier))\n\n下面得到 JFK 机场执飞数排名前5的航空公司，并且用柱状图表示。\n\nJFK_flights <- flights_sample %>%\n  filter(origin == \"JFK\") %>%\n  count(carrier, sort = TRUE) %>%\n  top_n(5, n)\n\nJFK_flights %>% \n  ggplot(aes(x = carrier, y = n)) +\n  geom_bar(aes(fill = carrier), stat = \"identity\") +\n  guides(fill = FALSE) +\n  theme_minimal()\n\n\n\n\nFigure 1: JFK flight\n\n\n\n\n接着们采用同样的方法得到 LGA 机场执飞数排名前五的航空公司，并且用柱状图表示：\n\nLGA_flights <- flights_sample %>%\n  filter(origin == \"LGA\") %>%\n  count(carrier, sort = TRUE) %>%\n  top_n(5, n)\n\nLGA_flights %>% \n  ggplot(aes(x = carrier, y = n)) +\n  geom_bar(aes(fill = carrier), stat = \"identity\") +\n  guides(fill = FALSE) +\n  theme_minimal()\n\n\n\n\nFigure 2: LGA flight\n\n\n\n\n从上面两张图中我们可以看到，同一家航空公司在两张图中的颜色并不一样，例如 MQ 公司在 Figure 1 中是水粉色，在 Figure 2 中则变成了蓝色。\n为什么会这样？这就要回到 ggplot2 的绘图过程。简单来说，如果要给类别（factor）变量分配颜色，ggplot2 绘图系统首先会根据类别的数量（即 factor 中 levels 的数量）生成一组颜色向量。如果因子的 levels 数量是 5，就自动生成五种颜色；如果因子的 levels 数量是 8，就自动生成 8 种颜色。\n\n# 使用scale::hue_pal()(n)可以生成一组系统的默认颜色向量\nhue_pal()(5)\n\n[1] \"#F8766D\" \"#A3A500\" \"#00BF7D\" \"#00B0F6\" \"#E76BF3\"\n\n\n\n# 使用scale::show_col()函数能够将颜色以视觉化的方式呈现\nshow_col(hue_pal()(5), borders = NA)\n\n\n\n\n不管是因子的 levels，还是颜色向量，它们都有先后顺序。两者的顺序一一对应起来，就是不同 levels 的配色方案。\n下面用一张表格来表示这种对应关系。\n\n# 得到 JFK_flights factor 的 levels\nJFK_flights_levels <- levels(JFK_flights$carrier %>% droplevels())\nJFK_flights_levels\n\n[1] \"9E\" \"AA\" \"B6\" \"DL\" \"MQ\"\n\n\n\n# 得到 LGA_flights factor 的 levels\nLGA_flights_levels <- levels(LGA_flights$carrier %>% droplevels())\nLGA_flights_levels\n\n[1] \"AA\" \"DL\" \"EV\" \"MQ\" \"US\"\n\n\n\n# ggplot2 自动生成的五种颜色\nhue_colors <- hue_pal()(5)\n\n\n# 使用表格看到两者意义对应的关系\ntibble(hue_colors = hue_colors,\n       figure1 = JFK_flights_levels,\n       figure2 = LGA_flights_levels) %>% \n  knitr::kable()\n\n\n\n\nhue_colors\nfigure1\nfigure2\n\n\n\n\n#F8766D\n9E\nAA\n\n\n#A3A500\nAA\nDL\n\n\n#00BF7D\nB6\nEV\n\n\n#00B0F6\nDL\nMQ\n\n\n#E76BF3\nMQ\nUS\n\n\n\n\n\n从表中可以看到，MQ 在 Figure 1 中 levels 排序为第五，因此对应的颜色是#E76BF3，也就是水粉色；而在 Figure 2 中，MQ 的 levels 排序为第四，因此对应的颜色为#00B0F6，也就是蓝色。\n如果我们继续对柱状图按照从大到小的排序，则 carrier 的 levels 顺序又会被进一步改变。\n\nLGA_flights %>% \n  mutate(carrier = fct_reorder(carrier, -n)) %>%\n  pull(carrier) %>%\n  droplevels()\n\n[1] DL MQ AA US EV\nLevels: DL MQ AA US EV\n\n\n航空公司 MQ 这会儿在 levels 中的排序变成了第二，而颜色就对应变成了 #A3A500，也就是军绿色（Figure 3）。\n\nLGA_flights %>% \n  mutate(carrier = fct_reorder(carrier, -n)) %>%\n  ggplot(aes(x = carrier, y = n)) +\n  geom_bar(aes(fill = carrier), stat = \"identity\") +\n  guides(fill = FALSE) +\n  theme_minimal()\n\n\n\n\nFigure 3: LGA flight\n\n\n\n\n应该如何解决这个问题，使得不同图表中的颜色映射变得统一起来？\n解决方法就是给这十家航空公司手动设定颜色，事前就将因子的 level 和颜色向量 color 一一对应。这样，不管后续因子的 level 顺序如何变化，level 所代表的颜色都不会根据其顺序而变化。\n简单来说共分为四个步骤：\n\n首先确立目标：要给一个因子 carrier 统一配色，该变量有 n 个类别（即 n 个 levels）\n用hue_pal()、brewer_pal()等方法生成一组颜色向量，向量的长度是因子 levels 的数量 n\n用 names() 给这组颜色变量命名，名字就是 levels\n用 ggplot2 绘图时使用 scale_color_manual()方法手动配色，values 即为上述有名字的颜色向量\n\n若用在本例中具体操作如下：\n\n# 从调色板中自动生成 nlevels 个颜色，命名为 carrier_colors\n# nlevel() 返回因子的 levels 数量\ncarrier_colors <- hue_pal()(nlevels(flights_sample$carrier))\ncarrier_colors\n\n [1] \"#F8766D\" \"#D89000\" \"#A3A500\" \"#39B600\" \"#00BF7D\" \"#00BFC4\" \"#00B0F6\"\n [8] \"#9590FF\" \"#E76BF3\" \"#FF62BC\"\n\n\n\n# 将 carrier_colors 视觉化\nshow_col(carrier_colors, borders = NA)\n\n\n\n\n\n# 用 names() 给 carrier_colors 加上名字，名字就是因子的 levels\nnames(carrier_colors) <- levels(flights_sample$carrier)\ncarrier_colors\n\n       9E        AA        B6        DL        EV        MQ        UA        US \n\"#F8766D\" \"#D89000\" \"#A3A500\" \"#39B600\" \"#00BF7D\" \"#00BFC4\" \"#00B0F6\" \"#9590FF\" \n       VX        WN \n\"#E76BF3\" \"#FF62BC\" \n\n\n接下来，可以使用 scale_fill_manual() 手动赋予颜色\n\nJFK_flights %>% \n  ggplot(aes(x = carrier, y = n)) +\n  geom_bar(aes(fill = carrier), stat = \"identity\") +\n  scale_fill_manual(values = carrier_colors) +\n  guides(fill = FALSE) +\n  theme_minimal()\n\n\n\n\nFigure 4: JFK flight\n\n\n\n\n\nLGA_flights %>% \n  ggplot(aes(x = carrier, y = n)) +\n  geom_bar(aes(fill = carrier), stat = \"identity\") +\n  scale_fill_manual(values = carrier_colors) +\n  guides(fill = FALSE) +\n  theme_minimal()\n\n\n\n\nFigure 5: LGA flight\n\n\n\n\n从图 Figure 4 和图 Figure 5 中可以看到，在设置了scale_fill_manual后，两张图中共同类别的颜色统一了，MQ 公司在两张图中都为蓝色。\n即使后续我们还需绘制其它图像，使用这个方法同样能够统一不同类别的颜色。\n举个例子，比较一下不同航空公司的飞行里程，观察哪些航空公司主营短程航班，哪些航空公司主营长途航班。\n我们用脊线图来表示不同航空公司的飞行里程。\n\nflights_sample %>%\n  mutate(carrier = fct_reorder(carrier, -distance, median)) %>%\n  ggplot(aes(x = distance, y = carrier)) + \n  geom_density_ridges(aes(fill = carrier), alpha = 0.7) +\n  scale_fill_manual(values = carrier_colors) +\n  guides(fill = FALSE) +\n  theme_minimal()\n\n\n\n\n图中结果显示，前四家航空的航班主要是短程飞行，中间五家航空公司短中长途飞行皆有，VX 公司则主营长途飞行，飞行里程多在 2000 到 3000 之间。\n关键在于，我们使用 scale_fill_manual 实现了和前图一致的配色方案。MQ 公司在本图中仍然是蓝色，其它颜色亦同。"
+  },
+  {
+    "objectID": "posts/ggplot2中如何统一不同图表中类别变量的颜色/index.html#包引入和数据准备",
+    "href": "posts/ggplot2中如何统一不同图表中类别变量的颜色/index.html#包引入和数据准备",
+    "title": "ggplot2中如何统一不同图表中类别变量的颜色",
+    "section": "包引入和数据准备",
+    "text": "包引入和数据准备\n首先载入本文将要用到的包。\n\nlibrary(tidyverse)\nlibrary(nycflights13)\nlibrary(scales)\nlibrary(ggridges)\n\nWarning: package 'ggridges' was built under R version 4.3.2\n\n\n本文将使用 Hadley Wickham 贡献的 nycflights13 数据集。该数据集包含了纽约市三大机场的 33 多万条航班飞行数据。\n来看看 nycflights13::flights 数据集的具体信息。flights 中的每行数据都表示一次航班的飞行情况，变量包括航班的起飞降落时间、起始地、目的地、航班号、延迟时间等等。\n\nknitr::kable(head(flights))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nmonth\nday\ndep_time\nsched_dep_time\ndep_delay\narr_time\nsched_arr_time\narr_delay\ncarrier\nflight\ntailnum\norigin\ndest\nair_time\ndistance\nhour\nminute\ntime_hour\n\n\n\n\n2013\n1\n1\n517\n515\n2\n830\n819\n11\nUA\n1545\nN14228\nEWR\nIAH\n227\n1400\n5\n15\n2013-01-01 05:00:00\n\n\n2013\n1\n1\n533\n529\n4\n850\n830\n20\nUA\n1714\nN24211\nLGA\nIAH\n227\n1416\n5\n29\n2013-01-01 05:00:00\n\n\n2013\n1\n1\n542\n540\n2\n923\n850\n33\nAA\n1141\nN619AA\nJFK\nMIA\n160\n1089\n5\n40\n2013-01-01 05:00:00\n\n\n2013\n1\n1\n544\n545\n-1\n1004\n1022\n-18\nB6\n725\nN804JB\nJFK\nBQN\n183\n1576\n5\n45\n2013-01-01 05:00:00\n\n\n2013\n1\n1\n554\n600\n-6\n812\n837\n-25\nDL\n461\nN668DN\nLGA\nATL\n116\n762\n6\n0\n2013-01-01 06:00:00\n\n\n2013\n1\n1\n554\n558\n-4\n740\n728\n12\nUA\n1696\nN39463\nEWR\nORD\n150\n719\n5\n58\n2013-01-01 05:00:00\n\n\n\n\n\n现在的任务是：分别找到三大机场执飞数量排名前五的航空公司，并用柱状图表示出来。\n数据集中我们将使用到的是变量是 carrier 和 origin。carrier 表示当次航班所属航空公司的代码，origin 表示航班起飞的机场。\n\n# 查看航空公司\nknitr::kable(flights %>% count(carrier, sort = TRUE))\n\n\n\n\ncarrier\nn\n\n\n\n\nUA\n58665\n\n\nB6\n54635\n\n\nEV\n54173\n\n\nDL\n48110\n\n\nAA\n32729\n\n\nMQ\n26397\n\n\nUS\n20536\n\n\n9E\n18460\n\n\nWN\n12275\n\n\nVX\n5162\n\n\nFL\n3260\n\n\nAS\n714\n\n\nF9\n685\n\n\nYV\n601\n\n\nHA\n342\n\n\nOO\n32\n\n\n\n\n\n\n# 查看航班起飞机场\nknitr::kable(flights %>% count(origin, sort = TRUE))\n\n\n\n\norigin\nn\n\n\n\n\nEWR\n120835\n\n\nJFK\n111279\n\n\nLGA\n104662\n\n\n\n\n\n由于航空公司过多，我们筛选出执飞数量最多的十家航空公司进行分析。\n\n# 得到执飞次数最多的十家公司\ntop10Carrier <- flights %>% \n  count(carrier, sort = TRUE) %>%\n  top_n(10, n)\n\n# 用semi_join()过滤出这十家航空公司的数据\nflights_sample <- flights %>% \n  semi_join(top10Carrier, by = \"carrier\") %>%\n  # 将carrier从字符串变成因子，方便后续分析\n  mutate(carrier = as.factor(carrier))\n\n下面得到 JFK 机场执飞数排名前5的航空公司，并且用柱状图表示\n\nJFK_flights <- flights_sample %>%\n  filter(origin == \"JFK\") %>%\n  count(carrier, sort = TRUE) %>%\n  top_n(5, n)\n\nJFK_flights %>% \n  ggplot(aes(x = carrier, y = n)) +\n  geom_bar(aes(fill = carrier), stat = \"identity\") +\n  guides(fill = FALSE) +\n  theme_minimal()\n\nWarning: The `<scale>` argument of `guides()` cannot be `FALSE`. Use \"none\" instead as\nof ggplot2 3.3.4.\n\n\n\n\n\nJFK flight\n\n\n\n\n接着们采用同样的方法得到 LGA 机场执飞数排名前五的航空公司，并且用柱状图表示：\n\nLGA_flights <- flights_sample %>%\n  filter(origin == \"LGA\") %>%\n  count(carrier, sort = TRUE) %>%\n  top_n(5, n)\n\nLGA_flights %>% \n  ggplot(aes(x = carrier, y = n)) +\n  geom_bar(aes(fill = carrier), stat = \"identity\") +\n  guides(fill = FALSE) +\n  theme_minimal()\n\n\n\n\nLGA flight\n\n\n\n\n从上面两张图中我们可以看到，同一家航空公司在两张图中的颜色并不一样，例如 MQ 公司在 figure@ref(fig:jfk1) 中是水粉色，在 figure@ref(fig:lga1) 中则变成了蓝色。\n为什么会这样？这就要回到 ggplot2 的绘图过程。简单来说，如果要给类别（factor）变量分配颜色，ggplot2 绘图系统首先会根据类别的数量（即 factor 中 levels 的数量）生成一组颜色向量。如果因子的 levels 数量是 5，就自动生成五种颜色；如果因子的 levels 数量是 8，就自动生成 8 种颜色。\n\n# 使用scale::hue_pal()(n)可以生成一组系统的默认颜色向量\nhue_pal()(5)\n\n[1] \"#F8766D\" \"#A3A500\" \"#00BF7D\" \"#00B0F6\" \"#E76BF3\"\n\n\n\n# 使用scale::show_col()函数能够将颜色以视觉化的方式呈现\nshow_col(hue_pal()(5), borders = NA)\n\n\n\n\n不管是因子的 levels，还是颜色向量，它们都有先后顺序。两者的顺序一一对应起来，就是不同 levels 的配色方案。\n下面用一张表格来表示这种对应关系。\n\n# 得到 JFK_flights factor 的 levels\nJFK_flights_levels <- levels(JFK_flights$carrier %>% droplevels())\nJFK_flights_levels\n\n[1] \"9E\" \"AA\" \"B6\" \"DL\" \"MQ\"\n\n\n\n# 得到 LGAflights factor 的 levels\nLGA_flights_levels <- levels(LGA_flights$carrier %>% droplevels())\nLGA_flights_levels\n\n[1] \"AA\" \"DL\" \"EV\" \"MQ\" \"US\"\n\n\n\n# ggplot2 自动生成的五种颜色\nhue_colors <- hue_pal()(5)\n\n\n# 使用表格看到两者意义对应的关系\ntibble(hue_colors = hue_colors,\n       figure1 = JFK_flights_levels,\n       figure2 = LGA_flights_levels) %>% \n  knitr::kable()\n\n\n\n\nhue_colors\nfigure1\nfigure2\n\n\n\n\n#F8766D\n9E\nAA\n\n\n#A3A500\nAA\nDL\n\n\n#00BF7D\nB6\nEV\n\n\n#00B0F6\nDL\nMQ\n\n\n#E76BF3\nMQ\nUS\n\n\n\n\n\n从表中可以看到，MQ 在 figure@ref(fig:jfk1) 中 levels 排序为第五，因此对应的颜色是#E76BF3，也就是水粉色；而在 figure@ref(fig:lga1) 中，MQ 的 levels 排序为第四，因此对应的颜色为#00B0F6，也就是蓝色。\n如果我们继续对柱状图按照从大到小的排序，则 carrier 的 levels 顺序又会被进一步改变。\n\nLGA_flights %>% \n  mutate(carrier = fct_reorder(carrier, -n)) %>%\n  pull(carrier) %>%\n  droplevels()\n\n[1] DL MQ AA US EV\nLevels: DL MQ AA US EV\n\n\n航空公司 MQ 这会儿在 levels 中的排序变成了第二，而颜色就对应变成了 #A3A500，也就是军绿色（figure@ref(fig:lga2)）。\n\nLGA_flights %>% \n  mutate(carrier = fct_reorder(carrier, -n)) %>%\n  ggplot(aes(x = carrier, y = n)) +\n  geom_bar(aes(fill = carrier), stat = \"identity\") +\n  guides(fill = FALSE) +\n  theme_minimal()\n\n\n\n\nLGA flight\n\n\n\n\n应该如何解决这个问题？使得不同图表中的颜色映射变得统一起来？\n解决方法就是给这十家航空公司手动设定颜色，事前就将因子的 level 和颜色向量 color 一一对应。这样，不管后续因子的 level 顺序如何变化，level 所代表的颜色都不会根据其顺序而变化。\n简单来说共分为四个步骤：\n\n首先确立目标：要给一个因子 carrier 统一配色，该变量有 n 个类别（也即 n 个 levels）\n用hue_pal()、brewer_pal()等方法生成一组颜色向量，向量的长度是因子 levels 的数量 n；\n用 names() 给这组颜色变量命名，名字就是 levels\n用 ggplot2 绘图时使用 scale_color_manual()方法手动配色，values 即为上述有名字的颜色向量\n\n若用在本例中具体如下：\n\n# 从调色板中自动生成nlevels个颜色，命名为 carrier_colors\n# nlevel()返回因子的levels数量\ncarrier_colors <- hue_pal()(nlevels(flights_sample$carrier))\ncarrier_colors\n\n [1] \"#F8766D\" \"#D89000\" \"#A3A500\" \"#39B600\" \"#00BF7D\" \"#00BFC4\" \"#00B0F6\"\n [8] \"#9590FF\" \"#E76BF3\" \"#FF62BC\"\n\n\n\n# 将 carrier_colors 视觉化\nshow_col(carrier_colors, borders = NA)\n\n\n\n\n\n# 用names()给carrier_colors加上名字，名字就是因子的levels\nnames(carrier_colors) <- levels(flights_sample$carrier)\ncarrier_colors\n\n       9E        AA        B6        DL        EV        MQ        UA        US \n\"#F8766D\" \"#D89000\" \"#A3A500\" \"#39B600\" \"#00BF7D\" \"#00BFC4\" \"#00B0F6\" \"#9590FF\" \n       VX        WN \n\"#E76BF3\" \"#FF62BC\" \n\n\n接下来，可以使用 scale_fill_manual() 手动赋予颜色\n\nJFK_flights %>% \n  ggplot(aes(x = carrier, y = n)) +\n  geom_bar(aes(fill = carrier), stat = \"identity\") +\n  scale_fill_manual(name = \"carrier\", values = carrier_colors) +\n  guides(fill = FALSE) +\n  theme_minimal()\n\n\n\n\nJFK flight\n\n\n\n\n\nLGA_flights %>% \n  ggplot(aes(x = carrier, y = n)) +\n  geom_bar(aes(fill = carrier), stat = \"identity\") +\n  scale_fill_manual(values = carrier_colors) +\n  guides(fill = FALSE) +\n  theme_minimal()\n\n\n\n\nLGA flight\n\n\n\n\n从图 figure@ref(fig:jfk2) 和图 figure@ref(fig:lga3) 中可以看到，在设置了scale_fill_manual后，两张图中共同类别的颜色统一了，MQ 公司在两张图中都为蓝色。\n即使后续我们还需绘制其它图像，使用这个方法同样能够统一不同类别的颜色。\n举个例子，比较一下不同航空公司的飞行里程，观察哪些航空公司主营短程航班，哪些航空公司主营长途航班。\n我们用脊线图来表示不同航空公司的飞行里程。\n\nflights_sample %>%\n  mutate(carrier = fct_reorder(carrier, -distance, median)) %>%\n  ggplot(aes(x = distance, y = carrier)) + \n  geom_density_ridges(aes(fill = carrier), alpha = 0.7) +\n  scale_fill_manual(values = carrier_colors) +\n  guides(fill = FALSE) +\n  theme_minimal()\n\n\n\n\n图中结果显示，前四家航空的航班主要是短程飞行，中间五家航空公司短中长途飞行皆有，VX 公司则主营长途飞行，飞行里程多在 2000 到 3000 之间。\n关键在于，我们使用 scale_fill_manual 实现了和前图一致的配色方案。MQ 公司在本图中仍然是蓝色，其它颜色亦同。"
+  },
+  {
+    "objectID": "posts/个性化搜索：google 自定义搜索引擎/index.html",
+    "href": "posts/个性化搜索：google 自定义搜索引擎/index.html",
+    "title": "个性化搜索：google 自定义搜索引擎",
+    "section": "",
+    "text": "google 的搜索语法虽然已经很强大，但是仍然无法满足我们的全部需求。\n如果希望能够在某些媒体的网站内搜索一个特定的议题，这就需要将检索范围限定在这些网站，进行站内搜索。但是试过各种方法后，遗憾地发现 google 并不支持多个site语法的组合。\n为什么「站内搜索」如此重要？互联网是一个很好的知识获取平台，我们可以在上面找到大多数想要知道的内容。\n但是正因为互联网上的信息太过海量，人很容易被淹没在如此巨大的信息流中。而且伴随着优质信息而来的是无数劣质的信息，人工筛选十分耗费精力。\n而「站内搜索」可以帮助精准定位，快速找到我们想要的东西。\n这种搜索方式适用于搜索目标非常明确，且对搜索结果的全面性要求不那么高的情况。因为使用站内搜索，在节省时间的同时也会让我们错失掉其它网站的优质信源。\n所以，在搜索之前，首先要考虑：我们想搜索的是什么？是否要求搜索结果非常全面？我们愿意为获取结果花费多少的时间和精力？思考清楚这些问题，再决定最佳的搜索方式。\n回到正题。在网上找了很久的关于多站点搜索的解决方案，无意中发现了 google 自定义搜索引擎。按照官方文档的描述,\n\nGoogle Custom Search enables you to create a search engine for your website, your blog, or a collection of websites.\n\n\nThere are two main use cases for Custom Search - you can create a search engine that searches only the contents of one website (site search), or you can create one that focuses on a particular topic from multiple sites.\n\n其实，它首先是一个针对网站管理者和网页开发者设立的服务。开发者可以通过设置自定义搜索引擎来优化自己的网站，为用户提供更好的站内搜索服务。\n但是普通用户只要注册了 google 账号也能够使用。利用它强大的多站点搜索功能，我们就可以定制自己所需要的个性化搜索了。\n下面是具体的使用方法。"
+  },
+  {
+    "objectID": "posts/个性化搜索：google 自定义搜索引擎/index.html#注册-google-账号",
+    "href": "posts/个性化搜索：google 自定义搜索引擎/index.html#注册-google-账号",
+    "title": "个性化搜索：google 自定义搜索引擎",
+    "section": "注册 google 账号",
+    "text": "注册 google 账号\n不用说，科学上网是必要前提，不翻墙是用不了 google 的任何服务的。之后，你还需要注册一个 google 账号。"
+  },
+  {
+    "objectID": "posts/个性化搜索：google 自定义搜索引擎/index.html#登陆",
+    "href": "posts/个性化搜索：google 自定义搜索引擎/index.html#登陆",
+    "title": "个性化搜索：google 自定义搜索引擎",
+    "section": "登陆",
+    "text": "登陆\n打开自定义搜索引擎页面，用自己的 google 账号登陆。"
+  },
+  {
+    "objectID": "posts/个性化搜索：google 自定义搜索引擎/index.html#添加",
+    "href": "posts/个性化搜索：google 自定义搜索引擎/index.html#添加",
+    "title": "个性化搜索：google 自定义搜索引擎",
+    "section": "添加",
+    "text": "添加\n\n点击「新增搜索引擎」\n依次填入要搜索的网站\n给搜索引擎起一个名字\n点击「创建」\n\n第二步中要理解「单个网页」、「整个网站」和「网站的某些部分」的区别，首先要理解URL，详见此处。\n以财新网来举例，\n\nwww.caixin.com 是整个财新网\n\n\nweekly.caixin.com 是财新网的某些部分，即只包括《财新周刊》的内容\n\n\nweekly.caixin.com/2015-08-14/100839890.html 就只是财新网中的一个网页，内容是一篇具体文章"
+  },
+  {
+    "objectID": "posts/个性化搜索：google 自定义搜索引擎/index.html#设置",
+    "href": "posts/个性化搜索：google 自定义搜索引擎/index.html#设置",
+    "title": "个性化搜索：google 自定义搜索引擎",
+    "section": "设置",
+    "text": "设置\n添加成功后，点击「控制台」，进入设置页面。\n设置页面内容很多，但是大多数都是我们不需要关心的。我们只要设置两个地方，一个是在搜索功能 — 高级 — 网页搜索设置中，把Results Browsing History调为「启用」，最后点击「保存」。启用后，我们才能返回前一次的搜索结果。\n另一个要设置外观。在外观 — 布局 中，把「叠加」改成「全宽」。「叠加」的搜索结果会弹出一个新的页面，操作起来很不方便。"
+  },
+  {
+    "objectID": "posts/个性化搜索：google 自定义搜索引擎/index.html#使用",
+    "href": "posts/个性化搜索：google 自定义搜索引擎/index.html#使用",
+    "title": "个性化搜索：google 自定义搜索引擎",
+    "section": "使用",
+    "text": "使用\n设置到这里就大功告成了。接下来，回到自定义搜索的主页面。在「公开网址」下点击页面链接就可以使用了。"
+  },
+  {
+    "objectID": "posts/个性化搜索：google 自定义搜索引擎/index.html#注意",
+    "href": "posts/个性化搜索：google 自定义搜索引擎/index.html#注意",
+    "title": "个性化搜索：google 自定义搜索引擎",
+    "section": "注意",
+    "text": "注意\n自定义搜索引擎的检索结果只能显示10页。也就是说100条以后的检索结果我们是看不到的。在网络上没找到可以突破限制的方法，不知道付费用户是否有这方面的限制。\n既然有这样的限制，就需要我们更好地提炼关键词。然后配合intitle、““等语法减小搜索范围了。"
+  },
+  {
+    "objectID": "posts/个性化搜索：google 自定义搜索引擎/index.html#注册",
+    "href": "posts/个性化搜索：google 自定义搜索引擎/index.html#注册",
+    "title": "个性化搜索：google 自定义搜索引擎",
+    "section": "注册",
+    "text": "注册\n不用说，科学上网是必要前提，不翻墙是用不了 google 的任何服务的。之后，你还需要注册一个 google 账号。"
+  },
+  {
+    "objectID": "posts/《我们是谁？大数据下的人类行为观察》读书笔记/index.html",
+    "href": "posts/《我们是谁？大数据下的人类行为观察》读书笔记/index.html",
+    "title": "《我们是谁？大数据下的人类行为观察》读书笔记",
+    "section": "",
+    "text": "这是一本关于社群媒体数据分析的书。\n作者 Christian Rudder毕业于哈佛大学数学系，是美国一个老牌婚恋交友网站 OkCupid 的联合创始人，同时也是这个网站的数据分析师。\nOkCupid 是美国最知名的线上交友网站之一，2004 年就成立了，目前拥有超过千万名用户。OkCupid 有一个特色，就是主打兴趣交友，让用户填写各种和兴趣以及三观相关的问题，通过算法为用户匹配出兴趣相近的约会对象。\n多年的运营使得 OkCupid 积累了大量的用户数据，这其中就包括了用户：\n其实关于社群媒体的数据分析，市面上已经有很多的相关论文和书籍，这本书里所使用的方法无非也就是常见的分类数据分析、文本分析和社会网络分析。\n但是作者在这过程中发现了几个比较有趣的结论，还有一些非常巧妙的研究设计思路，我觉得还是值得写一写的。"
+  },
+  {
+    "objectID": "posts/《我们是谁？大数据下的人类行为观察》读书笔记/index.html#婚恋与性别",
+    "href": "posts/《我们是谁？大数据下的人类行为观察》读书笔记/index.html#婚恋与性别",
+    "title": "《我们是谁？大数据下的人类行为观察》读书笔记",
+    "section": "婚恋与性别",
+    "text": "婚恋与性别\n\n男女如何给异性评分\nOkCupid 有一个评分系统，用户可以在网站上给不同的异性评分。作者基于这些评分数据，发现了一个有趣的现象。\n男性在给女性评分时，评分基本呈现正态分布，也就是说男性评价女性，低分少，高分少，中间分书多。而女性评价男性时，则是一个典型的右偏分布，低分多，中间分较少，高分几乎没有。\n这种现象可以有两种解释，一个是女性的审美要求比男性高，二是女性在「美」的方面做得比男性更好。当然了，我觉得在现实当中两者应该是同时存在的，美国如此，中国应该更是如此。\n\n\n\n男女为异性评分的比较\n\n\n\n\n男女对异性的年龄偏好\nOkCupid 会在自家网站上询问用户认为异性在哪个年纪是最由好看的。\n女性的回答在这方面明显受到自身年龄的影响，即女性认为男性最好看的年纪一般在自身年龄上下七岁左右，20 多岁的女性认为 20 多岁的男性最好看，40 多岁的女性会认为 40 岁左右的男性最好看。\n而男性则完全不受年纪影响，几乎所有年龄段的男性都认为女性最好看的年龄是在 20 岁出头的时候。\n但是当真正落实到行为上时，男性一般只会给和自己年龄相近的异性发送信息。作者评价这是「心口不一」。"
+  },
+  {
+    "objectID": "posts/《我们是谁？大数据下的人类行为观察》读书笔记/index.html#婚恋与种族",
+    "href": "posts/《我们是谁？大数据下的人类行为观察》读书笔记/index.html#婚恋与种族",
+    "title": "《我们是谁？大数据下的人类行为观察》读书笔记",
+    "section": "婚恋与种族",
+    "text": "婚恋与种族\n在美国做社会科学调查不能不考虑种族问题。作者依据 OkCupid 的数据看人们是如何给各个族裔的异性打分的，其中有一些有意思的结论，但是也可以证实美国社会中确实存在着比较严重的种族歧视：\n\n每个人在给同一族裔的异性打分的时候都比较客气，评分一般会高于平均值\n非黑人在给黑人异性打分的时候，评分普遍偏低，无论男女。黑人男性给黑人女性的评分甚至也低于平均值\n在所有族裔的女性当中，亚裔女性最受欢迎\n在所有族裔的男性当中，白人男性受到普遍欢迎\n亚裔男性和黑人男性一样，得到的评分普遍偏低，远低于白人男性\n\n作者的另外一個思路是观察每个用户的 profile，通过词频统计的方式看不同的族裔如何在 profile 中描述自己，结果发现每个族裔都有明显的特点——\n白人热衷于户外运动，黑人喜欢音乐，拉丁裔最爱舞蹈。最最有意思的一点就是，亚裔无论男女都有一个常见的描述词，叫 tall for an asian 。\n这种文本分析方法其实比较常见，一般都是通过词云或者列表的形式体现出来。但是作者在这里别出新意，设计了一个坐标图，以白人男性和其它族裔的用词比较为例。纵坐标是白人男性的用词排名，横坐标是其他族裔的用词排名。\n那么在这张图中，如果词汇处在坐标的左上角，则表示白人男性使用得多而其它族群使用得少，处在右下角则相反。我们可以看到，这张图所表现出的信息量要远远多于词云。\n\n\n\n词频坐标图"
+  },
+  {
+    "objectID": "posts/《我们是谁？大数据下的人类行为观察》读书笔记/index.html#用google-trend推估美国同志人数",
+    "href": "posts/《我们是谁？大数据下的人类行为观察》读书笔记/index.html#用google-trend推估美国同志人数",
+    "title": "《我们是谁？大数据下的人类行为观察》读书笔记",
+    "section": "用google trend推估美国同志人数",
+    "text": "用google trend推估美国同志人数\n这是整本书里面最让我拍案叫绝的方法。作者通过 google trend 中色情影片（av、gv）的搜索量以及搜索的地域分布来推估美国的男同性恋比例。\n作者在这里有一个假设，即认为男异性恋会在 google 上搜寻两性色情影视 av，而男同性恋会在 google 上搜寻男性色情影视 gv。\ngoogle trend 的结果发现，在美国所有的州，搜索 gv 的数量都占总搜索量的 5% 左右。作者由此估计美国的男同性恋人数应该占男性人数的 5% 左右，并且每个州应该是均匀分布的，不受该州文化宗教氛围的影响。\n作者同时又拿出另外一个数据，是一家调查公司对美国人性观念的调查。结果发现在美国，不同的州自认为男同性恋的男性人口比例在 2%—5% 不等，各个州对于同性恋的认同度在 25%—65% 之间。\n这里面非常有意味的一点在于，如果一个州对于同性恋的认同度越高，该州自认为男同志的人数比例也就越高。\n我们由此可以得出一个结论，那些自认为是同志比例很低的州，同志数量很可能并不低，只是该州的同志因为社会压力的关系不敢公开自己的性取向。依据作者在 google trend 中得出的结论，美国每个州的同志数量应该都是稳定在 5% 左右。\n作者的假设里面其实有一个可以质疑的点，即并不是只有男异性恋会搜索 av，女性也可能搜寻 av。但是反过来想，女性同样可能搜寻 gv，两者完全可能相互抵消。\n如果存在这种抵消作用的话，我们就可以质疑 5% 的数量到底是否准确。但是每个州的同志数量稳定在一个数字附近这个结论应该是没有问题的。"
+  },
+  {
+    "objectID": "posts/《我们是谁？大数据下的人类行为观察》读书笔记/index.html#google搜索的自动补齐功能",
+    "href": "posts/《我们是谁？大数据下的人类行为观察》读书笔记/index.html#google搜索的自动补齐功能",
+    "title": "《我们是谁？大数据下的人类行为观察》读书笔记",
+    "section": "google搜索的自动补齐功能",
+    "text": "google搜索的自动补齐功能\n除了 google trend，用 google 的搜索引擎还可以做出很多有意思的研究。\ngoogle 搜索一般会有关键词自动补齐的功能，即你输入一个关键词以后，google 会从自己的数据库中找出以此关键词开头的相关词组，然后用搜索量最高的替补词组来补齐你的关键词。\n通过这种方法也可以看出人们现在在关心什么，以及对于某个群体有怎样的刻板印象，例如 「Why is + race…」 的关键词就能看出英语国家的人民对于各个族裔有怎样的印象。这里非常值得一提的是，作者发现，在美国「 is my husband…」后的关键词出现频率最高的是「gay」。而在那些同性恋包容度低的州这个搜索比例尤其高。\n以上就是这本书中几个比较有意思的点。作者还在书中谈到了其他问题，包括数位品牌、美貌崇拜等等，还特地提到了大数据时代的个人信息与隐私泄露等问题，但是谈得并不深入，就不在这里展开了。\n总得来说，这本书虽然总体上有些啰嗦，但还是颇值得一读，作者在书中展现出来的数据分析方法和思路很值得借鉴。"
+  },
+  {
+    "objectID": "posts/《我们是谁？大数据下的人类行为观察》读书笔记/index.html#本书信息",
+    "href": "posts/《我们是谁？大数据下的人类行为观察》读书笔记/index.html#本书信息",
+    "title": "《我们是谁？大数据下的人类行为观察》读书笔记",
+    "section": "本书信息",
+    "text": "本书信息\n【原著】Rudder, C., Griffith, K., & Audio, R. H. (n.d.). Dataclysm: Who We Are. Random House Audio.\n【译本】克里斯汀·鲁德著，林俊宏译：《我们是谁？大数据下的人类行为观察》。台北：马可孛罗文化。"
+  },
+  {
+    "objectID": "posts/《我们是谁？大数据下的人类行为观察》读书笔记/index.html#用-google-trend-推估美国同志人数",
+    "href": "posts/《我们是谁？大数据下的人类行为观察》读书笔记/index.html#用-google-trend-推估美国同志人数",
+    "title": "《我们是谁？大数据下的人类行为观察》读书笔记",
+    "section": "用 google trend 推估美国同志人数",
+    "text": "用 google trend 推估美国同志人数\n这是整本书里面最让我拍案叫绝的方法。作者通过 google trend 中色情影片（av、gv）的搜索量以及搜索的地域分布来推估美国的男同性恋比例。\n作者在这里有一个假设，即认为男异性恋会在 google 上搜寻两性色情影视 av，而男同性恋会在 google 上搜寻男性色情影视 gv。\ngoogle trend 的结果发现，在美国所有的州，搜索 gv 的数量都占总搜索量的 5% 左右。作者由此估计美国的男同性恋人数应该占男性人数的 5% 左右，并且每个州应该是均匀分布的，不受该州文化宗教氛围的影响。\n作者同时又拿出另外一个数据，是一家调查公司对美国人性观念的调查。结果发现在美国，不同的州自认为男同性恋的男性人口比例在 2%—5% 不等，各个州对于同性恋的认同度在 25%—65% 之间。\n这里面非常有意味的一点在于，如果一个州对于同性恋的认同度越高，该州自认为男同志的人数比例也就越高。\n我们由此可以得出一个结论，那些自认为是同志比例很低的州，同志数量很可能并不低，只是该州的同志因为社会压力的关系不敢公开自己的性取向。依据作者在 google trend 中得出的结论，美国每个州的同志数量应该都是稳定在 5% 左右。\n作者的假设里面其实有一个可以质疑的点，即并不是只有男异性恋会搜索 av，女性也可能搜寻 av。但是反过来想，女性同样可能搜寻 gv，两者完全可能相互抵消。\n如果存在这种抵消作用的话，我们就可以质疑 5% 的数量到底是否准确。但是每个州的同志数量稳定在一个数字附近这个结论应该是没有问题的。"
+  },
+  {
+    "objectID": "posts/「图政」实习小记/「图政」实习小记.html",
+    "href": "posts/「图政」实习小记/「图政」实习小记.html",
+    "title": "「图政」实习小记",
+    "section": "",
+    "text": "这两天为了整理自己的「实习资料包」，把 tower 上的东西又重新翻过了一遍，突然就有了很多感触。\n如果从试用期开始算起，在图政前前后后待了有 9 个月的时间。9 个月，也许相当于人生的一百零八分之一。谁知道呢，总之并不算短也并不算长。然而，现在回想起来又觉得是一闪而过。\n里面有很多零散的记忆碎片，也有很多油然升起而又不知所终的情绪。现在尝试在记忆里慢慢把它们搜寻出来，拼装组合，形成一幅记忆地图，权且当作记念。\n放寒假的时候，碧旋开始带着我做军队人事调动的选题。对于一个没有建库经验且不曾接触过 excel 的人而言，第一次建库的经历无疑是漫长且有点痛苦的。\n军队选题的第一个困难就是切入点。在做这个选题之前，自己对中国的军队系统基本毫无了解，只能通过在网上查阅各种资料来搭建自己关于这个方面的知识体系。\n在看了大量新闻，并且基本了解了军队的层级系统之后，我和碧旋决定把选题的重心放在跨军区的人事调动上。我们试图从十八大后军队高级将领的人事调动中观察各个军区（特别是南京军区、兰州军区和济南军区，分别对应习、郭、徐）势力的消长。\n但最后的数据分析证明这样的预设并不准确，南京军区出身的将领并没有在晋升上有特别抢眼的表现，兰州军区和济南军区出身的将领也并未有受到明显打压的趋势。\n这样的结果并不出人意料，但多多少少让我感到困惑。我不知道在对一个领域没有结构性地了解，没有非常深刻的理解和把握之前，应该如何来设立指标？怎样才能抓住真正重要的东西，而非把时间浪费在一些没有意义的指标上？以及，在建库编码之前我们是否要有自己的一个预测呢？如果需要，那么如果数据得出的结果与预测不一致怎么办？\n第二个困难就是资料的收集。军队本身是一个封闭的系统，从公开途径得到将领们的详细资料并不容易，很多军事论坛里面的信息又不足采信。\n花费了无数时间在互联网的各个角落里进行搜寻，结果却差强人意。不少将领只能获得诸如籍贯、年龄、级别、军衔、所在军区等基本信息，早期的从军履历却面目模糊。一些数据的缺失也给后来的分析带来了麻烦。\n另一个比较棘手的问题是指标的分类，有时候一个对象可以同时分属两个指标项。比如三大海军舰队接受海军和大军区的双重领导，再比如有将领同时兼任两个职位，这时应该把它们归在什么位置？\n第三个困难就是 excel 的使用了。在真正了解 excel 的强大功能之前，我做了很多无用功，用人工的方法去做着函数能够瞬间完成的事情。因而面对着满屏单元格时常会升起一丝狂躁的感觉。\n不过好在工具总是相似的，在了解了工作原理后上手并不困难。借由此次建库也算是对 excel 的功能有了一些基本的了解。\n其实与工具相比，选题的切入点才是真正重要的。因为它决定了一篇报道所能够达到的深度。遗憾的是，那时的我甚或说现在的我，还远未能够达到。\n毕竟，时政类的深度报道需要长时间的积淀，需要对国家的政经体制的运行逻辑有自己的洞察和剖析，然后才会对当下的选题有一个准确的预判。\n第一次建库花了一个多月的时间，171 位高级将领，近 30 个细分指标，仔细数一数也有 5000 余个单元格。这里还要大大地感谢碧旋给我提了许许多多有益的建议，让我少走了不少弯路。\n虽然后来选题因为敏感度的原因被《南风窗》毙掉了，虽然最终得出的结论也并不让我满意，但是建库的过程还是让我受益匪浅。可以说，建库是一种强迫自己去深入了解「结构性知识」的有益方法。\n3 月份军队选题甫一结束，就开始了人大代表的选题。如果说军队调动的选题是一个人的单打独斗，人大代表的选题就是完完全全的团队协作了。5 个人，3 周时间，最终完成了 2000 多个人大代表样本的编码，形成了 1 个基础库，3 个分库。\n这里面最要感谢的当然是梦冉，如果没有这样一个优秀而负责的组长，我想这样的任务量我们是没办法按时完成的。印象最深刻的是 ddl 的前一天，企业家库还有一半没有完成，梦冉和柳辛说自己三点从床上爬起来编码。\n我觉得团队协作最最重要的就是成员之间彼此的信任和配合。可以说，长时间、高强度的重复性工作对于团队的每个成员都是不小的挑战。如果团队没有足够的信任感和凝聚力，是难以坚持下来的。幸运的是，大家配合的很默契，而且每个人都愿意付出。\n当然，除了精力和体力上的消耗，我们在编码的过程中还遇到了许许多多的问题。首当其冲的还是分类的问题，单单是「教育程度」这个指标我们就分了 18 个类目。\n学历和学位的区别，党校、函授、在职的区别，中专、大专、本科、硕士、博士的区别，可以形成无数的排列组合，感觉任何分类都无法穷尽样本。我甚至觉得事实可能是这个指标并不重要，是我们太较真了。\n但是在编码中又确确实实会遇到此类棘手的问题。再比如我们做人大代表的「职业」，也有 20 余个分类，看似齐全，但是遇到一些奇怪的名目，仍然束手无策，比如火车站站长和打捞局潜水队队长应该怎么分类？孤儿院院长呢？什么样的人应该归入领导干部？\n当你切切实实地去思考这些问题的时候，会发现好像所有之前认为理所当然的概念都变得模糊了。概念界定本身反而变成最困难的事情，为何如此界定？依据是什么？\n第二个问题就是团队作业中的版本控制问题。编码表总是在不断变动的，因为在编码的过程中，总会遇到许许多多的新问题，因此需要通过改动编码表来容纳或者说解决这些问题。\n但是异地的团队作业往往不能做到所有人同时在线，编码表和数据库的改动也不能及时通知到所有人。如果有人因为疏忽而没有注意信息，就会耗费很多无谓的时间，最终还要返工，浪费了人力成本。\n另一方面，例如「最终版、最最终版、真的是最终版了、最终版2.0」之类的文件命名会给人带来认知上的混乱，最终造成整个数据库版本的混乱。要解决问题，首先要保证命名规范，其次把每一次的改动都上传到 tower 固定的讨论组而非 QQ 文件上，写清楚每次所做的改动是什么。\n这样，如果之后遇到问题，就可以很容易地找回任一版本的数据库或者编码表了。这种方法其实也是借鉴了 git 的版本控制思想，只不过要麻烦一些。\n该怎么评价那段做人大代表选题的日子呢？现在回想起来，其实心情很复杂。一方面，我觉得那段时间真很有收获，任务量很艰巨，我们还是按时完成了。\n但是结果却让人遗憾，由于各种原因，数据库依然被无限期搁置。更令人惋惜的是，研究组好像也就此散掉了，柳辛离开了图政，子章去了新闻组。我自己的情绪也陷入了低谷，一度感到十分迷茫。\n和戴玉姐打了一通很长的电话，虽然并没有解决自己的困惑，但还是决定留下来。不知道什么原因，在那之后，研究组就没有继续建库了，只是偶尔帮《南风窗》做一做报告版和文内图表，因而也就没有什么特别深刻的印象。\n其实还是感觉挺遗憾的，因为自己的懒散，在图政的后半段时间里没有出什么像样的成果。转眼间就到了七月，新一轮招新结束后老人们陆陆续续都离开了，我和子章各自兼了一个多月的组长，把新人们带上正轨后也到了要离开的时刻。\n在图政的九个月里有很多很多的收获。除了之前提到的业务上的提升之外，最值得庆幸的就是在图政认识了很多有趣的同龄人。我觉得人是可以从同龄人身上更好地认识自己的，特别是从与自己志趣相近的同龄人身上。\n还有就是，图政让我更多地认清了一些需要面对的「现实」：有的题目并非是自己想做的，但是为了完成发稿任务又不得不做，即使觉得它毫无意义，这是一种现实。有的题目是自己想做的，但是因为自己的知识结构和能力所限，又不能做好，特别是专业性要求比较高的选题，这也是一种现实。"
+  },
+  {
+    "objectID": "posts/全局代理方案：土行孙 + Proxifier/index.html",
+    "href": "posts/全局代理方案：土行孙 + Proxifier/index.html",
+    "title": "全局代理方案：土行孙 + Proxifier",
+    "section": "",
+    "text": "多数时候，科学上网的目的是为了在 Web 上浏览墙外信息，比如上 Twitter、Facebook 及各类新闻网站，而这一行为基由浏览器即可完成。\n所以，一般情况下，我们只要购买一个 HTTP 代理帐号，给浏览器装上插件，就可以实现自由上网。我自己使用的是土行孙。\n但是，当需求变得复杂，比如需要让桌面上的软件也实现代理的时候，就会遇到一些困难和障碍。比如我自己就曾遇到过以下问题：\n其实，不少常用软件，如 Dropbox，在「设置」或「首选项」的选项卡内都会内置有代理功能，我们只需要在相关界面内填入自己的代理服务器、帐号和密码即可实现软件代理。\n但是对于那些没有代理功能的软件，像上面提到的 import.io 和 zotero，我们很多时候就无能为力了。\n为了使用这些软件，以前我会使用赛风这样具有全局代理功能的 VPN。但是由于筑墙技术的不断进步，赛风越来越不稳定，每次用这种方法都会非常耗时费力。\n后来在网上寻找解决方案的时候发现了一款叫 Proxifier 的软件，惊喜地发现它不仅可以实现网络的全局代理，还可以根据自己的需要让指定的软件实现代理功能。具体步骤如下："
+  },
+  {
+    "objectID": "posts/全局代理方案：土行孙 + Proxifier/index.html#注册土行孙帐号",
+    "href": "posts/全局代理方案：土行孙 + Proxifier/index.html#注册土行孙帐号",
+    "title": "全局代理方案：土行孙 + Proxifier",
+    "section": "注册土行孙帐号",
+    "text": "注册土行孙帐号\n对于常用 HTTP 代理的选择，强烈推荐土行孙，它有很多优点。\n\n服务稳定。用了三个多月，唯一的一次故障通过网站自带的「服务自检」功能立刻解决了。\n跨平台、多设备支持。基本套餐有 20G 的流量，用完为止，不限同时在线的设备数量。\n智能分流。能自动识别流量，需要翻墙就走代理，不需要翻墙就直接访问。如果遇到不能识别的网站，可以手动添加网址。\n配置方便。除了可以很方便地代理浏览器，还可以代理终端，甚至可以配置 AnyConnect 和 Surge\n\n当然，用其它的 HTTP 代理或者 SOCKS 代理配合 Proxifier 应该也能够实现同样的功能，但是我没有试过。"
+  },
+  {
+    "objectID": "posts/全局代理方案：土行孙 + Proxifier/index.html#下载安装-proxifier",
+    "href": "posts/全局代理方案：土行孙 + Proxifier/index.html#下载安装-proxifier",
+    "title": "全局代理方案：土行孙 + Proxifier",
+    "section": "下载安装 Proxifier",
+    "text": "下载安装 Proxifier\n下载地址"
+  },
+  {
+    "objectID": "posts/全局代理方案：土行孙 + Proxifier/index.html#配置-proxifier",
+    "href": "posts/全局代理方案：土行孙 + Proxifier/index.html#配置-proxifier",
+    "title": "全局代理方案：土行孙 + Proxifier",
+    "section": "配置 Proxifier",
+    "text": "配置 Proxifier\n\n设置代理服务器\n\n点击菜单栏中的 Profile - Proxy Servers\n点击 Add 添加并配置代理服务器\n填写服务器地址（Address）和端口（Port）\n选择代理的协议类型，土行孙为 HTTPS\n在Authentication下选中 Enable\n填写代理的帐号（Username）密码（Password）\n点击确定\n\n\n\n设置代理规则\n\n点击设置代理规则的图标 Proxification Rules\n规则中有两个默认的设置，分别是 Localhost 和 Default 。如果需要实现全局代理，则将 Default 的 Action 从 Direct 改为代理服务器\n点击Add添加规则，在 Name 中填写规则名称，在 Applications 中添加软件的路径，最后在 Action 选中代理服务器即可\n\n现在打开应用软件，软件已经可以走代理了。日志中还可以查看到代理应用每次发起的网络请求。"
+  },
+  {
+    "objectID": "posts/如何有效地获取信息/index.html",
+    "href": "posts/如何有效地获取信息/index.html",
+    "title": "如何有效地获取信息",
+    "section": "",
+    "text": "实习快要结束了。按照图政的传统，老实习生要为新人们提供几场培训，把自己各个方面的心得分享给大家。\n其实，与其说是培训，不如说是交流。趁着此次机会，我也正好把自己在信息搜索方面各项零碎的想法重新梳理了一番。下面的内容其实是为这次交流打的底稿。\n因为准备得匆忙，内容会比较宽泛。其中提到的一些工具并没有进行深入的讲解，只是介绍了基本的功能。\n我知道，一旦涉及到「工具」和「方法」，大量的案例和具体的操作步骤必不可少。否则听众或读者将很难上手，更毋宁说形成使用习惯了。但因为涉及到的工具比较多，需要花心思慢慢整理，期待之后有时间会逐一补上。"
+  },
+  {
+    "objectID": "posts/如何有效地获取信息/index.html#科学上网",
+    "href": "posts/如何有效地获取信息/index.html#科学上网",
+    "title": "如何有效地获取信息",
+    "section": "科学上网",
+    "text": "科学上网\n越来越觉得科学上网是有效获取信息的一个必要前提。在没有形成使用习惯之前可能不会有这种感觉，但是习惯一旦养成，就会产生极大的依赖性。\n科学上网首要的好处自然是可以突破信息封锁。无论是 Twitter、Facebook，还是 BBC 、纽约时报，大量优质的英语信源都需要科学上网才能有缘得见。同样的东西，有人看得见，有人无法看见，这就是信息不对称。这种不对称在专业性越强的领域，产生的影响就越大。\n科学上网的第二个好处是可以使用国外优秀的科技产品，比如之后会提到的搜索引擎和 RSS 阅读器。这些产品可以大大提高我们在信息检索和信息采集方面的效率，而国内同类型的产品并不能替代它们。"
+  },
+  {
+    "objectID": "posts/如何有效地获取信息/index.html#用好搜索引擎",
+    "href": "posts/如何有效地获取信息/index.html#用好搜索引擎",
+    "title": "如何有效地获取信息",
+    "section": "用好搜索引擎",
+    "text": "用好搜索引擎\n\n通用性搜索引擎\n虽然百度的引擎做得也不错，我们平常依靠百度能够解决多数问题。但是在技术和功能的拓展上，google 无疑要比百度优秀得多。\n首先体现在搜索引擎优化上。输入一个同样的关键词，很多时候谷歌返回的前几条信息就是我们想要的，而百度可能要在第二页以后才能找到。比如前阵子因为选题需要，我要找联合国发布的「电子政务报告」，两者返回的结果质量相差巨大。\n个人经验是，专业性越强的东西，谷歌返回的结果准确性越高，而百度返回的结果准确性则偏低。当然，输入的关键词本身也很重要。如果搜索结果不如意，就要不断变换关键词。平常在使用搜索引擎的时候，也要不断积累关键词，很多比较专业的领域都需要我们不断试错后才能得到较为满意的结果。\n\n\n搜索引擎语法\n和百度相比，google 有着更好的搜索引擎语法支持。具体语法及应用详见此处。\n我觉得这些语法中最有用的一个是双引号““强制进行连词检索，还有就是site站内搜索命令和inurl命令。比如我们知道联合国发布了某个报告，那么直接关键词 ”报告名称” site:un.org就可以轻松地在联合国网站内找到报告原文。\n再比如我们要找某份政府文件。为了保证信源的权威性，文件肯定要来源于政府网站，我们可以使用“文件名”+inurl:gov.cn来搜索这份文件。\n我之前做过一个北京人口政策方面的选题，需要查找有哪些国家部委或是其下属的事业单位在招聘公告里歧视非北京户口的毕业生，即在招聘公告中声明非北京户口就不能获得某个职位。这个时候我们就可以组合各种语法来进行检索。我所使用的检索式是“北京生源” OR “北京*户口” intitle:招聘 inurl:gov。\n\n\ngoogle自定义搜索引擎\n那假如我想把搜索范围限定在某几个网站里，是否能够通过组合多个 site 语法来实现呢？很可惜，google 并不支持这种语法组合。但是 google 有一个更为便捷和强大的功能叫做「自定义搜索引擎」。通过自定义搜索引擎，我们就能够定制专属于自己的个性化搜索。\n举个例子，假如我们有这样一个需求，需要查找某个议题在哪些纸媒中已经被报道过了。 这时候我们就可以建立一个「纸质媒体」的搜索引擎，把《财新周刊》、《南风窗》、《凤凰周刊》、《中国新闻周刊》、《财经》等纸媒的官网域名都添加到自定义搜索引擎里，然后保存起来。\n之后在这个自定义搜索引擎页面进行搜索，搜索结果就会限定在你所设定的几个网站内，并且以后随时都可以使用。这比一个个网站地查要快速得多，也方便得多。\n运用同样的方法，我们可以建立自己关注的某个议题库、影视资源搜索库、软件资源搜索库等等，大大提高自己的搜索效率。\n\n\n专门性搜索引擎（数据库）\n虽然像 google 这样的搜索引擎给我们提供了极大的便利，但是当我们需要查找一些比较冷僻的文件和资源时，通用性搜索引擎就未必能够找到了。\n比如要查找某条具体的法律法规或者地方性政策，我们可以去北大法宝进行检索；再比如需要查找某份行业年鉴或者综合性年鉴，我们可以去中国知网的年鉴数据库进行检索。\n要知道什么时候应该查找什么数据库，一是要靠平时的积累，同时也可以去各大学图书馆网站下熟悉各类数据库。比如武大图书馆和北大图书馆，购买的数据库都非常丰富。"
+  },
+  {
+    "objectID": "posts/如何有效地获取信息/index.html#用rss聚合信息",
+    "href": "posts/如何有效地获取信息/index.html#用rss聚合信息",
+    "title": "如何有效地获取信息",
+    "section": "用RSS聚合信息",
+    "text": "用RSS聚合信息\nRSS 的全称为 Really Simple Syndication，是一种简易的信息聚合工具。\n简单来讲，假如我们需要长期跟踪某个网站的消息，但是又不想每天都到该网站上查看更新，因为那样太耗费时间和精力。\n这种情况下，我们就可以利用 RSS 阅读器定制该网站的信息。只要该网站有更新，RSS 服务器就会自动抓取更新信息，并将更新内容以摘要或者全文的形式推送到我们的个人阅读器上。\n假设我有这么一个需求，需要监控武汉大学文史哲三院的学术讲座信息。那么这个时候，我们就可以在每个院系官网的「学术信息」栏目下抓取页面到订阅源上，保证自己能够在第一时间得到这些消息。\n再比如我们平常做数据监控，皮尤研究中心和经济学人智库等研究机构可能会不定期的发布一些报告。如果想要第一时间获取这些报告，最好的方式也是把它当成自己 RSS 阅读器的一个订阅源。\n但是有的时候某些网站并不会主动提供 RSS 订阅，一般的阅读器也无法自动抓取页面。这个时候就需要我们自己配合一些工具来自行抓取，比如 feed43。这就需要我们稍微懂一些 html 语言和正则表达式了。"
+  },
+  {
+    "objectID": "posts/新的开始/index.html",
+    "href": "posts/新的开始/index.html",
+    "title": "新的开始",
+    "section": "",
+    "text": "很久之前就想写博客了，却没想到拖了这么久。今天终于动笔开始写，在这里给自己一个期许，希望能够坚持写下去。\n想来也觉得惭愧，身在文学院，这三年来自己除了论文就再也没有写下其它什么像样的东西。很多本来值得纪念和珍藏的人和事已经渐渐模糊直至被淡忘。\n现在偶然翻看高中时代写的文章，会涌现出一些复杂和微妙的情感。一方面为自己当初的激愤和想当然感到羞赧，另一方面又时常会怀念那种喷薄的表达欲。\n虽然明白自己在文字上从来就缺少灵气，但那时的自己确乎对写作怀有一种热情和期待。观点、立场和价值判断背后同时含有对文字的某种虔诚。\n想来这还应该感谢高中的语文老师鲁卫鹏，总是鼓励我们写那些自己想写的文字。所以，即便是写那种被称为「作文」的东西，也并不缺少乐趣。\n但到了现在，没有了应试的压力，反而没有了动笔的欲望。三年来的学院教育并没有让自己在文字工夫上有所长进。眼光虽是高了不少，但写出来的东西却总是苍白且寡淡。\n这也应了陈平原先生的一个观点，即今日的文学学科教授的已不再是古典的「文学教育」，而是充分现代化和学术化的「文学史教育」。三年来，我们基本没受什么语言、文章方面的训练。\n三年不动笔的后果之一便是表达能力的严重退化。原本口头表达就不好，聊有所慰的是自己对字面上的东西还有些许敏锐。但如今，就连这也日益衰退。\n写论文时面对电脑，常常会突然忘词。苦思冥想许久也找不出一个恰当的语词，这让我感到悚然和恐惧。人如若丧失了自我表达的能力，将成为一座孤岛。\n另一方面，自己近来的记忆力似乎也在退化。生活中遭遇的人、经历的事和沾染的情绪大多不易记得，以至于每每见到班上同学熟悉的面孔却叫不出名字。高中时代一些原本以为可以铭记一生的事情也在渐渐遗忘。细节已经难以拾起，只是其中的某种情绪现在还能够模糊地感受得到。\n这也是一桩令人不安和恐惧的事。正当盛年的自己记忆力就已如此，将来的我还能够记起今日之我的所思所想所感吗？\n我想，基于这些理由，似乎足以说服自己重新拾起笔写点什么。写什么其实并不重要，重要的是在写作的过程中能够面对真实的自己，能够记录下自己零碎的思考和并不算丰富的情感，留作他日观。\n是为开篇。"
+  },
+  {
+    "objectID": "posts/「图政」实习小记/index.html",
+    "href": "posts/「图政」实习小记/index.html",
+    "title": "「图政」实习小记",
+    "section": "",
+    "text": "这两天为了整理自己的「实习资料包」，把 tower 上的东西又重新翻过了一遍，突然就有了很多感触。\n如果从试用期开始算起，在图政前前后后待了有 9 个月的时间。9 个月，也许相当于人生的一百零八分之一。谁知道呢，总之并不算短也并不算长。然而，现在回想起来又觉得是一闪而过。\n里面有很多零散的记忆碎片，也有很多油然升起而又不知所终的情绪。现在尝试在记忆里慢慢把它们搜寻出来，拼装组合，形成一幅记忆地图，权且当作记念。\n放寒假的时候，碧旋开始带着我做军队人事调动的选题。对于一个没有建库经验且不曾接触过 excel 的人而言，第一次建库的经历无疑是漫长且有点痛苦的。\n军队选题的第一个困难就是切入点。在做这个选题之前，自己对中国的军队系统基本毫无了解，只能通过在网上查阅各种资料来搭建自己关于这个方面的知识体系。\n在看了大量新闻，并且基本了解了军队的层级系统之后，我和碧旋决定把选题的重心放在跨军区的人事调动上。我们试图从十八大后军队高级将领的人事调动中观察各个军区（特别是南京军区、兰州军区和济南军区，分别对应习、郭、徐）势力的消长。\n但最后的数据分析证明这样的预设并不准确，南京军区出身的将领并没有在晋升上有特别抢眼的表现，兰州军区和济南军区出身的将领也并未有受到明显打压的趋势。\n这样的结果并不出人意料，但多多少少让我感到困惑。我不知道在对一个领域没有结构性地了解，没有非常深刻的理解和把握之前，应该如何来设立指标？怎样才能抓住真正重要的东西，而非把时间浪费在一些没有意义的指标上？以及，在建库编码之前我们是否要有自己的一个预测呢？如果需要，那么如果数据得出的结果与预测不一致怎么办？\n第二个困难就是资料的收集。军队本身是一个封闭的系统，从公开途径得到将领们的详细资料并不容易，很多军事论坛里面的信息又不足采信。\n花费了无数时间在互联网的各个角落里进行搜寻，结果却差强人意。不少将领只能获得诸如籍贯、年龄、级别、军衔、所在军区等基本信息，早期的从军履历却面目模糊。一些数据的缺失也给后来的分析带来了麻烦。\n另一个比较棘手的问题是指标的分类，有时候一个对象可以同时分属两个指标项。比如三大海军舰队接受海军和大军区的双重领导，再比如有将领同时兼任两个职位，这时应该把它们归在什么位置？\n第三个困难就是 excel 的使用了。在真正了解 excel 的强大功能之前，我做了很多无用功，用人工的方法去做着函数能够瞬间完成的事情。因而面对着满屏单元格时常会升起一丝狂躁的感觉。\n不过好在工具总是相似的，在了解了工作原理后上手并不困难。借由此次建库也算是对 excel 的功能有了一些基本的了解。\n其实与工具相比，选题的切入点才是真正重要的。因为它决定了一篇报道所能够达到的深度。遗憾的是，那时的我甚或说现在的我，还远未能够达到。\n毕竟，时政类的深度报道需要长时间的积淀，需要对国家的政经体制的运行逻辑有自己的洞察和剖析，然后才会对当下的选题有一个准确的预判。\n第一次建库花了一个多月的时间，171 位高级将领，近 30 个细分指标，仔细数一数也有 5000 余个单元格。这里还要大大地感谢碧旋给我提了许许多多有益的建议，让我少走了不少弯路。\n虽然后来选题因为敏感度的原因被《南风窗》毙掉了，虽然最终得出的结论也并不让我满意，但是建库的过程还是让我受益匪浅。可以说，建库是一种强迫自己去深入了解「结构性知识」的有益方法。\n3 月份军队选题甫一结束，就开始了人大代表的选题。如果说军队调动的选题是一个人的单打独斗，人大代表的选题就是完完全全的团队协作了。5 个人，3 周时间，最终完成了 2000 多个人大代表样本的编码，形成了 1 个基础库，3 个分库。\n这里面最要感谢的当然是梦冉，如果没有这样一个优秀而负责的组长，我想这样的任务量我们是没办法按时完成的。印象最深刻的是 ddl 的前一天，企业家库还有一半没有完成，梦冉和柳辛说自己三点从床上爬起来编码。\n我觉得团队协作最最重要的就是成员之间彼此的信任和配合。可以说，长时间、高强度的重复性工作对于团队的每个成员都是不小的挑战。如果团队没有足够的信任感和凝聚力，是难以坚持下来的。幸运的是，大家配合的很默契，而且每个人都愿意付出。\n当然，除了精力和体力上的消耗，我们在编码的过程中还遇到了许许多多的问题。首当其冲的还是分类的问题，单单是「教育程度」这个指标我们就分了 18 个类目。\n学历和学位的区别，党校、函授、在职的区别，中专、大专、本科、硕士、博士的区别，可以形成无数的排列组合，感觉任何分类都无法穷尽样本。我甚至觉得事实可能是这个指标并不重要，是我们太较真了。\n但是在编码中又确确实实会遇到此类棘手的问题。再比如我们做人大代表的「职业」，也有 20 余个分类，看似齐全，但是遇到一些奇怪的名目，仍然束手无策，比如火车站站长和打捞局潜水队队长应该怎么分类？孤儿院院长呢？什么样的人应该归入领导干部？\n当你切切实实地去思考这些问题的时候，会发现好像所有之前认为理所当然的概念都变得模糊了。概念界定本身反而变成最困难的事情，为何如此界定？依据是什么？\n第二个问题就是团队作业中的版本控制问题。编码表总是在不断变动的，因为在编码的过程中，总会遇到许许多多的新问题，因此需要通过改动编码表来容纳或者说解决这些问题。\n但是异地的团队作业往往不能做到所有人同时在线，编码表和数据库的改动也不能及时通知到所有人。如果有人因为疏忽而没有注意信息，就会耗费很多无谓的时间，最终还要返工，浪费了人力成本。\n另一方面，例如「最终版、最最终版、真的是最终版了、最终版2.0」之类的文件命名会给人带来认知上的混乱，最终造成整个数据库版本的混乱。要解决问题，首先要保证命名规范，其次把每一次的改动都上传到 tower 固定的讨论组而非 QQ 文件上，写清楚每次所做的改动是什么。\n这样，如果之后遇到问题，就可以很容易地找回任一版本的数据库或者编码表了。这种方法其实也是借鉴了 git 的版本控制思想，只不过要麻烦一些。\n该怎么评价那段做人大代表选题的日子呢？现在回想起来，其实心情很复杂。一方面，我觉得那段时间真很有收获，任务量很艰巨，我们还是按时完成了。\n但是结果却让人遗憾，由于各种原因，数据库依然被无限期搁置。更令人惋惜的是，研究组好像也就此散掉了，柳辛离开了图政，子章去了新闻组。我自己的情绪也陷入了低谷，一度感到十分迷茫。\n和戴玉姐打了一通很长的电话，虽然并没有解决自己的困惑，但还是决定留下来。不知道什么原因，在那之后，研究组就没有继续建库了，只是偶尔帮《南风窗》做一做报告版和文内图表，因而也就没有什么特别深刻的印象。\n其实还是感觉挺遗憾的，因为自己的懒散，在图政的后半段时间里没有出什么像样的成果。转眼间就到了七月，新一轮招新结束后老人们陆陆续续都离开了，我和子章各自兼了一个多月的组长，把新人们带上正轨后也到了要离开的时刻。\n在图政的九个月里有很多很多的收获。除了之前提到的业务上的提升之外，最值得庆幸的就是在图政认识了很多有趣的同龄人。我觉得人是可以从同龄人身上更好地认识自己的，特别是从与自己志趣相近的同龄人身上。\n还有就是，图政让我更多地认清了一些需要面对的「现实」：有的题目并非是自己想做的，但是为了完成发稿任务又不得不做，即使觉得它毫无意义，这是一种现实。有的题目是自己想做的，但是因为自己的知识结构和能力所限，又不能做好，特别是专业性要求比较高的选题，这也是一种现实。"
+  },
+  {
+    "objectID": "posts/又是找资料/index.html",
+    "href": "posts/又是找资料/index.html",
+    "title": "又是找资料",
+    "section": "",
+    "text": "这几天实习的时候，编辑部给派了一个任务，让我帮袁凌老师找资料。\n一开始还是挺亢奋的，结果找了三四天，在电脑上泡了十多个小时，还特地跑了一次首都图书馆，依然理不清头绪。甚至一度怀疑自己到底会不会找资料。看上去似乎信息检索的方法都懂，但是真正找起来，脑子里却是一团浆糊。\n袁老师在做的是一个关于北京市小商品交易市场变迁与小商贩生存境况的选题。需要我帮他找北京近年来有哪些知名的小商品交易市场拆迁或者关停了，它们的市场规模和关停的时间节点。另外还要找北京市政府限制摊贩经商的法规政策。\n后一个需求简单一些。先看相关新闻报道，把报道里提到的政策法规以时间顺序做一个梳理。然后再用「北大法宝数据库」，以「摊位」、「摊贩」、「商品交易市场」、「集贸市场」等关键词进行全文检索。检索范围限制在「地方法规」和「北京」，把所有结果过一遍，挑出有用的即可。基本上不会遗漏重要信息。\n另一个需求就有些麻烦了。首先要确定北京有哪些「知名」的商品交易市场或批发市场。这就涉及到「个案」，我这个外来人自然毫无头绪。特意咨询了另一个来自北京的实习生，她说了四五个地点，我一一记下，但不想也知道这肯定不全。\n我的第一个想法是，要想拿到齐全的商品市场和批发市场名称以及它们的具体规模，得找工商局，他们或许有完整的名录。结果在北京市工商局的官网上并没有找到，遂放弃。\n然后想既然是「被拆迁的小商品市场」，国土资源局和住建局网站或许会有信息，结果依旧没找到。\n接着又打统计资料的主意，查了北京市的社会经济统计年鉴。发现有相关指标，但是只有小商品交易市场的数量统计，没有具体名称和规模。\n1995年的北京市年鉴倒是有「成交额超亿元集贸市场情况」这么一个附录，里面有各个成交额超过一亿元的集贸市场的具体信息，但是时间太久远了没办法用。\n令人感到奇怪的是，1995 年之前和 95 年之后都没有这么一个附录。不知道为何在 95 年就突然出现了，然后又消失了。感觉莫名其妙，统计没有一点连续性。\n依旧不死心。跑到首都图书馆，翻了各种奇奇怪怪的年鉴和史志。还是没有发现有用的信息。现在才晓得，原来政府部门出的所谓「年鉴」，就是把部门里一年的新闻通稿通通罗列在一起。没有当年下发的文件和其它任何有价值的信息。\n发现官方渠道基本不可能之后，又开始找论文，从知网上下载了十多篇论文，浏览完后依旧没有找到有用的信息。\n于是有点绝望了。只能回到 google，重新搜相关的新闻报道。但是问题在于，没有具体的名称，只用「商品市场 OR 批发市场 拆迁」这类关键词组合，得到的结果要么是动批要么是官批、天意、大红门，其它拆迁时间较早和相对没那么知名的商品交易市场是无法搜到的。\n无奈之下尝试了一下百度，结果竟然有新发现。以「批发市场」进行关键词检索，首页会发现几个「批发市场平台」，里面汇集了各大批发市场的名录信息。\n虽然这些平台乍一看像是山寨的，很多信息就是从网络上粘贴拷贝下来，夹杂着错字和 html 标签。但是名录本身比较齐全。可以依着这些线索，再去找对应市场的具体信息。\n还有一个意外是百度百科。多数批发市场都有一个对应着的百度百科条目，里面会有一些市场本身的介绍。\n这本来应该是一个常识。但是因为对 google 有着过度的执念，以及对百度搜索有着强烈的抵触，所以竟然完全没有想到要用百度来搜索。\n百度百科显示的结果固然不可信，但是可以以此为「关键词线索」，去找新闻报道里面的具体数字。\n这种方法其实是基于这样的假设，即新闻报道介绍批发市场的市场规模时会引用百度百科的内容。这是基于以往的经验，结果也不出所料。确实是这样，多数媒体都直接复制了百科的内容。\n但是比对二者，无论百度百科还是新闻报道，在介绍规模的时候都没有标注信息来源。\n于是就会产生一种非常诡异的感觉。媒体报道和百度百科上的内容完全一样，你明明知道报道中的内容就是复制百科的。但是为了「可信度」，你又需要通过百科找到新闻报道，因为它们才是「可信的来源」。\n从中似乎也可以窥见中文互联网世界的某种生态。网络上流传着大量没有出处没有来源的信息，用户不经筛选和甄别地复制粘贴，媒体也概莫能外。\n政府方面无论是主管部门还是统计部门没有给民间提供有价值的数据的意识，而行业协会则没有这种能力，即使有也多是粗制滥造。这种生态很糟糕，但是又让人无可奈何。"
+  },
+  {
+    "objectID": "posts/Echarts3.0使用体验/index.html",
+    "href": "posts/Echarts3.0使用体验/index.html",
+    "title": "Echarts3.0 使用体验",
+    "section": "",
+    "text": "昨天在微博上看到，Echarts 发布了 3.0 的 beta 版本（详见此处）。在新版本中，开发团队增加了一些非常强大的功能，比如:"
+  },
+  {
+    "objectID": "posts/Echarts3.0使用体验/index.html#把坐标系和图表类型剥离开来",
+    "href": "posts/Echarts3.0使用体验/index.html#把坐标系和图表类型剥离开来",
+    "title": "Echarts3.0 使用体验",
+    "section": "把坐标系和图表类型剥离开来",
+    "text": "把坐标系和图表类型剥离开来\n在原先的版本中，柱形图、折线图、散点图都必须要和直角坐标系进行搭配，雷达图必须和极坐标搭配，地图则是一个独立的类型。剥离开以后，就可以组合产生非常多有意思的图表。特别是可以在地理坐标系上搭配各种图表类型，想想都让人觉得兴奋。\n之前一直觉得 Echarts 地图的功能太过有限，就连地理空间上的气泡图都无法实现（或许用 markpoint 可以实现，但是太过麻烦没有试过）。新版本出来以后功能就大大拓展了。"
+  },
+  {
+    "objectID": "posts/Echarts3.0使用体验/index.html#坐标数轴支持更多的数据类型",
+    "href": "posts/Echarts3.0使用体验/index.html#坐标数轴支持更多的数据类型",
+    "title": "Echarts3.0 使用体验",
+    "section": "坐标数轴支持更多的数据类型",
+    "text": "坐标数轴支持更多的数据类型\n之前曾模仿「数读」做过一个坐标轴上的气泡图，用的是散点图的图表类型。由于散点图表现的是相关关系，因此横纵数轴的数据都必须是数值型数据。所以就需要进一步将类目数据模拟成数值数据，整个过程还是比较麻烦的。3.0 出来以后就方便多了。"
+  },
+  {
+    "objectID": "posts/Echarts3.0使用体验/index.html#一个-echarts-实例中可以同时存在多个直角坐标系",
+    "href": "posts/Echarts3.0使用体验/index.html#一个-echarts-实例中可以同时存在多个直角坐标系",
+    "title": "Echarts3.0 使用体验",
+    "section": "一个 Echarts 实例中，可以同时存在多个直角坐标系",
+    "text": "一个 Echarts 实例中，可以同时存在多个直角坐标系\n之前的版本中，每个实例只允许存在一个直角坐标系。如果要实现多个直角坐标系，就要构造很多个实例。但是这样的话加载速度会变得很慢，而且页面布局也会很麻烦。\n改版后实现起来就相对容易多了，有利于我们进行数据的协同比较。《纽约时报》和《华盛顿邮报》就有很多类似的例子，例如这里。"
+  },
+  {
+    "objectID": "posts/Echarts3.0使用体验/index.html#其它",
+    "href": "posts/Echarts3.0使用体验/index.html#其它",
+    "title": "Echarts3.0 使用体验",
+    "section": "其它",
+    "text": "其它\n\n增强了对移动端的支持\n加强了图表的交互效果\n设计了新的图表类型\n\n虽然现在推出的还只是 beta 版，但这些新功能也足以让人感到惊艳了。之前学了一个多月的 Echarts2.7，从看文档、看实例开始，到模仿《纽约时报》和「数读」的图表做了11个小demo，感觉收获很大。\n毕竟刚刚接触前端不久，从学习 Echarts 的过程中也加强了自己对代码的感觉，也会试着去理解整个产品的设计理念与业务逻辑。虽然很多人吐槽 Echarts 的文档写得很差，但其实只要认认真真把文档看过几遍，大体上还是能够找到解决需求的方法的。\n真心希望 Echarts 会越做越好，最终能够成为一个像 D3 那样的世界级的开源产品，甚至能够超越它。"
+  },
+  {
+    "objectID": "posts/Linux 学习笔记：ssh 远程免密登录/index.html",
+    "href": "posts/Linux 学习笔记：ssh 远程免密登录/index.html",
+    "title": "Linux 学习笔记：ssh 远程免密登录",
+    "section": "",
+    "text": "近日在学习 Linux，虽然在 Mac OS 下 Linux 的大部分指令都可以使用，但是觉得既然准备学习 Linux，还是用原生的系统进行操作会比较好。\n于是尝试了一下 DigitalOcean 的 VPS ，选择的是月租 5 刀的低配套餐，主机位于洛杉矶，安装的是 CentOS。配置成功后 DigitalOcean 会将远程主机的 ip 和登录密码发送到邮箱。\n现在首先要做的是用自己的 Mac 登录这台远程主机，使用的方法是 ssh 登录。这里顺便把过程记录一下。"
+  },
+  {
+    "objectID": "posts/Linux 学习笔记：ssh 远程免密登录/index.html#ssh-协议和原理",
+    "href": "posts/Linux 学习笔记：ssh 远程免密登录/index.html#ssh-协议和原理",
+    "title": "Linux 学习笔记：ssh 远程免密登录",
+    "section": "ssh 协议和原理",
+    "text": "ssh 协议和原理\nssh 是一种加密的网络传输协议，能够实现不同计算机之间的远程加密登录。具体内容详见参考文献中阮一峰的文章以及慕课网 Tony 老师的视频讲解。\n传统的加密方式是对称加密，即加密和解密需要使用同一组密码。这样造成的结果是，如果一台计算机想要把信息加密发送给对方，首先要让对方知道加密的密码，这样对方在接收到加密信息之后才能解开。但是加密的密码在传输的过程中又容易被中间人截获，因此这种方式存在着很大的风险。\n而 ssh 采用的是另一种非对称加密。简单来说，计算机会自动生成一对密匙（公钥和私钥），我们可以用其中一把进行加密，然后对方用另一把进行解密。\n例如 A 要向 B 发送一则加密信息，A 可以选择用自己的私钥对信息进行加密， B 则可以用 A 提供的公钥解密；另一种方式是 A 可以用 B 提供的公钥加密，B 再用自己的私钥进行解密。\n在整个信息传递的过程之中，A 和 B 的私钥始终都握在自己手中，只有自己知道。只要他们能够保证自己手中的私钥在本机不泄露，那么他们传递的加密信息就是安全的。\n我理解的原理大致是这样，接下来是登录步骤。"
+  },
+  {
+    "objectID": "posts/Linux 学习笔记：ssh 远程免密登录/index.html#登录步骤",
+    "href": "posts/Linux 学习笔记：ssh 远程免密登录/index.html#登录步骤",
+    "title": "Linux 学习笔记：ssh 远程免密登录",
+    "section": "登录步骤",
+    "text": "登录步骤\n\n生成密钥\n如果本地主机没有密钥的话，首先需要生成一对密钥。\n\nssh-keygen -t rsa\n\n此时，我本地主机的/Users/Boyce/.ssh目录下会生成两个新文件，分别是id_isa和id_rsa.pub。其中id_isa是私钥，id_rsa.pub是公钥。\n\n\n密码登录\n接着用 ssh 命令登录自己的远程主机\n\nssh root@host\n\n这时，远程主机会把自己的公钥传送给我们, 终端会问是否要继续连接\n\n    $ ssh user@host\n    　　The authenticity of host 'host(***)' can't be established.\n    　　RSA key fingerprint is ***\n    　　Are you sure you want to continue connecting (yes/no)?\n\n输入 yes 以后，表示同意继续连接。之后终端会让我们输入远程主机的登录密码，这段密码会以远程主机的公钥进行加密，然后传回远程主机。远程主机再用自己的私钥对其进行解密，如果解密后登录密码正确就可以进行正常连接了。\n连接成功后这台远程主机的公钥会被保存在本机/Users/Boyce/.ssh/目录下的 known_hosts 文件中，可以进入该目录用vim known_host进行查看。\n\n\n公钥免密登录\n虽然连接成功，但是如果使用这种方法，每次连接服务器都需要输入一遍登录密码，这样很麻烦。\n于是我们选择另外一种方法，就是把自己的公钥上传到远程主机上，这样每次我们连接远程主机的时候，远程主机都会向我们发送一段随机字符，然后我们用自己的私钥对信息进行加密发送回去，远程主机再用我们提供的公钥进行解密。\n这样来回一次后，如果远程主机确认信息无误，我们的计算机就可以直接登录而不需要再输入密码了。\n具体步骤是我们先要把自己本机上的公钥传送给远程主机，命令如下\n\n  ssh-copy-id root@host\n\n这时终端会让我们再次输入远程主机的密码，输入成功后我们计算机上的公钥就保存在了远程主机/root/.ssh/目录下的authorized_keys文件中了。接着我们再用 ssh 命令进行登录\n\n    ssh root@host\n\n一般情况下这样就已经能够免密直接登录了。但是终端却要我再次输入本机的私钥，\n\n  Enter passphrase for key /Users/Boyce/.ssh/id_rsa\n\ngoogle 之后发现原来这是 Mac Sierra 系统的问题，该版本的系统不再自动保存 ssh keys 到 keychain 中。在网上找到两种解决方案，第一种是在本机的/Users/Boyce/.ssh/目录下增加一个config配置文件；第二种方案是修改开机启动项，让电脑每次开机的时候执行更新 keychain 的操作。第一种方式试了之后发现无效，于是选择第二种方式。\n具体做法是首先用ssh-add命令把私钥添加到 keychain 中，\n\n    ssh-add -K /Users/Boyce/.ssh/id_rsa\n\n接着进入本机开机启动项的目录/Users/Boyce/Library/LaunchAgents，新建一个以.plist为结尾的文件，例如 addsshkeytoagent.plist\n\n    cd /Users/Boyce/Library/LaunchAgents\n    vim addsshkeytoagent.plist\n\n进入插入模式，把以下代码片段复制进去后保存退出。\n\n    <?xml version=\"1.0\" encoding=\"UTF-8\"?>\n    <!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">\n    <plist version=\"1.0\">\n    <dict>\n        <key>Label</key>\n        <string>ssh-add-a</string>\n        <key>ProgramArguments</key>\n        <array>\n            <string>ssh-add</string>\n            <string>-A</string>\n        </array>\n        <key>RunAtLoad</key>\n        <true/>\n    </dict>\n    </plist>\n    \n    <!-- @@@@LingonWhatStart:ssh-add -A@@@@LingonWhatEnd -->\n\n现在就我们可以用 ssh 免密直接登录远程主机了。\n\n    ssh root@host\n\n\n\n使用别名登录\n但是这里仍旧有一个问题，就是远程主机的 ip 地址太难记忆了。我们可以为远程主机设置一个别名，例如这台主机是在 DigitalOcean 上购买的，就姑且叫它 do 吧。\n首先进入/Users/Boyce/.ssh/目录下， 用 vim config在 config 文件中加入如下信息\n\n    Host do\n        HostName example.com\n        User  root\n\n保存退出后就可以用别名登录远程主机了\n\n    ssh do\n\n登录成功！\n\n    [root@Boyce_ocean ~]"
+  },
+  {
+    "objectID": "posts/Linux 学习笔记：ssh 远程免密登录/index.html#参考文献",
+    "href": "posts/Linux 学习笔记：ssh 远程免密登录/index.html#参考文献",
+    "title": "Linux 学习笔记：ssh 远程免密登录",
+    "section": "参考文献",
+    "text": "参考文献\n\n阮一峰：SSH原理与运用（一）：远程登录\n阮一峰：SSH原理与运用（二）：远程操作与端口转发\nTony：SSH 协议原理\nMacOS X 终端里 SSH 会话管理\nSaving SSH keys in macOS Sierra keychain"
+  },
+  {
+    "objectID": "posts/RSS 订阅方案：Inoreader+Feed43.html",
+    "href": "posts/RSS 订阅方案：Inoreader+Feed43.html",
+    "title": "RSS 订阅方案：Inoreader + Feed43",
+    "section": "",
+    "text": "按照维基百科的定义，\n用通俗的话说，RSS 就是提供一种信息聚合的服务，能把不同网站不同来源的信息聚合在一处，并以摘要的形式投送给订阅者，以便用户能够对大量信息进行快速筛选和阅读。"
+  },
+  {
+    "objectID": "posts/RSS 订阅方案：Inoreader+Feed43.html#为何要用-rss",
+    "href": "posts/RSS 订阅方案：Inoreader+Feed43.html#为何要用-rss",
+    "title": "RSS 订阅方案：Inoreader + Feed43",
+    "section": "为何要用 RSS",
+    "text": "为何要用 RSS\n第一次接触到 RSS 还是大一的时候，是讲座网的一位学长推荐给我们的。那时他在用 Google Reader，我也就跟着注册了一个，添加了十来个订阅源。\n不过说实话，作为大一新生，自己每天有意识去获取的信息并不多，因而也就没有养成使用习惯。\n直到大二，愈来愈发现自己身上似乎存在着某种程度上的信息饥渴症。每天都要花很多时间在搜寻信息和浏览信息上。而信息源散落又在互联网的各个角落，管理起来比较混乱。\n于是又想起了 RSS。但是那时 Google 已经停止了对 Google Reader 的支持，于是就转投 Feedly。一段时间以后就成为了 RSS 的重度用户。\n对于一个有着大量信息摄取习惯的人来说，RSS 绝对是利器。它的高效体现在以下几个方面\n\n自动投送。节省了用户自己登陆多个网站所花费的时间。\n及时投送。一般能够在网站发布信息 3 小时内进行投送，付费用户可以确保在 15 分钟内进行投送，这就保证了信息获取的即时性。\n聚合展示信息。能够让用户快速在信息流中筛选出自己想读的内容，不想读的扫完标题和摘要即可跳过。\n区分信息的层级。 可以通过给不同的订阅源进行分类来区别信息的重要性。\n便于保存和查找。遇到优质的内容可以即时保存，添加标签，将来有用时也能很快找到。\n便于知识管理。可以配合 Evernote 进行使用，形成自己的知识库。"
+  },
+  {
+    "objectID": "posts/RSS 订阅方案：Inoreader+Feed43.html#微信公众号与-rss-的异同",
+    "href": "posts/RSS 订阅方案：Inoreader+Feed43.html#微信公众号与-rss-的异同",
+    "title": "RSS 订阅方案：Inoreader + Feed43",
+    "section": "微信公众号与 RSS 的异同",
+    "text": "微信公众号与 RSS 的异同\n其实在某种程度上，微信公众号也可以看成是一个 RSS。公众号运营者通过平台将信息定时定点地投放给订阅者，用户所订阅的信息也都聚合在「订阅号」这个平台上。但是公众号与 RSS 的不同之处在于：\n\n公众号加上了「强社交」的色彩，用户除了订阅信息，也在分享信息，也从朋友那里获取信息。我们所获取的信息密度和价值高低，很大程度上取决于我们自己的朋友圈。\n封闭的系统。信息发布者需要在平台管理方那里进行注册和认证。所有信息也只在平台内部流动。\n功能较弱。与 Feedly、Inoreader 这类 RSS 订阅器比起来，微信公众号无法区分信息层级，无法进行自定义的信息过滤，无法对自有订阅源进行有效搜索。\n\n综上而言，微信公众号除了社交上的优势外，功能是不如传统的 RSS 订阅器的。\n曾经有想过将微信公众号的内容全部推送到自己的 RSS 订阅器上（狗耳朵的付费服务可以实现此功能，详见此处）以方便管理，但是发现阅读量、点赞数和评论在网页上都无法查看，于是就放弃了。现在的情况是两边都在用着。"
+  },
+  {
+    "objectID": "posts/RSS 订阅方案：Inoreader+Feed43.html#rss-订阅器的选择",
+    "href": "posts/RSS 订阅方案：Inoreader+Feed43.html#rss-订阅器的选择",
+    "title": "RSS 订阅方案：Inoreader + Feed43",
+    "section": "RSS 订阅器的选择",
+    "text": "RSS 订阅器的选择\n至于 RSS 订阅器的选择，人各有好。现在比较流行的应用是 Inoreader，我在今年暑假的时候也从 Feedly 迁移到了 Inoreader。理由是 Inoreader 的功能和体验经过不断改进已经全面超越了 Feedly，包括在阅读体验、订阅源管理和社交分享等各方面。\n这里有一篇少数派的文章，《观点：不可替代的 RSS，比 Feedly 更好用的 Inoreader》，比较了两者的优劣。\n至于 Inoreader 的使用教程，网络上有非常多的资料，我就不再赘述了。可参看 Inoreader 的官方教程，以及这一份简单的中文入门教程。\n这里要提醒一下，从 10 月份起，Inoreader 的访问速度一下子就变得特别慢。国内网络明明可以访问，但是加载起来需要等待很久的时间。我试了一下让 Inoreader 走代理路线，速度虽然还是比以前慢一些，但是在可接受的范围内。"
+  },
+  {
+    "objectID": "posts/RSS 订阅方案：Inoreader+Feed43.html#rss-辅助工具feed43的使用",
+    "href": "posts/RSS 订阅方案：Inoreader+Feed43.html#rss-辅助工具feed43的使用",
+    "title": "RSS 订阅方案：Inoreader + Feed43",
+    "section": "RSS 辅助工具「Feed43」的使用",
+    "text": "RSS 辅助工具「Feed43」的使用\n当然，RSS 订阅器也有自己的局限。并不是说有了 RSS 订阅器，就能在互联网上想抓什么抓什么了。如果该网站没有提供 RSS 源，订阅器也无从抓取。比如中国大多数高校网站和政府网站就不提供 RSS 源。\n但是如果真有需求，我们完全可以使用一些工具来自己制作订阅源。Feed43 就是这样一款优秀的定制工具，只需要稍懂一些 html，我们即可进行高度的个性化定制。"
+  },
+  {
+    "objectID": "posts/Scrapy 学习感想及资源汇集.html",
+    "href": "posts/Scrapy 学习感想及资源汇集.html",
+    "title": "Scrapy 学习感想及资源汇集",
+    "section": "",
+    "text": "最近一段时间一直在学 Python，想通过 Python 来写一些有趣的小爬虫。\n其实就语法来说，如果有了一定的 Javascript 基础，Python 的语法学起来并不会很困难。真正困难的是怎样配置运行环境，以及怎样在遇到 bug 的时候进行有效排查。\n在学 Requests 库的时候尚不会觉得很吃力，因为文档的内容本身比较少，遇到问题多调试几下也就解决了。但是学习 Scrapy，对于一个像我这样的 Python 初学者而言，单单看 Scrapy 的文档还是很困难的。\n首先是文档本身很长，并且里面有很多生僻的概念。第一次遇到这些概念，无论是中英文都读不太懂。\n其次是 Scrapy 调试起来比较困难（当然是相较于 Requests 而言的），很多时候遇到问题也不知道如何解决。\n最后是学习 Scrapy 要涉及到很多的知识领域，而且这些都是之前自己并没有接触过的。在学的过程中会发现，原来不仅仅要学习 Python，还要学 HTTP 协议，要学习 Xpath，要学习正则表达式，甚至还要学习 Linux。\n我原先用的是 Windows 的开发环境，在安装以及调试的时候遇到了各种问题，好不容易安装成功却发现 Scrapy shell 无法使用。无奈之下安装了一个 VitualBox 虚拟机，在 Linux 下进行开发。\n虽然学习 Linux 基础也花了很多时间（慕课网上有非常好的视频教程，Tony 老师的讲得特别棒，链接见此），但是现在想起来绝对是超值。因为学 Linux 可以加深我们对计算机系统的理解。\n所以，一路学下来的过程还是比较坎坷的，也曾几度想要放弃，但好歹坚持下去了。虽然现在看文档还是有一大部分不能理解，但是至少是能爬点东西下来了。\n所以就想把自己在学习过程中遇到的好东西整理出来，以后再找起来也就没那么费力。"
+  },
+  {
+    "objectID": "posts/Scrapy 学习感想及资源汇集.html#http-基础",
+    "href": "posts/Scrapy 学习感想及资源汇集.html#http-基础",
+    "title": "Scrapy 学习感想及资源汇集",
+    "section": "HTTP 基础",
+    "text": "HTTP 基础\n\n图解HTTP 可以了解 HTTP 协议的基础知识和概念，写得挺通俗的一本书"
+  },
+  {
+    "objectID": "posts/Scrapy 学习感想及资源汇集.html#xpath",
+    "href": "posts/Scrapy 学习感想及资源汇集.html#xpath",
+    "title": "Scrapy 学习感想及资源汇集",
+    "section": "Xpath",
+    "text": "Xpath\n用 Xpath 可以简单地进行结构化的网页数据提取\n\nW3School 教程\n极客学院：XPath 与多线程爬虫"
+  },
+  {
+    "objectID": "posts/Scrapy 学习感想及资源汇集.html#正则表达式",
+    "href": "posts/Scrapy 学习感想及资源汇集.html#正则表达式",
+    "title": "Scrapy 学习感想及资源汇集",
+    "section": "正则表达式",
+    "text": "正则表达式\n当遇到比较复杂的网页内容时，可以用正则表达式进行精确地字符串匹配。但是正则学习起来还是很复杂的，到现在我也只能做简单的匹配。从视频入门可能会相对容易一些。\n\n极客学院：基本的正则表达式\n慕课网：Python 正则表达式\nPython 正则表达式指南\nUbuntu：Python 正则表达式操作指南"
+  },
+  {
+    "objectID": "posts/Scrapy 学习感想及资源汇集.html#scrapy文档",
+    "href": "posts/Scrapy 学习感想及资源汇集.html#scrapy文档",
+    "title": "scrapy学习感想及资源汇集",
+    "section": "Scrapy文档",
+    "text": "Scrapy文档\n虽然文档很难读，但是还是最重要的参考资料\n\n中文文档0.24\n英文文档0.24"
+  },
+  {
+    "objectID": "posts/Scrapy 学习感想及资源汇集.html#scrapy-的相关视频",
+    "href": "posts/Scrapy 学习感想及资源汇集.html#scrapy-的相关视频",
+    "title": "Scrapy 学习感想及资源汇集",
+    "section": "Scrapy 的相关视频",
+    "text": "Scrapy 的相关视频\n没有相关基础的话可以先从视频入手。极客学院 kingname 老师讲课的语速虽然偏慢，但是逻辑还是很清晰的。课程有提供源码，按照里面的步骤自己操作一遍，会很有收获。\n\n极客学院：定向爬虫：Scrapy初探\n极客学院：定向爬虫：MongoDB与Scrapy\n极客学院：定向爬虫：动态加载网页的爬取"
+  },
+  {
+    "objectID": "posts/Scrapy 学习感想及资源汇集.html#scrapy-的相关文章",
+    "href": "posts/Scrapy 学习感想及资源汇集.html#scrapy-的相关文章",
+    "title": "Scrapy 学习感想及资源汇集",
+    "section": "Scrapy 的相关文章",
+    "text": "Scrapy 的相关文章\n首推 young-hz 在 CSDN 上写的系列文章，通读一遍，会对 Scrapy 的结构和运作机制有一个比较清楚的了解\n\nScrapy 研究探索（一）——基础入门\nScrapy 研究探索（二）——爬w3school.com.cn\nScrapy研究探索（三）——Scrapy核心架构与代码运行分析\nScrapy研究探索（四）——中文输出与中文保存\nScrapy研究探索（五）——自动多网页爬取（抓取某人博客所有文章）\nScrapy研究探索（六）——自动爬取网页之II（CrawlSpider）\nScrapy研究探索（七）——如何防止被ban之策略大集合\n\n然后还有其它一些不错的文章\n\n学习Scrapy入门\n爬虫框架Scrapy的第一个爬虫示例入门教程\nScrapy模拟登录\nScrapy笔记—微博模拟登录及抓取微博内容\n使用Scrapy定制可动态配置的爬虫\n编程方式下运行 Scrapy spider\n使用Redis和SQLAlchemy对Scrapy Item去重并存储"
+  },
+  {
+    "objectID": "posts/Scrapy 学习感想及资源汇集.html#scrapy-案例",
+    "href": "posts/Scrapy 学习感想及资源汇集.html#scrapy-案例",
+    "title": "Scrapy 学习感想及资源汇集",
+    "section": "Scrapy 案例",
+    "text": "Scrapy 案例\n\nscrapy-examples github 上的开源项目，里面有知乎、豆瓣、亚马逊等十个网站的爬虫源码，可以模仿学习。"
+  },
+  {
+    "objectID": "posts/Scrapy 学习感想及资源汇集.html#scrapy-文档",
+    "href": "posts/Scrapy 学习感想及资源汇集.html#scrapy-文档",
+    "title": "Scrapy 学习感想及资源汇集",
+    "section": "Scrapy 文档",
+    "text": "Scrapy 文档\n虽然文档很难读，但是还是最重要的参考资料\n\n中文文档0.24\n英文文档0.24"
+  },
+  {
+    "objectID": "posts/Windows 下的常用软件.html",
+    "href": "posts/Windows 下的常用软件.html",
+    "title": "Windows 常用软件",
+    "section": "",
+    "text": "几天前给笔记本新插了一个内存条，顺便重装了系统。联想 Y470，Windows7 系统，才用了三年，就已经慢得跑不动了。\n这回没用 Ghost 重装，而是去下了官方镜像。没想到系统补丁就打了足足有好几个小时。再加上重装软件，前前后后竟忙活了有三天时间。\nWindows 系统其它方面还好，就是太折腾人了。发现自己近来也是愈没有心思瞎折腾，希望能够早日换上 Mac 吧。\n但是在此之前，还是把在 Windows 下的常用软件整理在这里。其中大多数软件本身也是跨平台的。"
+  },
+  {
+    "objectID": "posts/Windows 下的常用软件.html#浏览器",
+    "href": "posts/Windows 下的常用软件.html#浏览器",
+    "title": "Windows 常用软件",
+    "section": "浏览器",
+    "text": "浏览器\n\nchrome\n主力浏览器\n\n各种优秀的插件大大拓展了 Chrome 的功能，基本上任何需求都能够找到相应的插件。\n配合 Google 账号，可以在多平台上同步书签和历史记录。\n和Gmail、Youtube、Google Drive、Google Calendar 等 Google 服务构成一个完整的生态系统。\nF12开发者工具对于前端开发很友好，调试起来相当方便。\n\n\n\nFirefox\n备用浏览器。平常浏览网页一般用chrome浏览器，当需要隐藏自己的行踪时，用Firefox + Tor方案解决。"
+  },
+  {
+    "objectID": "posts/Windows 下的常用软件.html#网盘",
+    "href": "posts/Windows 下的常用软件.html#网盘",
+    "title": "Windows 常用软件",
+    "section": "网盘",
+    "text": "网盘\n\nDropbox\n有 2G 的免费空间。主要用于同步重要的个人资料和文件，含有个人隐私的东西放在百度云里不放心。Dropbox 在大陆被墙，需要配合科学上网工具使用，我用的 VPN 是 Jayproxy，提供 Dropbox 的代理。\n\n\n百度云\n\n免费容量足足有 1T。\n跨平台，同步速度快，用起来挺方便。\n主要用来同步电子书、电影、课堂材料和设计素材，私人资料是不敢放里面的。\n\n\n\nBitTorrent\n用来同步科学上网工具，具体原理及用法详见编程随想的文章——BT Sync：不仅是同步利器，而且是分布式网盘。"
+  },
+  {
+    "objectID": "posts/Windows 下的常用软件.html#代码编辑器",
+    "href": "posts/Windows 下的常用软件.html#代码编辑器",
+    "title": "Windows 常用软件",
+    "section": "代码编辑器",
+    "text": "代码编辑器\n\nSublime Text3\n才用了一个多月，还不太熟悉。但是到目前为止，体验十分不错。\n\n界面好看，跨平台。\n各种 Snippets 提高敲代码的速度。\n配合Emmet、SidebarEnhancements、TernJS等插件，提高生产效率。"
+  },
+  {
+    "objectID": "posts/Windows 下的常用软件.html#清理",
+    "href": "posts/Windows 下的常用软件.html#清理",
+    "title": "Windows 常用软件",
+    "section": "清理",
+    "text": "清理\n\nCCleaner\n一款十分优秀的系统清理软件。可以清理系统的垃圾文件、注册表，也可以清理浏览器缓存、Cookies 和历史记录。"
+  },
+  {
+    "objectID": "posts/Windows 下的常用软件.html#密码管理",
+    "href": "posts/Windows 下的常用软件.html#密码管理",
+    "title": "Windows 常用软件",
+    "section": "密码管理",
+    "text": "密码管理\n\nKeepass\n开源软件，跨平台。用 Keepass 之前经常被各种账号密码搅得心烦意乱。常常是注册完一个账号，密码过两天就忘。Keepass 可以帮助我们管理各个网站和应用上的账号密码。有了它，我们只要记住一个密码就够了。"
+  },
+  {
+    "objectID": "posts/Windows 下的常用软件.html#下载",
+    "href": "posts/Windows 下的常用软件.html#下载",
+    "title": "Windows 常用软件",
+    "section": "下载",
+    "text": "下载\n\n迅雷\n买了会员。虽然迅雷的安全性堪忧，但是下载速度是真快。现在还不忍舍弃。"
+  },
+  {
+    "objectID": "posts/Windows 下的常用软件.html#影音",
+    "href": "posts/Windows 下的常用软件.html#影音",
+    "title": "Windows 常用软件",
+    "section": "影音",
+    "text": "影音\n\nPotplayer\n一款优秀的视频软件。支持各种奇怪的音视频格式，字幕同步也十分给力。我主要用它来看电影、打录音稿。"
+  },
+  {
+    "objectID": "posts/Windows 下的常用软件.html#图片",
+    "href": "posts/Windows 下的常用软件.html#图片",
+    "title": "Windows 常用软件",
+    "section": "图片",
+    "text": "图片\n\nPicasa\nGoogle 家的图片管理和编辑软件。如果只是对图片进行简单处理，Picasa 就够用了。"
+  },
+  {
+    "objectID": "posts/Windows 下的常用软件.html#压缩",
+    "href": "posts/Windows 下的常用软件.html#压缩",
+    "title": "Windows 常用软件",
+    "section": "压缩",
+    "text": "压缩\n\n7-zip\n这没什么好说的。方便的压缩软件。"
+  },
+  {
+    "objectID": "posts/Windows 下的常用软件.html#其它",
+    "href": "posts/Windows 下的常用软件.html#其它",
+    "title": "Windows 常用软件",
+    "section": "其它",
+    "text": "其它\n\nflux\n一款可以调节屏幕色温的软件，据说能够保护视力。是否真正能够保护视力我不知道，但是用了之后眼睛确实不那么容易疲劳了。\n\n\nClover\nWindows 资源管理器。可以将多个 Windows 窗口合并在一个页面上，就像 Chrome 同时开启多个网页一样。还可以 给Windows 窗口添加书签。用起来很方便，但是有的时候不稳定。"
   }
 ]
